@@ -1,0 +1,152 @@
+
+  
+  .son{
+  display:flex;
+  width:100%;
+  height: 100%;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 100%;
+    /* background-color: #f0f0f0; */
+    border-radius: 10px;
+    position: relative;
+    display:flex;
+  }
+
+  .progress-container .progress-bar:first-child{
+
+    /* background:yellow; */
+    }
+
+  .parent-progress__station{
+  /* width:120px;
+  height:auto; */
+  margin: 0px 2px;
+  position: relative;
+  }
+
+  .parent-progress__station-name{
+    position: absolute;
+    top: 34px;
+    /* text-align: center; */
+    /* bottom: 0px; */
+    font-size: 13.5px;
+    width: 100px;
+    height: 100%;
+    font-weight: bold;
+    /* text-wrap: nowrap; */
+  }
+  .parent-progress__station-date{
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    /* text-align: center; */
+    /* bottom: 0px; */
+    font-size: 11.5px;
+    width: 100px;
+    height: 100%;
+    /* text-wrap: nowrap; */
+  }
+  
+  .parent-progress__station-icon{
+    /* height: 100%;
+    width: 100%; */
+    height: 55px;
+    fill: #fcc400;
+  }
+
+  .parent-progress__station-icon svg{
+    height: 30px;
+    width: 30px;
+  }
+
+  .progress-tooltip {
+    position: absolute;
+    top: -29px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    border-radius: 5px;
+    /* height: 34px;
+    width: 60px; */
+  }
+
+    
+
+
+  .progress-tooltip svg{
+    height: 30px;
+    width: auto;
+    fill:#000;
+
+  }
+
+  .progress-tooltip svg path{
+    fill:#000;
+  }
+
+  .progress-fill {
+    height: 100%;
+    width:100%;
+    border-radius: 10px;
+    /* background: linear-gradient(to right, #3498db 0%, #3498db 50%, #e74c3c 50%, #e74c3c 100%); */
+  }
+
+  .track_card__transporticon:hover + .track_card__tooltip{
+    opacity: 1;
+    visibility: visible;
+
+  }
+
+  .track_card__tooltip{
+    border: 1px solid #707070;
+    background-color: #fff;
+    color: #707070;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 130px; */
+    position: absolute;
+    font-size: 10px;
+    padding: 5px 5px 5px 5px;
+    /* width: auto; */
+    z-index: 4;
+    top: -68px;
+    left: -50px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+
+}
+
+.track_card__tooltip-date{
+  text-wrap: nowrap;
+}
+
+@media (max-width:778px){
+
+  .progress-tooltip{
+    top: -24px;
+  }
+
+  .progress-tooltip svg{
+    height: 24px;
+  }
+
+  .parent-progress__station-icon svg{
+    height: 35px;
+    width: 20px;
+  }
+
+  .track_card__tooltip{
+    font-size: 9px;
+    padding: 2px 4px 2px 5px;
+
+    top: -44px;
+    left: -50px;
+}
+
+}

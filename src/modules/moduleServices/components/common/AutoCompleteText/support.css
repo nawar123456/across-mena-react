@@ -1,0 +1,114 @@
+
+.autocomplete-recent {
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background: #fff;
+  }
+
+  .autocomplete-recent-title {
+	font-size: 0.9rem;
+	color: #666;
+	margin-bottom: 5px;
+  }
+
+  .autocomplete-recent-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+
+  .autocomplete-recent-item {
+	cursor: pointer;
+	padding: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 4px;
+	transition: background-color 0.2s;
+  }
+
+  .autocomplete-recent-item:hover {
+	background-color: #f0f0f0;
+  }
+
+  .autocomplete-recent-item span {
+	font-size: 0.85rem;
+	color: #333;
+  }
+
+
+
+
+.autocomplete-title{
+	color: #727272;
+	font-size: var(--font-size-label);
+	font-weight: normal;
+}
+
+.automcomplete-searchbox{
+	/* border-radius: 9px; */
+	/* box-shadow: 0px 0.5px 3px rgba(0,0,0,0.16); */
+	/* border: 1px solid #b5b5b58c; */
+	/* background-color: #fff; */
+	width: 100%;
+	position: relative;
+
+}
+
+
+.automcomplete-searchbox__row{
+	display: flex;
+	align-items: center;
+	padding: 0px 5px;
+	gap: 2px;
+	background-color: #fff;
+	border-radius: 9px;
+	border: 1px solid #b5b5b58c;
+	box-shadow: 0px 0.5px 3px rgba(0,0,0,0.16);
+}
+
+.automcomplete-searchbox__row-icon{
+
+}
+
+.automcomplete-searchbox__row-icon svg{
+	height: 25px !important;
+	width: 23px !important;
+	margin-top: 5px;
+	fill: #727272;
+}
+
+.automcomplete-searchbox__row-icon svg path {
+	/* fill: #727272 !important; */
+	stroke: #727272 !important;
+}
+
+.automcomplete-searchbox__row-icon svg g path{
+	fill: none;
+	stroke: rgba(114, 114, 114, 0.8) !important;
+	stroke-miterlimit: 10;
+	stroke-width: 11px !important;
+}
+
+
+.automcomplete-searchbox__row-input{
+	height: var(--height-input);
+	padding: var(--padding-search-input-rtl);
+	border: 0;
+	outline: 0;
+	/* box-shadow: 0px 0.5px 3px rgba(0,0,0,0.16); */
+	color: hsl(0, 0%, 20%);
+	font-size: var(--font-size-input);
+	padding: 0px 5px;
+	/* border-radius: 9px; */
+	background-color: transparent;
+	/* background-color: red; */
+	/* flex: 1; */
+	width: 100%;
+}
+
+.automcomplete-searchbox__row-input::placeholder{
+font-size: var(--font-size-label);
+}

@@ -1,0 +1,132 @@
+.calculator-container-cube {
+    direction: rtl;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .title {
+    color: #fbbf24;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle-cube {
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .form-box-cube {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .rectangle-label-cylinder {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-bottom: 10px;
+    gap: 7px;
+  }
+  
+  .rectangle-label-cylinder img{
+    width: 16px;
+    height: 16px;
+    margin-top: 0.4% 
+    }
+    
+  .section-label-cube {
+    font-weight: bold;
+    /* color: #fbbf24; */
+    font-size: 18px;
+  }
+  
+  .form-group-cube {
+    margin-bottom: 15px;
+  }
+  
+  .input-row-cube {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  
+  .number-input-container-cube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .number-input-container-cube input {
+    width: 60px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  
+  
+  .input-cylinder {
+    min-width: 545px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: right;
+    margin: 2px 0;
+  }
+  .result-box-cube {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .add-info-all {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-top: 20px;
+  }
+  
+  .add-info {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+  .text-add {
+    font-size: 16px;
+    color: #fbbf24;
+  }
+  
+  .overall-result-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #fff8e1;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .result-icon-right,
+  .result-icon-left {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  

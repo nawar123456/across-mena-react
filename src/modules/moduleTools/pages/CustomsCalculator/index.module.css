@@ -1,0 +1,1313 @@
+.input-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.input-box{
+    margin: 20px 0 12px 0;
+    position: relative;
+}
+
+.width-100{
+    width: 100% ;
+}
+
+.width-gap-20{
+    width: calc( 100% / 3 - 20px );
+}
+
+.width-orginal-20{
+    width: calc( 100% / 2 - 20px );
+}
+
+.width-gap-120 , .width-gap-28{
+    width: calc( 100% / 4  );
+}
+
+.width-gap-40{
+    width: calc( 100% / 2 - 80px );
+    display: flex;
+    gap: 20px;
+    /* background-color: #322d1a; */
+    border-radius: 5px;
+    align-items: center;
+    padding: 12px;
+    /* width: calc( 100% / 3 - 40px ); */
+}
+
+.form-plus{
+        width: 100%;
+        position: relative;
+        text-align: end;
+        margin: -17px 0px 0px 0px;
+}
+.form-add{
+background-color: transparent;
+border: none;
+outline: none;
+}
+
+.plus-icon{
+    /* position: absolute; */
+    background : #fcc400;
+    /* box-shadow: 1px 1px 5px #a9a9a9; */
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    /* left: -3%; */
+    cursor: pointer;
+    padding: 2px;
+
+}
+
+
+
+.plus-icon line {
+    stroke: #fff;
+    transition: stroke 0.2s;
+}
+
+.form-add:not([disabled]):hover .plus-icon line {
+    stroke: #000;
+}
+/* .width-gap-28{ */
+    /* width: calc( 100% / 4 - 10px ); */
+    /* width: calc( 100% / 3 - 28px ); */
+/* } */
+
+.entryarea .input-title{
+    position: absolute;
+    transition: 0.2s ease;
+    padding: 0px 10px;
+    background-color: transparent;
+
+}
+
+.input-title {
+    /* margin-bottom: 20px; */
+    font-weight: 700;
+    /* background-color: yellow; */
+    display: block;
+    font-size: 18px;
+    color: #a9a5a5;
+    font-weight:900;
+    /* z-index: 1111; */
+}
+
+.input-results {
+    /* margin-bottom: 20px; */
+    font-weight: 600;
+    /* background-color: yellow; */
+    display: block;
+    font-size: 19px;
+    margin-bottom: -5px;
+    color: #606060;
+
+}
+
+.input-warning{
+    padding-right: 1.2%;
+    margin-top: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #F60000;
+}
+.results-warning{
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #F60000;
+    text-align: center;
+}
+
+.input-warning-origin{
+    padding-right: 1.2%;
+    margin-top: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #F60000;
+    position: absolute;
+}
+
+.border-warning{
+    border: 1px solid #f60000;
+    border-radius: 9px;
+}
+
+
+
+
+
+/* .my-custom-tooltip {
+    background-color: #f7bd11;
+    color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px; */
+    /* width: 200px;
+    word-wrap: break-word; */
+    /* Add more custom styles as needed */
+/* } */
+
+
+
+.pr-15{
+    /* padding-right: 15px;
+    margin-bottom: 0px; */
+    /* width: 75%; */
+
+}
+
+.pr-30{
+    /* padding-right: 30px;
+    margin-bottom: 0px; */
+
+}
+
+.pr-0{
+    padding-right: 0px;
+    margin-bottom: 0px;
+}
+
+
+/*------------------------------------search box  ----------------------------------------------*/
+.search-parent{
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box{
+    display: flex;
+
+}
+
+.entryarea{
+    position: relative;
+    height: 55px;
+    line-height: 55px;
+    flex-grow: 2;
+}
+
+.input-search{
+    position: absolute;
+    /* line-height: 80px; */
+    transition: 0.1s ease;
+    z-index: 9;
+
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border-radius: var(--border-calculator-search) ;
+    padding: 0px 10px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    overflow: hidden;
+    flex-grow:2;
+    border: 1px solid #b5b5b58c;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+.btn-accordain {
+    /* Just a little styling to make it pretty */
+    /* background:linear-gradient(#fffdfd, rgba(0,0,0,0), #d4d4d4); */
+    background-color: #fcc400;
+    color: #fff;;
+    border-radius: var(--borde-caluclator-button);
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid #b5b5b58c;
+    border-right: none;
+    /* padding-top: 1%;
+    padding-right: 1px;
+    padding-left: 1px; */
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.btn-accordain:hover{
+    color: #000;
+}
+.btn-accordain:hover .btn-title{
+    color: #000;
+}
+
+  .btn-title{
+    padding-top: 3px ;
+  }
+
+  .btn-icon{
+    width: 22px ;
+    height: 22px;
+    display: none;
+  }
+
+/* .btn-accordain:hover .btn-icon{
+    fill: #FFC400;
+} */
+
+.list-item{
+    border-bottom: 1px solid #C5C5C5;
+    padding: 1.2% 1.2% 0.3% 1.2%;
+    line-height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    /* font-family: simpbdo; */
+}
+
+.list-item:hover{
+    background-color: #C5C5C5;
+}
+
+
+
+.search-list{
+    height: 200px;
+    overflow-y: scroll;
+    box-shadow:  2px 2px 2px 1px #b5b5b58c;
+    border-radius: 0px 0px 5px 5px;
+
+}
+
+
+.search-list::-webkit-scrollbar {
+    width: 5px;
+  }
+
+.search-list::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 15px;
+
+}
+
+.search-list::-webkit-scrollbar-thumb {
+    background-color: #FFC400;
+    border-radius: 15px;
+
+}
+
+/*_________________________________________________________________*/
+
+.fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 30px 30px 30px;
+    /* padding-bottom: 100px; */
+    width: 100%;
+    border: 1px solid #FFC400;
+    box-shadow:5px 5px 4.5px rgba(0, 0, 0, 0.16), 0px 0px 1.5px rgba(0, 0, 0, 0.16);
+    background: #fff;
+    border-radius: 16px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.fieldset:before {
+    content: "";
+      display: block;
+      position: relative;
+    top: -13px;
+    left: -10px;
+    width: calc(100% + 18px);
+  }
+
+  .legend {
+    /* text-transform: capitalize;
+    font-variant: small-caps; */
+    background: #FFC400;
+    position: relative;
+    top: -1px;
+    left: 0px;
+    padding: 5px 20px;
+    font-size: 24px;
+    border-radius: 8px 8px 8px 8px;
+  }
+
+  .fieldset-values{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 30px 0px 30px;
+    /* padding-bottom: 100px; */
+    width: 100%;
+    border: 1px solid #FFC400;
+    box-shadow: 5px 5px 4.5px rgba(0, 0, 0, 0.16), 0px 0px 1.5px rgba(0, 0, 0, 0.16);
+    background: #fff;
+    border-radius: 16px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.fieldset-values:before {
+    content: "";
+      display: block;
+      position: relative;
+    top: -13px;
+    left: -10px;
+    width: calc(100% + 18px);
+  }
+
+  .legend-values {
+    /* text-transform: capitalize;
+    font-variant: small-caps; */
+    background: #FFC400;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 5px 20px;
+    font-size: 24px;
+    border-radius: 8px 8px 8px 8px;
+  }
+
+
+  .form-delete{
+    height: 5px;
+    width: 33px;
+    /* border-radius: 50%; */
+    /* background-color: #7f7f7f; */
+    font-size: 19.5px;
+    fill: #fcc400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    inset-inline-end:10px;
+    top: 0px;
+    transition: all .3s;
+    font-weight: bold;
+}
+
+.form-delete svg{
+    width: 20px;
+    height: 20px;
+}
+
+.form-delete:hover{
+    fill: #a1a1a1;
+    transform: rotate(180deg);
+    /* background-color: #a1a1a1; */
+    /* border-radius: 50%; */
+}
+
+
+/*------------------------------------check box ------------------*/
+.checkbox-parent{
+    display: flex;
+    width: 100%;
+    margin: 18px 0 18px 0;
+    gap: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.mt-30{
+    margin-top: 45px;
+    margin-right: 31px;
+}
+
+.checkbox-parent .input-title{
+
+    margin-bottom: 0px;
+}
+
+.checkbox-text{
+    height: 22px ;
+    width: 22px ;
+    accent-color: #ffc400;
+    }
+
+.checkbox-text:checked:after {
+        color:white;
+      }
+
+
+.terms-title{
+    text-decoration: underline;
+    outline: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.terms-title:hover{
+    color: #FFC400;
+    text-decoration: underline;
+
+}
+/*________________________*/
+
+
+
+
+/*---------------------------input text ---------*/
+.input-parent{
+    position: relative;
+
+}
+
+.input-text{
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border-radius: 9px;
+    border: 1px solid #b5b5b58c;
+    padding: 10px;
+    font-size: 17px;
+    /* border-bottom-width: 2px; */
+    transition: all 0.3s ease;
+    font-weight: 700;
+    overflow: hidden;
+
+    position: absolute;
+    /* line-height: 80px; */
+    transition: 0.1s ease;
+    z-index: 9;
+    background-color: transparent;
+    cursor: pointer;
+
+
+}
+
+.input-text:focus , .input-search:focus{
+    border: 1px solid #FFC400;
+
+    /* border-bottom-width: 2px; */
+}
+
+.input-title.active  ,.input-search:focus + .input-title , .input-search:valid + .input-title , .input-text:focus + .input-title , .input-text:valid + .input-title{
+    color: #fcc400;
+    height: 30px;
+    /* width: 120px; */
+    line-height: 30px;
+    transform: var(--transition-calculato-input);
+    z-index: 10;
+    padding: 0px 9px;
+    background-color: #fff;
+}
+
+
+
+
+.input-units{
+    position: absolute;
+    top: 28%;
+    z-index: 10;
+    border-radius: var(--borde-caluclator-button);
+    inset-inline-end: 3px;
+    padding-top: 0px;
+    border: none;
+    width: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: center;
+    height: 36px;
+    color: #b5b5b58c;
+    background-color: #fff;
+    transform: translateX(2px);
+    text-align: center;
+}
+
+.input-notes{
+    /* position: absolute; */
+    font-size: 13px;
+    margin-top: 5px;
+    color: #b5b5b5;
+    width: calc( 100% / 3 - 20px );
+    margin-right: auto;
+}/* for mobile width 100% and margin-right delete */
+
+.input-notes2{
+        /* position: absolute; */
+        font-size: 13px;
+        margin-top: 5px;
+        color: #b5b5b5;
+        width: calc( 100% / 2 - 20px );
+        margin-right: auto;
+}
+.notes-info1{
+    width: 100%;
+}
+
+.notes-info2{
+    color: red;
+    width: 100%;
+}
+
+.flex-full{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+
+
+
+input[type=text]:disabled ,
+input[type=submit]:disabled {
+    background: rgba(255, 255, 255, 0);
+
+
+
+}
+input[type=submit]:disabled {
+    border: 2px solid #b5b5b58c
+}
+
+
+/* remove the input focus blue box, it will be in the wrong place. */
+input:focus {
+    outline: none;
+  }
+
+
+/*____________________________________________
+*/
+
+
+.label-unit{
+    margin:  0 6px;
+  }
+
+/*------------------------------------form button----------------------------------------------*/
+
+.form-btn{
+    height: 50px;
+    margin: 15px auto;
+    width: 29%;
+	display: flex;
+	flex-direction: column;
+}
+
+.input-submit{
+    height: 100%;
+    width: 85%;
+	align-self: center;
+    outline: none;
+    font-size: 25px;
+    border-radius: 10px;
+    /* background: linear-gradient(#fffdfd, #d4d4d4); */
+	background-color: #ffc400;
+    /* border: 2px solid #ffc400; */
+    border: none;
+
+    color: #fff;
+    cursor: pointer;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    transition: all .2s;
+}
+
+/* .input-submit:focus,.input-submit:hover{
+    border: 2px solid #ffc400;
+} */
+
+
+.input-submit:hover{
+    color: #000;
+
+}
+
+
+/*------------------------------------end form ------------------------------------------------------*/
+
+
+/*------------------------------------Start Calculator  ------------------------------------------------------*/
+
+
+.math-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-column-gap: 1px;
+    /* grid-row-gap: 2px; */
+
+}
+.hide-math-container{
+    display: none;
+}
+
+.math-right > div , .math-left > div{
+    background-color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    /* font-size: 20px; */
+    display: flex;
+    word-wrap:break-word;
+    /* gap: 50%; */
+}
+.math-right > div:first-child , .math-left > div:first-child{
+/* border-top: 1px solid rgba(112,112,112,0.13); */
+}
+
+.math-left > div{
+    padding-right: 30px;
+
+}
+
+
+.math-item-title{
+    font-size: 18px;
+    font-weight: 500;
+    width: 63%;
+    text-align: start;
+    margin: auto;
+
+}
+
+.math-item-value{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: simpbdo;
+    width: 40%;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: start;
+    padding: 0px 14px;
+
+    margin: auto;
+}
+
+.math-item-value span{
+    margin: 0px 8px;
+    font-size: 14px;
+}
+
+.math-item-final{
+
+    font-family: simpbdo;
+    width: 40%;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: start;
+    padding-right: 20px;
+    margin: auto;
+
+
+}
+
+.line{
+    /* position: relative; */
+    display:flex;
+    gap:40px;
+    margin-top:30px;
+    justify-content:center;
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 10px;
+    border-top: 1px solid #ffc400;
+    grid-column: 1 / 3;
+
+}
+
+.line-number {
+    font-family: simpbdo;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.parent-warning{
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.warning-text{
+font-size: 11px;
+color: #423E3E;
+line-height: 20px;
+letter-spacing: 0.1px;
+}
+
+.warning-image{
+    height: 35px;
+    width: 30px;
+}
+
+
+.math-right{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+
+}
+
+
+
+.math-left{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ffc400;
+    /* flex-wrap: wrap; */
+}
+
+.last{
+    margin-top: auto;
+}
+
+
+
+@media (max-width : 1300px) {
+
+    .container{
+        width: 75%;
+        padding: 25px 0px;
+    }
+
+.btn-accordain {
+
+   font-size: 17px;
+   color: white;
+        /* padding-top: 1.7%; */
+      }
+
+
+    /*------------------------------------form ----------------------------------------------*/
+
+    .input-title{
+
+        font-size: 17px;
+    }
+
+
+
+    /*------------------------calculator ------------------------------------------------*/
+
+    .math-item-title{
+        font-size: 15px;
+        /* width: 67%; */
+
+    }
+
+    .math-item-value{
+        /* width: 35%; */
+        font-size: 14px;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .math-item-final{
+
+        /* width: 35%; */
+        font-size: 18px;
+        padding-right: 0px;
+        text-align: center;
+
+
+    }
+
+    /*
+ .math-right > div , .math-left > div{
+         flex-wrap: wrap;
+        gap: 10px;
+
+    }
+*/
+    .line{
+        /* position: relative; */
+        gap:15px;
+        font-size: 18px;
+
+
+    }
+
+}
+
+.select-option{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-option span{
+    line-height: 30px;
+}
+
+.select-flag{
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+
+@media (max-width: 1130px) {
+
+    .width-gap-40{
+        width: calc( 100% / 2 - 80px );
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+         /* background-color: #e6d7a2;  */
+        /* Nawar background ugly */
+
+        border-radius: 5px;
+        align-items: flex-start;
+        padding: 5px 2px 5px 0px;
+    }
+
+    .input-results {
+        margin-bottom: 5px;
+        font-weight: 600;
+        /* background-color: yellow; */
+        display: block;
+        font-size: 14px;
+    }
+
+    .input-title {
+        margin-bottom: 13px;
+        font-weight: bold;
+        /* background-color: yellow; */
+        display: block;
+        font-size: 16px;
+    }
+
+    .flex-full{
+        align-items: center;
+    }
+
+    .mt-30{
+        margin-right: 7px;
+    }
+
+    .btn-accordain {
+
+        /* padding-top: 2.5%; */
+        padding-right: 0px;
+        padding-left: 0px;
+        font-size: 15px;
+        }
+
+        .btn-accordain:hover{
+            color: #000;
+        }
+    .input-box {
+        width: 100%;
+        margin: 12px 0 4px 0;
+    }
+
+
+    .input-notes , .input-notes2{
+        width: calc( 100% / 1 );
+        margin-top: -5px;
+    }
+
+
+
+    .fieldset, .fieldset-values {
+        padding: 20px 5px;
+		margin-top: 70px
+    }
+
+    .input-warning-origin{
+        position: static;
+    }
+
+    /* .checkbox-parent{
+        margin: 10px 0 0px 0;
+    } */
+
+
+    .pr-15{
+        /* padding-right: 30px; */
+    }
+
+    .pr-0{
+        padding-right: 30px;
+    }
+
+    /*------------------------------------form button----------------------------------------------*/
+
+
+    .form-btn{
+        width: 35%;
+    }
+
+    .form-btn input{
+        height: 95%;
+        width: 85%;
+        font-size: 20px;
+    }
+
+    .check-padding{
+        padding-right: 0px ;
+    }
+
+        .terms-title{
+
+            font-size: 14px;
+    }
+}
+
+@media (max-width : 765px) {
+
+
+    .btn-accordain {
+
+        /* padding-top: 12px; */
+        width: 200px;
+
+      }
+      .btn-accordain:hover{
+        color: #000;
+    }
+
+
+
+    /*------------------------------------form ----------------------------------------------*/
+    .fieldset{
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 30px 30px 30px;
+
+        border: 1px solid #FFC400;
+
+        background: #fff;
+        border-radius: 50px;
+        margin-top: 30px; */
+        /* border: none;
+        padding: 0px;
+        margin-top: 0px; */
+    }
+
+    .fieldset:before {
+        /* content: "";
+          display: block;
+          position: relative;
+        top: -13px;
+        left: -10px;
+        width: calc(100% + 18px); */
+        /* display: none; */
+      }
+
+      .legend {
+        /* text-transform: capitalize;
+        font-variant: small-caps;
+        background: #FFC400;
+        position: relative;
+        top: -9px;
+        left: 0px;
+        padding: 5px 20px;
+        font-size: 24px;
+        border-radius: 8px 8px 0 0; */
+        /* display: none; */
+      }
+
+      .pr-30{
+        padding-right: 0px;
+    }
+
+    .pr-15{
+        padding-right: 0px;
+    }
+
+    .pr-0{
+        padding-right: 0px;
+    }
+
+    .checkbox-text{
+
+        /* margin-right: auto; */
+        }
+
+        .checkbox-parent{
+            /* margin: 12px 0 15px 0; */
+        }
+
+        .checkbox-parent .input-title{
+
+            margin-bottom: 0px;
+        }
+
+    .terms-title{
+        text-decoration: none;
+        outline: none;
+        font-weight: bold;
+        color: #000c37;
+        font-size: 13px;
+        cursor: pointer;
+}
+
+
+    /*------------------------------------form button----------------------------------------------*/
+    .form-btn{
+    width: 38%;
+}
+
+.form-btn input{
+    height: 95%;
+    width: 90%;
+    font-size: 14px;
+}
+
+    /*---------------------calculator ------------------------------*/
+
+    .math-container{
+        grid-template-columns: auto ;
+
+        /* grid-row-gap: 2px; */
+
+    }
+
+    .math-left{
+
+        border-right: none;
+
+        border-top: 1px solid #ffc400;
+    }
+
+    .math-left > div{
+        padding-right: 0px;
+
+    }
+
+    .math-item-title{
+        font-size: 15px;
+        width: 70%;
+    }
+
+    .math-item-value{
+        width: 35%;
+        font-size: 14px;
+        padding-right: 0px;
+        /* text-align: center; */
+    }
+
+    .math-item-final{
+
+        width: 35%;
+        font-size: 18px;
+        padding-right: 0px;
+
+    }
+
+    .line{
+        grid-column: 1;
+    }
+
+    .last{
+        border-top: 1px solid rgba(112,112,112,0.13);
+    }
+    .math-right > div:first-child , .math-left > div:first-child{
+        border-top: 1px solid rgba(112,112,112,0.13);
+        }
+
+        .math-right > div , .math-left > div{
+
+            border-bottom: 1px solid rgba(112,112,112,0.13);
+        }
+
+}
+
+@media (max-width : 600px) {
+
+    .entryarea .input-title{
+        top: -7px ;
+    }
+
+    /*------------------------------------form ----------------------------------------------*/
+    .input-search{
+        height: 40px;
+        width: 100%;
+        outline: none;
+        border-radius: var(--border-calculator-search) ;
+        /* padding: 1.2%; */
+        font-size: 16px;
+        transition: all 0.3s ease;
+        font-weight: 700;
+        overflow: hidden;
+        flex-grow:2;
+        border: 1px solid #b5b5b58c;
+    }
+
+      .btn-title{
+        padding-top: 3px ;
+      }
+
+
+    .btn-accordain {
+        font-size: 12px;
+        /* width: 40%; */
+        width: auto;
+        /* padding-top: 3.4%; */
+        padding: 0px 10px 0px 10px;
+        /* text-align: center; */
+        gap: 3px;
+        line-height: 35px;
+        height: 40px;
+      }
+
+      .btn-accordain:hover{
+        color: #000;
+    }
+
+      .btn-icon{
+        height: 25px;
+        width: 25px;
+        margin-left: 5px;
+      }
+
+      .list-item{
+        border-bottom: 1px solid #C5C5C5;
+        padding: 1.2% 1.2% 0.3% 1.2%;
+        line-height: 30px;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+        /* font-family: simpbdo; */
+    }
+
+    .input-warning{
+        padding-right: 1.2%;
+        margin-top: 2px;
+        font-size: 9px;
+        font-weight: bold;
+        color: #F60000;
+    }
+
+
+
+      .input-text{
+        height: 40px;
+        width: 100%;
+        outline: none;
+        border-radius: 9px;
+        border: 1px solid #b5b5b58c;
+        padding: 10px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        font-weight: 700;
+        overflow: hidden;
+    }
+
+    .input-units{
+        position: absolute;
+        top: 5px;
+        border-radius: var(--borde-caluclator-button);
+        padding-top: 4px;
+        border: none;
+        width: auto;
+        padding-left: 8px;
+        padding-right: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        vertical-align: center;
+        height: 25px;
+        color: #000c37;
+        background-color: #fff;
+        transform: translateX(2px);
+        text-align: center;
+    }
+
+    .select-option{
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .select-flag{
+        /* height: 20px; */
+        /* width: 20px; */
+    }
+
+    .checkbox-text{
+        height: 16px;
+        width: 15px;
+        }
+
+    /* .terms-title{
+            text-decoration: none;
+            outline: none;
+            font-weight: bold;
+            color: #000c37;
+            font-size: 12px;
+            cursor: pointer;
+    } */
+
+    /* .checkbox-parent{
+        display: flex;
+        width: 100%;
+        margin: 8px 0 0px 0;
+        gap: 9px;
+        font-size: 15px;
+        font-weight: 600;
+        align-items: flex-end;
+
+
+    } */
+
+
+
+
+
+    /*------------------------------------form button----------------------------------------------*/
+
+    .form-btn{
+        width: 50%;
+    }
+    .form-btn input{
+        height: 70%;
+        width: 100%;
+        font-size: 80%;
+        font-weight: bold;
+    }
+
+
+    /*---------------------calculator ------------------------------*/
+    .math-item-title{
+        font-size: 14px;
+        width: 50%;
+
+    }
+    .math-item-value{
+        width: 50%;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .math-item-final{
+
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .line{
+        gap:13px;
+        font-size: 16px;
+    }
+
+    .warning-text{
+        line-height:17px;
+        letter-spacing: 0px;
+    }
+
+    .warning-image{
+        height: 30px;
+        width: 30px;
+    }
+
+
+
+}

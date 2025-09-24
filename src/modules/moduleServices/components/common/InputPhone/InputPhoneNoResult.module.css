@@ -1,0 +1,41 @@
+.formNoResult-box{
+    position: relative;
+	bottom: 38px;
+ }
+/* Ensure this targets only elements inside .react-tel-input */
+.material .react-tel-input .special-label {
+    display: none !important;
+  }
+  
+  
+
+    .formNoResult-box .formNoResult-label{
+        color: #727272;
+        font-size: var(--font-size-label);
+        font-weight: normal;
+		position: relative;
+		bottom: 3px;
+    }
+
+
+    .formNoResult-icon{
+        position: absolute;
+        top: 35%;
+        right: 10px;
+        z-index: 1;
+    }
+
+    .formNoResult-icon svg{
+        height: 20px;
+    width: 21px;
+	fill: darkgray;
+    margin: 10px 0px 0px 0px
+    }
+
+	@media (max-width:450px) {
+		.formNoResult-box{
+	width: 101.5%;
+		}
+
+	}
+

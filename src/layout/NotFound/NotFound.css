@@ -1,0 +1,14 @@
+.btn-not-found{
+    background-color: #ffc400;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn-not-found:hover{
+    color: #000;
+}

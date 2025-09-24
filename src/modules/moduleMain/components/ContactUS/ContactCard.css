@@ -1,0 +1,87 @@
+.phone-number-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.number-contact{
+    color: #0d3453;
+}
+
+.contact-card-img{
+width: 35px;
+height: 35px;
+}
+.social-icons:hover img{
+color: #fcc400;
+}
+.contact-info-h3{
+font-size: 24px;
+padding-top: 30px;
+}
+.phone-number-contact-p{
+    font-size: 17px;
+}
+
+@media (max-width:1300px){
+
+.contact-card-img{
+width: 30px;
+height: 30px;
+}
+}
+@media (max-width:500px){
+    
+.contact-info-h3{
+font-size: 20px;
+padding-top: 30px;
+}
+.contact-info-p{
+font-size: 18px;
+padding-top: 20px;
+}
+.phone-number-contact-p{
+    font-size: 16px;
+}
+
+.contact-card-img{
+width: 33px;
+height: 33px;
+}
+}
+@media (min-width:400px){
+.contact-info-h3{
+font-size: 16px;
+padding-top: 30px;
+}
+.contact-info-p{
+font-size: 16px;
+padding-top: 20px;
+}
+.phone-number-contact-p{
+    font-size: 15px;
+}
+
+.contact-card-img{
+width: 30px;
+height: 30px;
+}
+}
+@media (max-width:350px){
+.contact-info-h3{
+font-size: 16px;
+padding-top: 30px;
+}
+.contact-info-p{
+font-size: 16px;
+padding-top: 20px;
+}
+.phone-number-contact-p{
+    font-size: 15px;
+}
+
+.contact-card-img{
+width: 30px;
+height: 30px;
+}
+}

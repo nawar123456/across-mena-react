@@ -1,0 +1,88 @@
+.modal-accordion{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 33333;
+    /* transform: translate(-50%, -50%); */
+    border: 1px solid #ccc;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    width: 100%;
+    /* padding: 25px; */
+    /* padding: 0px 20px; */
+    height: 100%;
+    border: 1px solid #FDDD6B;
+    background-color: #fff;
+    /* border-radius: 20px; */
+    /* line-height: 30px; */
+    overflow: hidden;
+    animation: scale-fade-out 0.2s;
+    /* opacity: 0;*/
+}
+
+
+@keyframes scale-fade-out {
+    0% {
+        /* transform: translate(-0%, -0%); */
+        opacity: 0;
+        /* transform: scale(0); */
+    }
+
+
+    100% {
+        /* transform: translate(-50%, -50%); */
+        opacity: 1;
+        /* transform: scale(1); */
+
+    }
+}
+
+.modal-accordion::backdrop{
+    /* background-color: transparent; */
+
+    }
+
+
+.modal-accordion .delete-icon{
+    height: 33px;
+    width: 33px;
+    /* border-radius: 50%; */
+    /* background-color: #7f7f7f; */
+    font-size: 19.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right:0px;
+    top: 0px;
+    transition: all .3s;
+    font-weight: bold;
+    fill: #fff;
+}
+
+.modal-accordion .delete-icon svg{
+  height: 20px;
+  width: 20px;
+}
+
+.modal-accordion .delete-icon:hover{
+    fill: #a1a1a1;
+    transform: rotate(180deg);
+    /* background-color: #a1a1a1; */
+    /* border-radius: 50%; */
+}
+
+.modal-accordion .modal-search{
+    padding: 40px 20px;
+    background: linear-gradient(261deg, rgba(255,208,40,1) 0%, rgba(255,206,59,1) 30%, rgba(255,211,57,1) 45%, rgba(255,213,67,1) 84%, rgba(255,208,43,1) 100%, rgba(255,208,43,1) 100%);
+    /* border-radius: 20px 20px 0px 0px; */
+}
+
+
+@media (max-width:660px) {
+
+    .modal-accordion .modal-search{
+        padding: 5px 20px 12px 20px;
+    }
+    
+}

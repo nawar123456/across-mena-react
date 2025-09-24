@@ -1,0 +1,109 @@
+.details-book__card .card-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	width: 190%;
+    border-top: 1px solid #eaeaea;
+    padding: 15px 0px 15px 0px;
+	margin-top: 9px;
+	margin-right: -45px;
+    margin-left: -74px;
+}
+
+.three-contact-label1{
+	position: relative;
+	left:var(--three-contact-label-left1);
+    transform: translateX(10%) translateY(20%);
+
+}
+.three-contact-label2{
+	position: relative;
+	left:var(--three-contact-label-left2);
+}
+.three-contact-label3{
+	position: relative;
+	left:var(--three-contact-label-left3);
+}
+.three-contact-value{
+	position: relative;
+	top: var(--three-contact-value-top);
+}
+  /* start card1 */
+.details-book__card1 .card-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    padding: 15px 0px;
+	position: relative;
+}
+
+.details-book__card1 .card-item2 {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border-top: 1px solid #eaeaea; */
+    padding: 15px 0px;
+	color: #727272;
+	position: relative;  }
+/* end card1*/
+
+.card-item .card-item_title{
+   font-size: 18px;
+   font-weight: normal;
+   color: #727272;
+}
+
+.card-item .card-item_info{
+    font-size: 18px;
+    color: #727272;
+    font-weight: normal;
+    text-align: end;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-direction: var(--flex-row-rtl);
+}
+
+@media (max-width: 1250px) {
+	.details-book__card .card-item{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 160%;
+		border-top: 1px solid #eaeaea;
+		padding: 15px 0px 15px 0px;
+		margin-right: -45px;
+		margin-left: -74px;
+	}
+}
+
+@media (max-width: 450px) {
+
+
+	.details-book__card1 .card-item{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 30px;
+		width: 100%;
+		border-top: 1px solid #eaeaea;
+		padding-top: 20px ;
+		position: relative;
+	}
+
+
+	.details-book__card .card-item{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 215%;
+		border-top: 1px solid #eaeaea;
+		padding: 15px 0px 15px 0px;
+		/* margin-right: -70px; */
+		margin-left: -75px;
+	}
+
+}

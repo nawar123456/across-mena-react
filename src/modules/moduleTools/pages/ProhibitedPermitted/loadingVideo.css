@@ -1,0 +1,25 @@
+/* App.css */
+
+
+  .video-container {
+	margin-top: 5.5%;
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	height: 85vh; /* Full height of the viewport */
+  }
+
+  .fullscreen-video {
+	max-width: 100%; /* Ensure video scales down if too wide */
+	max-height: 100%; /* Ensure video scales down if too tall */
+  }
+
+  @media (max-width : 500px) {
+	.video-container {
+		margin-top: 10%;
+		display: flex;
+		justify-content: center; /* Center horizontally */
+		align-items: center; /* Center vertically */
+		height: 85vh; /* Full height of the viewport */
+	  }
+  }

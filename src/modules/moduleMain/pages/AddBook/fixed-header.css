@@ -1,0 +1,121 @@
+.fixed-header {
+  position: fixed;
+  top: 78px;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px 0px 4px 60px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #eaeaea;
+  margin: 0px 2px;
+  direction: var(--dir-inverse);
+}
+
+.main-action {
+  background: #ffc400;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  color: black;
+}
+
+.helper-text {
+  font-size: 20px;
+  margin: 0 12px;
+}
+
+.user-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+	@media(max-width:1300px){
+
+.fixed-header {
+  position: fixed;
+  top: 78px;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 0px 4px 0px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #eaeaea;
+  margin: 0px 2px;
+  direction: var(--dir-inverse);
+}
+  }
+	@media(max-width:600px){
+
+.user-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+.helper-text {
+  font-size: 16px;
+  margin: 0 12px;
+  width: 97%;
+}
+.fixed-header {
+  position: fixed;
+  top: 78px;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5.5px 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #eaeaea;
+  margin: 0px 2px 2px;
+  direction: var(--dir-inverse);
+  
+}
+    }
+
+    	@media(max-width:400px){
+
+.user-icon img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+
+.helper-text {
+  font-size: 15px;
+  margin: 0 8px;
+  width: 75%;
+}
+.fixed-header {
+  position: fixed;
+  top: 78px;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5.5px 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #eaeaea;
+  margin: 0px 2px 2px;
+  direction: var(--dir-inverse);
+  
+}
+    }

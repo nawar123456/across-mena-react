@@ -1,0 +1,77 @@
+.parent-table{
+    overflow-x: auto;
+    margin: 22px 0px;
+    padding: 1px;
+
+  }
+  
+  table.table-74 {
+    margin-left: auto; 
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  table, th, td {
+    border: 1px solid black; 
+    text-align: center;
+  }
+  
+  th{
+    font-size: 17px;
+    padding: 5px;
+  
+  }
+  
+  td{
+      font-size: 15px;
+      padding: 5px;
+      width: 50%;
+  }
+  
+  .last-td{
+    text-align: right;
+  }
+
+  @media (max-width: 768px) {
+
+    table.table-74  {
+
+        width: 80%;
+      }
+    th{
+        font-size: 15px;
+        padding: 3px;
+    }
+}
+
+@media (max-width: 660px) { 
+
+    table.table-74  {
+
+        width: 100%;
+      }
+    th{
+        font-size: 13px;
+        padding: 3px;
+    }
+
+    td{
+    font-size: 12px;
+    padding: 1px;
+    }
+}
+
+@media (max-width: 425px) { 
+    
+    th{
+        font-size: 11px;
+        padding: 2px;
+    }
+    td{
+        font-size: 11px;
+    }
+
+}
+
+

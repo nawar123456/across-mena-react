@@ -1,0 +1,187 @@
+.accordion-calc .dialog-item{
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: var(--trantion-calculator-aggre);
+    border: 1px solid #ccc;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    width: 35%;
+    /* padding: 25px; */
+    /* padding: 0px 20px; */
+    /* height: auto; */
+    /* border:  1px solid #FDDD6B; */
+    background-color: #e3e3e3;
+    border-radius:20px;
+    /* line-height: 30px; */
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.accordion-calc .dialog-item::backdrop{
+    background-color: transparent;
+    }
+
+.dialog-title{
+    color: #1D2444;
+    font-size: 21px;
+
+}
+
+.dialog-description{
+    font-weight: normal;
+    color: #1D2444;
+    font-size: 20px;
+    font-weight:normal;
+    word-wrap: break-word;
+    line-height: 30px;
+    padding: 0px 20px;
+    height: auto;
+    
+}
+.dialog-description::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .dialog-description::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 5px;
+
+  }
+  
+  .dialog-description::-webkit-scrollbar-thumb {
+    background-color: #FFC400;
+    border-radius: 5px;
+  }
+
+.dialog-btns{
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    height: 50px;
+
+}
+
+.agree-btn , .close-btn{
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+    background: linear-gradient(#fffdfd, #d4d4d4);
+    background-color: #d4d4d4;
+    border: 2px solid #ffc400;
+
+    color: #000;
+    cursor: pointer;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: 700;
+    transition: all .2s;
+    display: block;
+    width: 20%;
+    height: 100%;
+    
+}
+
+@media (max-width:900px) {
+
+    .accordion-calc .dialog-item{
+        position: fixed;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -85%);
+        border: 1px solid #ccc;
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+        width: 50%;
+        /* padding: 25px; */
+        /* padding: 0px 20px; */
+        /* height: auto; */
+        /* border:  1px solid #FDDD6B; */
+        background-color: #e3e3e3;
+        border-radius:20px;
+        /* line-height: 30px; */
+        text-align: center;
+        padding: 5px 5px 0px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dialog-title{
+        color: #1D2444;
+        font-size: 16px;
+        font-weight: bold;
+        word-wrap: break-word;
+
+    }
+
+    .dialog-description{
+        font-weight: normal;
+        color: #1D2444;
+        font-size: 15px;
+        font-weight:normal;
+        word-wrap: break-word;
+        line-height: 30px;
+        padding: 0px 5px;
+        word-wrap: break-word;
+        height: 50px;
+        overflow: auto;
+
+    }
+
+    .agree-btn , .close-btn{
+        outline: none;
+        font-size: 14px;
+        border-radius: 10px;
+        background: linear-gradient(#fffdfd, #d4d4d4);
+        background-color: #d4d4d4;
+        border: 2px solid #ffc400;
+    
+        color: #000;
+        cursor: pointer;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-weight: 700;
+        transition: all .2s;
+        display: block;
+        width: 25%;
+        height: 70%;
+        line-height: 30%;
+        
+    }
+}
+.we{
+    
+}
+
+@media (max-width:600px) {
+
+    
+    .accordion-calc .dialog-item{
+        position: fixed;
+        top: 65%;
+        left: 70%;
+        transform: translate(-20%, -85%);
+        border: 1px solid #ccc;
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+        width: 70%;
+        /* padding: 25px; */
+        /* padding: 0px 20px; */
+        /* height: 150px; */
+        /* border:  1px solid #FDDD6B; */
+        background-color: #e3e3e3;
+        border-radius:20px;
+        /* line-height: 30px; */
+        text-align: center;
+        padding: 12px 5px 0px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+}

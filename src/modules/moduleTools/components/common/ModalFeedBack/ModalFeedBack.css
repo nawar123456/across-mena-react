@@ -1,0 +1,292 @@
+/* The Modal (background) */
+.modal-feedback__background{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1058; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(78, 84, 102, 0.6);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.modal-feedback {
+  background-color: #fff;
+  padding: 40px 0px 40px 0px;
+  width: 60%;
+  margin: 0px auto;
+  border-radius: 9px;
+  }
+
+  
+
+/* Modal Content/Box */
+.modal-feedback__content {
+    background-color: #fff;
+    /* margin: 5% auto 5% auto; 15% from the top, 15% from the bottom and centered */
+    margin: 0px auto;
+    border: 1px solid #fcc400;
+    width: 85%; /* Could be more or less, depending on screen size */
+    border-radius: 9px;
+}
+
+  /* Add padding and center-align text to the container */
+.modal-feedback__container {
+    padding: 30px 16px 16px 16px;
+    text-align: center;
+  }
+
+.modal-feedback__container-title{
+  font-size: var(--font-size-label);
+  color: #0D3453;
+  filter: drop-shadow(3px 1.5px 1px rgba(0,0,0,0.04));
+  overflow-wrap: break-word;
+  font-weight: normal;
+
+}
+
+.modal-feedback__container-details{
+text-align: start;
+margin: 20px 0px 20px 0px;
+
+}
+
+.modal-feedback__container-details__text{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 15px;
+  color: #0D3453;
+}
+
+.modal-feedback__container-tools{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.modal-feedback__container-input{
+  margin: 5px 0px;
+  text-align: start;
+}
+
+/* Clear floats */
+
+.modal-feedback__clearfix{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.modal-feedback__clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.modal-feedback__cancelbtn, .modal-feedback__submitbtn {
+    float: left;
+    width: 160px;
+    border-radius: 9px;
+    padding: 16px;
+    opacity: 0.9;
+    margin: 0px 20px;
+    border: none;
+    font-size: var(--font-size-input);
+    outline: none;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.16);
+  }
+
+  .modal-feedback__cancelbtn:hover, .modal-feedback__submitbtn:hover {
+    opacity: 1;
+  }
+
+  .modal-feedback__submitbtn:disabled{
+    background: rgba(221, 221, 221, 0.5);
+    border: 2px solid rgba(221, 221, 221, 0.8);
+    color: #707070 ;
+
+}
+
+.modal-feedback__submitbtn .btn-ring:after {
+    content: "";
+    display: block;
+    width: var(--font-size-input);
+    height: var(--font-size-input);
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-color: #fcc400 transparent #fcc400 transparent;
+    animation: ring 1.2s linear infinite;
+    -webkit-animation: ring 1.2s linear infinite;
+  }
+
+  @keyframes ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes  ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+  /* Add a color to the cancel button */
+  .modal-feedback__cancelbtn {
+    background-color: #ccc;
+    color: #0D3453;
+    cursor: pointer;
+  }
+  
+  /* Add a color to the delete button */
+  .modal-feedback__submitbtn {
+    background-color: #fcc400;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /*select */
+
+  .modal-feedback__container__select-title{
+
+    color: #0D3453;
+    font-size: var(--font-size-label);
+    font-weight: normal;
+  }
+
+  .modal-feedback__container__select-menu{
+    /* width: 300px; */
+    cursor: pointer;
+    position: relative;
+  }
+
+.modal-feedback__container__select-menu__select{
+  background-color: #fff;
+  padding: 10px;
+  /* color: #0D3453; */
+  font-weight: 500;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0.5px 3px rgba(0,0,0,0.16);
+  border: 1px solid #b5b5b58c;
+  height: var(--height-input);
+}
+
+.modal-feedback__container__select-menu__select-icon{
+  width: 20px;
+  height: 20px;
+  fill: #0D3453;
+  transform: rotate(0deg);
+  transition: transform 0.3s ;
+}
+.modal-feedback__container__select-menu__select-icon.rotate{
+
+  transform: rotate(180deg);
+  transition: transform 0.3s ;
+}
+
+.modal-feedback__container__select-menu__options-list{
+  position: absolute;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  margin-top: 14px;
+  padding: 0px 0px;
+  max-height: 230px;
+  overflow-y: auto;
+  transition:  height 0.15s;
+  z-index: 33;
+  height: 0;
+}
+
+.modal-feedback__container__select-menu__options-list__item{
+  padding: 8px 0;
+  font-weight: 500;
+  font-size: 15px;
+  transition: .3s ease-in-out;
+  padding: 15px 20px;
+}
+
+.modal-feedback__container__select-menu__options-list__item:hover,
+.modal-feedback__container__select-menu__options-list__item.selected{
+  background-color: #FFF77D ;
+}
+
+.modal-feedback__container__select-menu__options-list::-webkit-scrollbar{
+  width: 4px;
+  background-color: #eee;
+}
+
+.modal-feedback__container__select-menu__options-list::-webkit-scrollbar-thumb{
+  background-color: #fcc400;
+}
+
+
+
+.modal-feedback__container__select-menu__options-list.active{
+  height: 170px;
+}
+
+
+@media (max-width:800px){
+
+
+
+  .modal-feedback__container-tools{
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .modal-feedback {
+    width: 85%;
+    }
+  
+    .modal-feedback__content {
+      width: 85%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .modal-feedback {
+    padding: 10px 0px 10px 0px;
+    width: 97%;
+    }
+  
+    .modal-feedback__content {
+      padding: 13px 0px 13px 0px;
+      width: 97%;
+    }
+
+
+  
+    .modal-feedback__cancelbtn, .modal-feedback__submitbtn {
+    width: 100%;
+    }
+
+    .modal-feedback__cancelbtn, .modal-feedback__submitbtn {
+      padding: 10px 3px;
+      margin: 0px 5px;
+    }
+
+    .modal-feedback__submitbtn .btn-ring:after {
+      width: 15px;
+      height: 15px;
+    }
+}

@@ -1,0 +1,278 @@
+.form-no-results__button-parentss{
+	direction: rtl;
+	}
+
+	.form-no-results__buttonsss{
+		height: 50px;
+		width: 60%;
+		max-width: 421px;
+		min-width: 370px;
+		border-radius: 11px;
+		background-color: #fcc400;
+		font-size: 30px;
+		outline: none;
+		border: none;
+		color: #fff;
+		font-weight: bold;
+		cursor: pointer;
+		margin: 38px 0px -25px 0px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.form-no-results__buttonsss:hover{
+color: #000;
+	}
+.form-no-results{
+	border: 1px solid #fcc400;
+	border-radius: 18px;
+	/* background-color: #fff;
+	box-shadow: 1.5px 3px 8px rgba(0,0,0,0.1); */
+	height: 100%;
+	width: 75%;
+	padding: 40px 20px;
+	margin: 0px auto;
+	}
+
+	.form-no-results .input-warning{
+		margin-top: 9px;
+		font-size: 13px;
+		font-weight: bold;
+		color: #F60000;
+	}
+
+	.form-no-results__checks + .input-warning{
+		width: 55%;
+		margin: 0px auto;
+	}
+
+	.header-no-results{
+		text-align: center;
+		margin: 60px auto 30px auto;
+		font-weight: bold;
+		font-size: 18px;
+		color: #0D3453;
+		width: 60%;
+	}
+
+	.form-no-results .form-item{
+		margin: var(--margin-up-down) ;
+		color: #0D3453;
+	}
+
+	.form-no-results .width-100{
+		width: 55% ;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.input-box2 .react-tel-input .special-label {
+		display: none !important ;
+	}
+/* Ensure this targets only elements inside .react-tel-input */
+.material .react-tel-input .special-label {
+	display: none !important;
+  }
+  
+	  .form-no-results__checks{
+		display: flex;
+		align-items: center;
+		/* justify-content: space-between; */
+		gap: 20px;
+		width: 100%;
+		margin: -42px auto 20px;
+		flex-wrap: wrap;
+		/* margin-left: auto;
+		margin-right: auto; */
+	  }
+
+	.form-no-results__buttons-parents{
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-top: -2px;
+	}
+
+	.form-no-results__buttons{
+		height: var(--height-input);
+		width: 22%;
+		border-radius: 10px;
+		background-color: #fcc400;
+		font-size: 2em;
+		outline: none;
+		border: none;
+		color: #fff;
+		font-weight: bold;
+		cursor: pointer;
+		margin: 30px 0px 0px 0px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.form-no-results__buttons:hover{
+		color: #000;
+	}
+
+	.form-no-results__buttons-parent .form-no-results__buttons:disabled {
+		background: rgba(221, 221, 221, 0.5);
+		border: 2px solid rgba(221, 221, 221, 0.8);
+		color: #707070 ;
+	}
+
+	.form-no-results__buttons-parent .form-no-results__buttons .btn-ring:after {
+		content: "";
+		display: block;
+		width: 25px;
+		height: 25px;
+		margin: 8px;
+		border-radius: 50%;
+		border: 3px solid #fff;
+		border-color: #fcc400 transparent #fcc400 transparent;
+		animation: ring 1.2s linear infinite;
+		-webkit-animation: ring 1.2s linear infinite;
+	  }
+
+	  @keyframes ring {
+		0% {
+		  transform: rotate(0deg);
+		}
+		100% {
+		  transform: rotate(360deg);
+		}
+	  }
+
+	  @-webkit-keyframes  ring {
+		0% {
+		  transform: rotate(0deg);
+		}
+		100% {
+		  transform: rotate(360deg);
+		}
+	}
+
+	@media (max-width: 660px) {
+		.form-no-results__button-parentss{
+			direction: rtl;
+			.form-no-results__checks{
+				display: flex;
+				align-items: center;
+				/* justify-content: space-between; */
+				gap: 10px;
+				width: 100%;
+				margin: -42px auto 20px;
+				flex-wrap: wrap;
+				/* margin-left: auto;
+				margin-right: auto; */
+			  }
+		
+
+
+		}
+		.form-no-results__buttonsss{
+			height: 45px;
+			width: 45%;
+			min-width: 200px;
+			border-radius: 11px;
+			background-color: #fcc400;
+			font-size: 30px;
+			outline: none;
+			border: none;
+			color: #fff;
+			font-weight: bold;
+			cursor: pointer;
+			margin: 38px 0px 0.5em 0px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+		}
+
+
+
+	}
+
+	@media(max-width:1250px){
+	  .form-no-results__checks{
+
+		justify-content:initial;
+
+	  }
+	}
+
+	@media (max-width:1000px){
+		.form-no-results__button-parentss{
+			direction: rtl;
+
+
+		}
+
+		.form-no-results__buttonsss{
+			height: 50px;
+			width: 100%;
+			border-radius: 11px;
+			background-color: #fcc400;
+			font-size: 1.55em;
+			outline: none;
+			border: none;
+			color: #fff;
+			font-weight: bold;
+			cursor: pointer;
+			margin: 38px 0px 0.5em 0px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	  .form-no-results{
+		width: 100%;
+		margin: 0px 0px;
+		padding: 40px 40px;
+		}
+
+		.header-no-results{
+			margin: 10px auto 20px auto;
+			width: 100%;
+			text-align: start;
+		}
+
+		.form-no-results .form-item{
+			margin: var(--margin-up-down) ;
+			color: #0D3453;
+		}
+
+		.form-no-results .width-100{
+			width: 100% ;
+		}
+
+		.input-box2 .react-tel-input .special-label {
+			display: none !important ;
+		}
+/* Ensure this targets only elements inside .react-tel-input */
+.material .react-tel-input .special-label {
+	display: none !important;
+  }
+  
+
+
+		  .form-no-results__checks + .input-warning ,.form-no-results__checks {
+			width: 100%;
+			/* margin: 0px auto; */
+		}
+
+		.form-no-results__checks{
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.form-no-results__buttons{
+			width: 120px;
+		}
+
+		  .home-card{
+			  margin: 10px 0px 30px 0px;
+
+		  }
+
+
+
+	}

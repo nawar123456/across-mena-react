@@ -1,0 +1,102 @@
+.input-box{
+    position: relative;
+    top: 12px;
+    }
+    
+    .input-text {
+        height:var(--height-input);
+        width: 100%;
+        outline: none;
+        border-radius: 9px;
+        border: 1px solid #b5b5b58c;
+        padding: var(--padding-input-personal-rtl);
+        font-size: var(--font-size-input);
+        /* border-bottom-width: 2px; */
+        transition: all 0.3s ease;
+        font-weight: normal;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        background-color: #fff;
+        /* box-shadow : 0px 0.5px 3px rgba(0,0,0,0.16); */
+    }
+    
+    .input-textarea{
+    
+        font-size: 16px;
+        line-height: 33px;
+        height: 200px;
+        overflow-y: auto;
+        resize: none;
+    }
+    
+    .input-text:focus {
+        border: 1px solid #FFC400;
+        box-shadow : 0px 0.5px 3px #FFC400;
+        /* border-bottom-width: 2px; */
+    }
+    
+    .input-box .input-label{
+        color: #727272;
+        font-size: var(--font-size-label);
+        font-weight: normal;
+        position: relative;
+        bottom: 3px;
+      }
+    
+    
+      /* .input-box .input-text:focus + .input-label,
+      .input-box .input-text:not(:placeholder-shown) + .input-label
+      {
+        top: 0px;
+        font-size: 13px;
+        color: #BABABA;
+        padding: 1px;
+        background-color: #fff;
+        border-radius: 8px;
+        font-weight: normal;
+        z-index: 2;
+    
+      } */
+    
+    .input-icon{
+        position: absolute;
+        top: 46.5%;
+        inset-inline-start: 10px;
+        z-index: 1;
+    }
+    
+    .input-icon svg{
+        height: 22px;
+        width: 23px;
+        fill: #656363;
+        margin: 8px 0px 0px 0px
+    }
+    
+    .input-text:disabled{
+        color: #b5b5b5;
+    }
+    
+    
+    @media (max-width: 660px) {
+    
+        .input-text {
+            height:var(--height-input);
+            width: 101.5%;
+            outline: none;
+            border-radius: 9px;
+            border: 1px solid #b5b5b58c;
+            padding: var(--padding-input-personal-rtl);
+            font-size: var(--font-size-input);
+            /* border-bottom-width: 2px; */
+            transition: all 0.3s ease;
+            font-weight: normal;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            background-color: #fff;
+            /* box-shadow : 0px 0.5px 3px rgba(0,0,0,0.16); */
+        }
+    
+    }
+    

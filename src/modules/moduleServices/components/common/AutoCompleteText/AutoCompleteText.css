@@ -1,0 +1,336 @@
+.autocomplete-recent {
+	z-index: 2000;
+    position: absolute;
+    width: -webkit-fill-available;
+    margin-top: 5px;
+    margin-bottom: 0px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background: #fff;
+	padding: 10px;
+	max-height: 300%;
+	overflow-y: auto; /* Enable vertical scrolling */
+	scroll-behavior: smooth;
+
+  }
+
+  .autocomplete-recent::-webkit-scrollbar {
+	width: 3px; /* Width of the scrollbar */
+  }
+
+  .autocomplete-recent::-webkit-scrollbar-track {
+	background: #f0f0f0; /* Background of the track */
+	border-radius: 5px;
+  }
+
+  .autocomplete-recent::-webkit-scrollbar-thumb {
+	background-color: #fcc400; /* Color of the scrollbar */
+	border-radius: 5px;
+  }
+
+  .autocomplete-recent::-webkit-scrollbar-thumb:hover {
+	background-color: #ffcc33; /* Lighter shade on hover */
+  }
+
+  /* Fallback for Non-Webkit Browsers (like Firefox) */
+  .autocomplete-recent {
+	scrollbar-color: #fcc400 #f0f0f0; /* Thumb color and track color */
+	scrollbar-width: thin; /* Thin scrollbar */
+  }
+
+
+  .autocomplete-recent-title {
+	font-size: 16px;
+	color: #0D3453;
+	margin-bottom: 5px;
+  }
+
+  .autocomplete-recent-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+
+  .autocomplete-recent-item {
+	cursor: pointer;
+	padding: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 4px;
+	transition: background-color 0.2s;
+	color: #0D3453;
+  }
+
+  .autocomplete-recent-item:hover {
+	background-color: #fcc400;
+  }
+
+  .autocomplete-recent-item span {
+	font-size: 17px;
+	color: #0D3453;
+  }
+
+
+  /* // new */
+
+
+
+
+
+.autocomplete-title{
+	color: #727272;
+	font-size: var(--font-size-label);
+	font-weight: normal;
+}
+
+.automcomplete-searchbox{
+	/* border-radius: 9px; */
+	/* box-shadow: 0px 0.5px 3px rgba(0,0,0,0.16); */
+	/* border: 1px solid #b5b5b58c; */
+	/* background-color: #fff; */
+	width: 100%;
+	position: relative;
+
+}
+
+
+.automcomplete-searchbox__row{
+	display: flex;
+	align-items: center;
+	padding: 0px 5px;
+	gap: 2px;
+	background-color: #fff;
+	border-radius: 9px;
+	border: 1px solid #b5b5b58c;
+	box-shadow: 0px 0.5px 3px rgba(0,0,0,0.16);
+}
+
+.automcomplete-searchbox__row-icon{
+
+}
+
+.automcomplete-searchbox__row-icon svg{
+	height: 25px !important;
+	width: 23px !important;
+	margin-top: 5px;
+	fill: #727272;
+}
+
+.automcomplete-searchbox__row-icon svg path {
+	/* fill: #727272 !important; */
+	stroke: #727272 !important;
+}
+
+.automcomplete-searchbox__row-icon svg g path{
+	fill: none;
+	stroke: rgba(114, 114, 114, 0.8) !important;
+	stroke-miterlimit: 10;
+	stroke-width: 11px !important;
+}
+
+
+.automcomplete-searchbox__row-input{
+	height: var(--height-input);
+	padding: var(--padding-search-input-rtl);
+	border: 0;
+	outline: 0;
+	/* box-shadow: 0px 0.5px 3px rgba(0,0,0,0.16); */
+	color: hsl(0, 0%, 20%);
+	/* font-size: var(--font-size-input); */
+	font-size:18px;
+	padding: 0px 5px;
+	/* border-radius: 9px; */
+	background-color: transparent;
+	/* background-color: red; */
+	/* flex: 1; */
+	width: 100%;
+}
+
+.automcomplete-searchbox__row-input::placeholder{
+font-size: var(--font-size-label);
+}
+
+.automcomplete-searchbox__row-details{
+display: flex;
+align-items: center;
+position: absolute;
+right: var(--right-input);
+left: var(--left-input);
+background-color: transparent;
+}
+
+.automcomplete-searchbox__row-details span{
+margin: 0px 3px;
+color: #0D3453;
+pointer-events: none;
+
+}
+
+.automcomplete-searchbox__row-details-code{
+padding-top: 2px;
+}
+
+.automcomplete-searchbox__row-details span::selection{
+background-color: transparent;
+color: rgba(114, 114, 114, 0.50);
+}
+
+.automcomplete-searchbox__row-img, .automcomplete-searchbox__resultsbox-info__text svg{
+width: 28px !important;
+height: 28px !important;
+margin: 0px 9px;
+}
+
+.automcomplete-searchbox__resultsbox{
+margin-top: 5px;
+position: absolute;
+top: 100%;
+width: 100%;
+background-color: transparent;
+z-index: 4;
+
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.fade-enter {
+	animation: fadeIn 0.4s ease-in forwards;
+}
+
+.automcomplete-searchbox__resultsbox-box{
+	/* border-top: 1px solid #999; */
+	padding: 15px 10px;
+	background-color: #fff;
+	border-radius: 9px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,0.16);
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.automcomplete-searchbox__resultsbox-box::-webkit-scrollbar{
+width: 6px;
+height: 20px;
+border-radius: 9px;
+background-color: #e4e4e4;
+}
+
+.automcomplete-searchbox__resultsbox-box::-webkit-scrollbar-thumb{
+background-color: #fcc400;
+border-radius: 9px;
+}
+
+
+
+/*details info inside ul : */
+.automcomplete-searchbox__resultsbox ul li{
+
+	list-style: none;
+	padding: 13px 10px;
+	cursor: pointer;
+	border-radius: 9px;
+
+}
+
+.automcomplete-searchbox__resultsbox-info{
+display: flex;
+align-items: flex-start; /* change from center*/
+justify-content: space-between;
+padding-top: 2px; /*should delete*/
+}
+
+.automcomplete-searchbox__resultsbox-info span {
+padding-top: 3px;
+}
+
+.automcomplete-searchbox__resultsbox-info__text{
+display: flex;
+align-items: center;
+gap: 5px;
+
+}
+.automcomplete-searchbox__resultsbox-info__text span:nth-child(1){
+padding-top: 3px;
+
+}
+.automcomplete-searchbox__resultsbox-info__text span:nth-child(2){
+/* margin: 0px 7px; */
+/* padding-top: 2px; */
+}
+.automcomplete-searchbox__resultsbox-info img{
+width: 28px;
+height: 28px;
+}
+
+.automcomplete-searchbox__resultsbox-info__menaimg{
+display: inherit;
+}
+
+.automcomplete-searchbox__resultsbox-info__menaimg svg{
+height: 28px;
+width: 28px;
+}
+
+.automcomplete-searchbox__resultsbox-info__menaimg svg path {
+/* fill: #727272 !important; */
+stroke: #727272 !important;
+}
+
+.automcomplete-searchbox__resultsbox-info__menaimg svg g path{
+fill: none;
+stroke: rgba(114, 114, 114, 0.8) !important;
+stroke-miterlimit: 10;
+stroke-width: 11px !important;
+}
+
+.automcomplete-searchbox__resultsbox ul li:hover{
+
+	background-color: #FFF77D;
+}
+
+.automcomplete-searchbox__resultsbox-box__NoResult{
+position: absolute;
+text-align: center;
+width: 100%;
+color: #b5b5b5;
+}
+
+.parent-loading__Port{
+	padding: 15px 10px;
+}
+
+.error__Port{
+	color: #F60000;
+	font-weight: bold;
+	text-align: center;
+}
+
+.ghgh{
+color: #b5b5b5;
+font-size: 12px;
+margin-top: -4px;
+}
+
+@media  only screen and (min-width: 800px) and (max-width: 1000px){
+
+.automcomplete-searchbox{
+	width: 45%;
+}
+
+}

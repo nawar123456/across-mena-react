@@ -1,0 +1,26 @@
+.feature-card {
+    background-color: #fafafa;
+    border-radius: 12px;
+    padding: 20px;
+    width: 384px;
+    height: 260px;   
+    text-align: center;
+    /* box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05); */
+    transition: transform 0.2s ease;
+  }
+  
+  /* .feature-card:hover {
+    transform: translateY(-3px);
+  } */
+  
+  .feature-card__icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card__text {
+    font-size: 25px;
+    color: #333;
+  }
+  

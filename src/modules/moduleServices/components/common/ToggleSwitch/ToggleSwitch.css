@@ -1,0 +1,82 @@
+
+.toggle-form-parent{
+/* background-color: #00e0e0e;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100vw;
+height: 100vh; */
+position: absolute;
+top: 4px;
+inset-inline-end: 0px;
+}
+
+
+.toggle-form-parent__box{
+width:100px ;
+height: 48px;
+background-color: #fff;
+border-radius: 9px;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: all 0.3s;
+
+}
+
+.toggle-form-parent__box-circle{
+	position: absolute;
+    border-radius: 9px;
+    width:50px ;
+	height: 46px;
+	background-color: #ffc400;
+	inset-inline-end: 1px ;
+	transition: all 0.3s;
+	z-index: 1;
+}
+
+/* .toggle--isActive{
+background-color: green ;
+} */
+
+.toggle--isActive .toggle-form-parent__box-circle{
+
+	inset-inline-end: calc(100px - 50px - 3px );
+}
+
+
+.toggle-form-parent__box-text{
+	font-size: var(--font-size-input);
+	font-weight: bold;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	gap: 25px; /*half of parent's width */
+	flex: 1;
+	padding: 0 4px;
+	z-index: 2;
+
+
+}
+
+@media(max-width:850px){
+
+	.toggle-form-parent{
+		/* top: 1px; */
+	}
+
+	.toggle-form-parent__box{
+		height: 45px;
+	}
+}
+
+
+@media(max-width:450px){
+	.toggle-form-parent__box{
+		height: 40px;
+	}
+
+}

@@ -1,0 +1,42 @@
+.goTop--hidden{
+    display: none;
+}
+
+.goTop{
+    display: block;
+}
+.goTop .goTop-icon{
+    position: fixed;
+    background : #222;
+    box-shadow: 1px 1px 5px #fcc400;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    bottom: 7%;
+    right: 3%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    padding: 3px;
+    z-index: 2222;
+}
+
+.goTop .goTop-icon:hover{
+    transform: scale(1.1);
+}
+
+.goTop .goTop-icon:hover path{
+    fill: #fcc400;
+}
+
+@media (max-width: 660px){
+
+    .goTop{
+        display: none;
+    }
+
+    .goTop .goTop-icon{
+        width: 35px;
+        height: 35px;
+    }
+}

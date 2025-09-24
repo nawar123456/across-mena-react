@@ -1,0 +1,162 @@
+
+
+
+.parent-card__check{
+	border: 1px solid #eaeaea;
+    padding: 15px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+    border-radius: 5px;
+    box-shadow: 0.5px 1px 0.5px 0.5px rgba(48, 48, 48, 0.1);
+    cursor: pointer;
+}
+
+.parent-card__check.border-active {
+	border: 1px solid #fcc400;
+  }
+
+.whatsapp-card {
+    /* Specific size for the Whatsapp card */
+	border: 1px solid #eaeaea;
+    padding: 15px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+    border-radius: 5px;
+    box-shadow: 1.5px 1px 0.5px 1px rgba(48, 48, 48, 0.1);
+    cursor: pointer;
+    width: 130px;
+
+}
+.checked {
+	background-color: black; /* Background color when checked */
+	color: yellow; /* Text color when checked */
+	border: 1px solid #fcc400;
+  }
+
+.parent-card__check-icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #0D3453;
+
+}
+
+.parent-card__check-icon svg{
+ width: 20px;
+ height: 20px;
+}
+
+.parent-card__check-icon svg path{
+    fill: #FFC400;
+   }
+
+.parent-card__check-icon span {
+    font-size: 14px;
+}
+
+
+.parent-card__check-input{
+
+}
+
+.parent-card__check-input .form-control {
+    /* font-family: system-ui, sans-serif; */
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    align-items: center;
+    /* gap: 0.5em; */
+  }
+
+  .parent-card__check-input .form-control .form-control__placeholder{
+    font-size: 14px;
+  }
+
+  .parent-card__check-input .form-control .parent-finish-checkbox{
+    appearance: none;
+    background-color: #fff;
+    margin: 0px;
+    /* padding: 11px; */
+    /* padding-bottom: 10px; */
+    /* padding-top: 2px; */
+    padding: 4px 0px 2px 0px;
+    font: inherit;
+    /* color: #FFC400; */
+	width: 19px;
+    height: 19px;
+    border: 0.08em solid #9a9a9a;
+    border-radius: 0.15em;
+    transform: translateY(0.09em);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+
+.parent-card__check-input .form-control .parent-finish-checkbox::before {
+    content: "";
+    width: 0.65em;
+    height: 0.85em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #FFC400;
+
+    transform-origin: bottom left;
+    clip-path: polygon(10% 40%, 0 48%, 50% 80%, 100% 10%, 95% 0%, 42% 67%);
+}
+
+.parent-card__check-input .form-control .parent-finish-checkbox:checked::before {
+    transform: scale(1);
+}
+
+@media(max-width:1250px){
+    .parent-card__check{
+        width: 150px;
+		height: 50px;
+
+    }
+    
+.parent-card__check{
+	border: 1px solid #eaeaea;
+    padding: 15px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+    border-radius: 5px;
+    box-shadow: 0.5px 1px 0.5px 0.5px rgba(48, 48, 48, 0.1);
+    cursor: pointer;
+}
+}
+
+@media (max-width:850px) {
+
+
+    .parent-card__check{
+        justify-content: flex-start;
+        width: 220px;
+        text-align: end;
+        padding: 10px 10px;
+    }
+
+    .parent-card__check-input {
+        margin-inline-start: auto;
+    }
+
+}
+
+@media( max-width:450px){
+    .parent-card__check{
+       width: 96%;
+        position: relative;
+        right: 1.5%;
+        height: var(--height-input);
+        border-radius: 10px;
+    }
+}

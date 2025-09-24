@@ -1,0 +1,318 @@
+.calculatedOceanFreight-value{
+color: #fcc400;
+font-size: 27px;
+}
+.card-book_item{
+    /* background-color: #fcfcfc; */
+	margin: 20px 0px;
+    border-radius: 18px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    padding: 27px 10px 15px;
+    display: flex;
+    border: 1px solid #eaeaea;
+    flex-direction: column;
+}
+
+.warning-offer-all{
+	color: rgb(13, 52, 83);
+    white-space: nowrap;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+
+.warningSoldout-only{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: 4px;
+    margin-top: 0px;
+
+}
+.sold-and-warning{
+font-size: 29px;
+text-align: center;
+}
+.per-container{
+	margin: -15px 47px 10px 0px;
+	color: #0d3453;
+	font-size: 14px;
+	direction: rtl;
+    display: none;
+}
+.btn_value{
+font-size: 33px;
+}
+.card-book_item .row_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-direction: row-reverse;
+    direction: rtl;
+
+}
+
+.card-book_item .item_img{
+width: 8%;
+margin-top: -5px;
+}
+
+.card-book_item .item_img svg{
+    width: 80%;
+    height: 60%;
+}
+
+.card-book_item .item_timeline_simple{
+    width: 80%;
+    height: 100px;
+}
+
+.card-book_item .item_booking{
+    height: 57px;
+    width: 13%;
+}
+
+.item_booking .booking-details{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 5px 0px;
+    cursor: pointer;
+
+}
+.item_booking .booking-details .details-title{
+
+    font-size: 15px;
+    font-weight: normal;
+    color: #727272;
+
+}
+.item_booking .booking-details .details-icon{
+height: 15px;
+width: 20px;
+margin-right: -28px;
+transition: transform 0.3s ease;
+
+}
+.rotated {
+    transform: rotate(180deg);
+  }
+span.btn_value{
+		display:'flex';
+		justify-content: 'center';
+		color: '#fcc400'!important;
+		font-size:'1.6vw';
+		margin:'-16px 0px 0px 0px';
+}
+.card-book_item .item_booking .booking_btn .booking_btn_simple{
+	margin: -15px 0px 0px 0px;
+    height: 90%;
+    width: 100%;
+    /* padding: 40
+    /* padding: 40px; */
+    background: #fcc400;
+    background: linear-gradient(178deg,
+    #fcc400 0.00%,
+    #1c1c1c 100.00%);
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.booking_btn_simple{
+        font-size: 25px;
+
+	margin: 35px 0px 0px 0px;
+ height: 90%;
+    width: 100%;
+    /* padding: 40
+    /* padding: 40px; */
+    background: #fcc400;
+    background: linear-gradient(178deg,
+    #fcc400 0.00%,
+    #1c1c1c 100.00%);
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.button-hover:hover{
+	color: black;
+
+}
+
+.booking_btn:hover{
+color: black;
+}
+.card-book_item .item_booking .booking_btn span:first-child{
+    font-size: 25px;
+    font-weight: normal;
+    word-break: break-all;
+}
+
+.card-book_item .item_booking .booking_btn span:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+    overflow-wrap: break-word;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .card-book_item {
+        padding: 30px 0px 12px;
+    }
+    .card-book_item .row_1{
+        flex-direction: column;
+    }
+
+    .card-book_item .item_booking .booking_btn{
+        height: 80%;
+    }
+
+    .card-book_item .item_timeline_simple{
+        width: 93%;
+        height: 85px;
+    }
+
+    .card-book_item .item_booking .booking_btn span:first-child{
+        font-size: 25px;
+        font-weight: normal;
+        word-break: break-all;
+    }
+
+    .card-book_item .item_booking .booking_btn span:nth-child(2){
+        font-size: 18px;
+        font-weight: bold;
+        overflow-wrap: break-word;
+    }
+    .card-book_item .item_img {
+   display: none;
+    }
+}
+@media (max-width: 500px) {
+
+	.item_booking .booking-details .details-title{
+
+		font-size: 15px;
+		margin: 0px 0px 0px -80px;
+		font-weight: normal;
+		color: #727272;
+
+	}
+
+	.per-container{
+		margin: -15px 76.4% -3px 0px;
+		color: #0d3453;
+		font-size: 14px;
+		direction: rtl;
+	}
+.btn_value{
+	position: relative;
+	bottom: 7.6rem;
+}
+
+	.item_booking .booking-details .details-icon{
+		height: 15px;
+		width: 20px;
+		margin-right: -90%;
+		transition: transform 0.3s ease;
+
+		}
+
+	.item_booking .booking-details{
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		margin: 5px 0px;
+		/* margin-right: -11em; */
+		cursor: pointer;
+
+	}
+
+
+    .card-book_item .item_booking{
+        width: 90%;
+		margin-top: 8px;
+    }
+
+    .card-book_item .item_booking .booking_btn span:first-child{
+        font-size: 25px;
+        font-weight: normal;
+        word-break: break-all;
+    }
+
+    .card-book_item .item_booking .booking_btn span:nth-child(2){
+        font-size: 15px;
+        font-weight: bold;
+        overflow-wrap: break-word;
+    }
+
+    .card-book_item .item_booking .booking_btn {
+		display: flex;
+		flex-direction: column;
+		height: 45px;
+		border-radius:10px ;
+        width: 100%;
+		align-self: center;
+		text-align: center;
+		align-items: center;
+        margin-top: -30px;
+    }
+}
+
+@media (max-width:400px){
+	.per-container{
+		margin: -15px 74% -3px 0px;
+		color: #0d3453;
+		font-size: 14px;
+		direction: rtl;
+	}
+	.card-book_item .item_booking .booking_btn {
+		display: flex;
+		flex-direction: column;
+		height: 45px;
+		border-radius:10px ;
+	    width: 100%;
+        margin-top: -30px;
+    }
+}
+
+
+@media (max-width:350px){
+	.per-container{
+		margin: -15px 70% -3px 0px;
+		color: #0d3453;
+		font-size: 14px;
+		direction: rtl;
+	}
+
+	.card-book_item .item_booking .booking_btn {
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		height: 45px;
+        width: 100%;
+        margin-top: -30px;
+		align-self: center;
+		text-align: center;
+		align-items: center;
+    }
+}
+

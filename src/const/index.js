@@ -1,0 +1,1 @@
+export {NavLinksData2} from './NavLinksData';

@@ -1,0 +1,107 @@
+/* CountryPortsPage.css */
+.port-swiper-wrapper{
+
+  margin: 25px 0px;
+}
+.country-ports-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 3rem auto 9rem auto  ;
+  padding: 20px;
+  font-family: 'Cairo', sans-serif;
+  
+}
+
+/* أزرار التصدير والاستيراد */
+.buttons-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.btn-export,
+.btn-import {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  height: 50px;
+}
+
+.btn-export {
+  background-color: #f5f5f5;
+  color: #727272;
+}
+
+.btn-import {
+  background-color: #fcc400;
+  color: white;
+}
+
+/* صف الحقول الثلاثة */
+.inputs-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-wrapper {
+  flex: 1;
+  min-width: 200px;
+}
+
+.from-input,
+.to-input {
+  flex: 1.5;
+}
+
+.container-input {
+  flex: 1;
+}
+
+/* تحسين تصميم AutoCompleteText */
+/* .automcomplete-searchbox__row {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+  transition: border-color 0.2s;
+} */
+
+.automcomplete-searchbox__row:hover {
+  border-color: #fcc400;
+}
+
+.automcomplete-searchbox__row-input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background: transparent;
+}
+
+/* دعم الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .inputs-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .input-wrapper {
+    width: 100%;
+  }
+}
+
+/* عرض النتائج المختارة */
+.selected-values {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #555;
+}

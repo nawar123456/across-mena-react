@@ -1,0 +1,140 @@
+.button-ContactUS{
+font-size: 24px;
+color: #fff;
+height: 46px;
+font-weight: bold;
+}
+.button-ContactUS:hover{
+    color: #000;
+    background-color: #fcc400;
+}
+.contact-Icon{
+width: 33px;
+height: 33px;
+}
+
+.form-contactus .form-item{
+    margin: var(--margin-up-down) ;
+    color: #0D3453;
+}
+
+.form-contactus .width-100{
+    width: 100% ;
+
+}
+
+.input-box2 .react-tel-input .special-label {
+    display: none !important ;
+  }
+/* Ensure this targets only elements inside .react-tel-input */
+.material .react-tel-input .special-label {
+    display: none !important;
+  }
+  
+
+.form-no-results__button-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form-no-results__button{
+    height: var(--height-input);
+    width: 18%;
+    border-radius: 18px;
+    background-color: #fcc400;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 45px 0px 0px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-no-results__button:hover{
+    color: #000;
+}
+
+.form-no-results__button-parent .form-no-results__button:disabled {
+    background: rgba(221, 221, 221, 0.5);
+    border: 2px solid rgba(221, 221, 221, 0.8);
+    color: #707070 ;
+}
+
+.form-no-results__button-parent .form-no-results__button .btn-ring:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-color: #fcc400 transparent #fcc400 transparent;
+    animation: ring 1.2s linear infinite;
+    -webkit-animation: ring 1.2s linear infinite;
+  }
+
+  .form-contactus .input-warning{
+    margin-top: 9px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #F60000;
+}
+
+.input-Phone-ContactUS{
+    position: relative;
+    top: 12px;
+}
+
+.form-contactus {
+    background: #f9f9f9; /* Light gray to match right-side form background */
+    margin: 1rem;
+    border-radius: 20px;
+    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.05); */
+    width: 100%;
+    max-width: 700px;
+    margin-inline-start: auto;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1.5rem; */
+  }
+  
+
+  @keyframes ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes  ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width:850px){
+    .form-contactus .form-item{
+        margin: var(--margin-up-down) ;
+        color: #0D3453;
+    }
+
+        .form-contactus .width-100{
+        width: 100% ;
+    }
+
+    .form-no-results__button{
+        width: 120px;
+    }
+}

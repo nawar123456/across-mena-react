@@ -1,0 +1,55 @@
+/* MainPage.css */
+.port-swiper-wrapper{
+
+  margin: 50px 0px;
+}
+.main-page {
+  width: 100%;
+  padding: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.export-btn, .import-btn {
+  padding: 8px 24px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.export-btn {
+  background-color: white;
+  color: #727272;
+}
+
+.import-btn {
+  background-color: #fcc400;
+  color: white;
+}
+
+.from-section, .to-section {
+  margin-top: 16px;
+}
+
+.from-section .automplete-searchbox__row-input {
+  background-color: #f9f9f9;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.to-section .automplete-searchbox__row-input {
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+}

@@ -1,0 +1,1306 @@
+/* Container to wrap section + wave smoothly */
+
+
+/* Start THE TrUck (تعقب) */
+
+.trucking-style img {
+  max-width: 446px;
+  height: 285px;
+}
+[dir="ltr"] .trucking-style img{
+  max-width: 380px;
+  height: 415px;
+}
+
+.trucking-content {
+  font-size: 30px;
+  max-width: 71%;
+  padding-right: 2px;
+  padding-bottom: 55px;}
+ 
+  [dir="ltr"]  .trucking-content {
+    max-width: 75%;
+  }
+
+  .trucking-description {
+    font-size: 30px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+
+  [dir="ltr"] .trucking-description {
+    font-size: 27px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+
+  .trucking-description2 {
+    font-size: 25px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+  [dir="ltr"] .trucking-description2 {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+
+
+/* End Truck() */
+
+.sea-shipping-wrapper {
+  position: relative;
+  background-color: #f7f7f7;
+  z-index: 1;
+  overflow: visible;
+}
+
+/* Section layout */
+.land-shipping-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px 25px 40px;
+  flex-wrap: wrap;
+  z-index: 2;
+  position: relative;
+  padding-bottom: 0px;
+  margin-bottom: -2%;
+}
+
+/* Wave at the bottom of the background */
+.bottom-wave {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+  z-index: 2;
+  margin-bottom: -5px; /* tighten it up if needed */
+}
+
+.bottom-wave svg {
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+
+.wave-mask {
+  position: relative;
+  top: 4px;
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.wave-mask svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+
+
+/* start sea-content 1400*/
+
+.sea-style img {
+  max-width: 440px;
+  height: 415px;
+  margin-bottom: 15px;
+}
+[dir="ltr"] .sea-style img{
+  max-width: 380px;
+  height: 415px;
+    margin-bottom: 15px;
+
+}
+
+.sea-content {
+  font-size: 30px;
+  max-width: 71%;
+  padding-right: 2px;
+  padding-bottom: 7%;
+}
+ 
+  [dir="ltr"]  .sea-content {
+    max-width: 75%;
+    padding-bottom: 8%;
+
+  }
+
+  .sea-title {
+    font-size:35px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 5px solid #fcc400;
+  }
+
+  .sea-description {
+    font-size: 30px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+
+  [dir="ltr"] .sea-description {
+    font-size: 26px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+
+  .sea-description2 {
+    font-size: 25px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom:1.2rem;
+  }
+  [dir="ltr"] .sea-description2 {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom:1.2rem;
+  }
+/* end sea-content  1400 */
+
+
+
+  /* start track-content*/
+
+.track-style img {
+    max-width: 485px;
+    height: 355px;
+
+}
+
+[dir="ltr"] .track-style img{
+    max-width: 485px;
+    height: 355px;
+
+}
+
+.track-content {
+  font-size: 30px;
+  max-width: 71%;
+  padding-right: 2px;
+  padding-bottom: 7%;
+} 
+  [dir="ltr"]  .track-content {
+    max-width: 62%;
+      padding-bottom: 4%;
+
+  }
+
+  .track-description {
+    font-size: 30px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+
+  [dir="ltr"] .track-description {
+    font-size: 26px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+
+  .track-description2 {
+    font-size: 25px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+ 
+  [dir="ltr"] .track-description2 {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+  
+/* end track-content*/
+
+
+
+/* start aitPort-content*/
+
+
+.air-content {
+    max-width: 71%;
+    padding-right: 2px;
+  padding-bottom: 7%;
+}
+  
+
+
+
+.air-style img {
+  max-width: 480px;
+  height: 415px;
+}
+
+[dir="ltr"] .air-style img{
+  max-width: 550px;
+  height: 420px;
+
+}
+
+[dir="ltr"]  .air-content {
+  max-width: 71%;
+  padding-bottom: 8%;
+
+}
+  .air-title {
+    font-size:35px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 5px solid #fcc400;
+  }
+.air-description {
+  font-size: 30px;
+  color: #555;
+  font-weight: bold;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+.air-description2 {
+  font-size: 25px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom:1.2rem;
+}
+
+[dir="ltr"] .air-description {
+  font-size: 26px;
+  color: #555;
+  font-weight: bold;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+
+[dir="ltr"] .air-description2 {
+  font-size: 22px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom:1.2rem;
+}
+
+
+
+/* end aitPort-content*/
+
+
+/* TrackHero Content */
+.track-content {
+  max-width: 71%;
+  padding-right: 2px;
+  padding-bottom: 7%;
+}
+
+.track-title {
+  font-size:35px;
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 5px solid #fcc400;
+}
+
+/* .title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fcc400;
+  border-radius: 2px;
+} */
+
+/* .description {
+  font-size: 29px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+.description2 {
+  font-size: 29px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+} */
+
+
+
+/* TrackHero Specific Paragraph Style */
+.track-description {
+  font-size: 30px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;;
+}
+
+/* AirPlane Specific Paragraph Style */
+[dir='ltr'] .cta-button{
+  background-color: #fcc400;
+  color: white;
+  padding: 5px 25px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 23.5%;
+  height: 50px;}
+
+
+  .cta-button {
+    background-color: #fcc400;
+    color: white;
+    padding: 5px 25px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 23%;
+    height: 50px;}
+
+
+.cta-button:hover {
+  background-color: #fcc400;
+  color: #555;
+}
+
+.track-cta-button{
+  background-color: #fcc400;
+  color: white;
+  padding: 5px 25px;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 26%;
+  height: 50px;
+}
+
+[dir="ltr"] .air-cta-button{
+  background-color: #fcc400;
+  color: white;
+  padding: 5px 25px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 40%;
+  height: 50px;
+}
+
+[dir="rtl"]  .image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+[dir="ltr"]  .image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  transform: rotateY(180deg);
+}
+
+
+
+
+.image-container  {
+
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+
+/* .track-style img {
+  max-width: 600px;
+  height: 400px;
+} */
+
+@media (max-width:1300px){
+  .track-cta-button{
+  background-color: #fcc400;
+  color: white;
+  padding: 5px 25px;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 28%;
+  height: 50px;
+}
+
+  [dir='ltr'] .track-cta-button {
+    background-color: #fcc400;
+    color: white;
+    padding: 5px 25px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 25%;
+    height: 50px;
+}
+  /* start Air Section */
+
+.air-description {
+  font-size: 24px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+  .air-description2 {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+[dir="ltr"]    .air-description {
+      font-size: 24px;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+}
+[dir="ltr"] .air-description2 {
+        font-size: 20px;
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 1.2rem;
+}
+      
+
+
+.air-style img {
+max-width: 400px;
+height: 415px;
+}
+
+[dir="ltr"] .air-style img{
+max-width: 480px;
+height: 415px;
+}
+
+/* End Air Section */
+
+/* Start Track Section: */
+ .track-content {
+  max-width: 63%;
+    padding-bottom: 7%;
+
+}
+[dir="ltr"]  .track-content {
+  max-width: 58%;
+    padding-bottom: 5%;
+
+}
+
+  [dir="ltr"] .track-style img{
+    max-width: 415px;
+    height: 415x;
+  }
+
+  .track-style img {
+        max-width: 468px;
+        height: 323px;
+        margin-top: 2%;
+  }
+
+  .track-description {
+    font-size: 24px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+ 
+   .track-description2 {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+
+  
+  [dir="ltr"]  .track-description {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+ 
+
+
+/* end Track-section */
+
+  /* Start Sea Section:1300 */
+     .sea-cta-button {
+    background-color: #fcc400;
+    color: white;
+    padding: 5px 25px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 26%;
+    height: 50px;
+}
+  .sea-description {
+    font-size: 24px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.sea-description2 {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+  [dir="ltr"] .sea-style img {
+    max-width: 340px;
+    height: 415px;
+      margin-bottom: 15px;
+
+  }
+  [dir="ltr"]  .sea-content {
+    max-width: 72%;
+    padding-bottom: 8%;
+    margin-bottom: 15px;
+
+
+  }
+
+  [dir="ltr"] .sea-description {
+    font-size: 24px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+
+  [dir="ltr"] .sea-description2 {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+  /* end sea Section 1300 */
+ 
+  /* .image-container img {
+    max-width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+  } */
+  .sea-title {
+    font-size:28px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 5px solid #fcc400;
+  }
+    .track-title {
+    font-size:28px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+        border-bottom: 5px solid #fcc400;
+  }
+  
+  .air-title {
+    font-size:28px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+      border-bottom: 5px solid #fcc400;
+  }
+  /* p {
+    font-size: 24px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }  */
+
+
+}
+
+
+@media (max-width: 600px) {
+  .sea-style img,
+  .track-style img,
+  .air-style img {
+    /* width: 100%; */
+    height: auto;
+    max-width: 132px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    justify-content: center;
+  }
+
+  .sea-content,
+  .track-content,
+  .air-content {
+    max-width: 66%;
+    padding: 45px 0px 20px;
+    text-align: right;
+    margin-right: -12px;
+    padding-bottom: 7%;
+
+  }
+
+  .title {
+    font-size: 19px;
+  }
+
+  .sea-description,
+  .track-description,
+  .air-description {
+    font-size: 12px;
+  }
+
+  .sea-description2,
+  .track-description2,
+  .air-description2 {
+    font-size: 12px;
+  }
+
+  .cta-button {
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 475px) {
+  [dir="ltr"] .sea-style img {
+        max-width: 172px;
+        height: auto;
+        margin-top: 91%;
+    }
+  
+
+.cta-button {
+    background-color: #fcc400;
+    color: white;
+    padding: 5px 25px;
+    font-size: 19px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 75.5%;
+    height: 42px
+  }
+
+  
+[dir='ltr'] .cta-button {
+  background-color: #fcc400;
+  color: white;
+  padding: 5px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 72%;
+  height: 42px
+}
+[dir='ltr'] .sea-cta-button {
+        background-color: #fcc400;
+        color: white;
+        padding: 5px 25px;
+        font-size: 17px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 69%;
+        height: 42px;
+  }
+  .sea-style img,
+
+
+  .track-style img{
+    height: auto;
+    max-width: 170px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: -90px;
+  }
+
+
+  .image-container {
+    justify-content: center;
+  }
+
+  .sea-content,
+  .track-content,
+  .air-content {
+    max-width: 56%;
+    padding: 45px 0px 20px;
+    text-align: right;
+    margin-right: -13px;
+  }
+
+  .title {
+    font-size: 19px;
+  }
+
+  .sea-description,
+  .track-description,
+  .air-description {
+    font-size: 15px;
+  }
+
+  .sea-description2,
+  .track-description2,
+  .air-description2 {
+    font-size: 14px;
+  }
+  .track-cta-button{
+    width: 52%;
+    font-size: 18px;
+    padding: 8px;
+    height: 41px;
+  
+ }
+ [dir="ltr"] .track-cta-button{
+  width: 53%;
+  font-size: 17px;
+  padding: 8px;
+  height: 41px;
+
+}
+
+  .cta-button {
+    width: 50%;
+    font-size: 17px;
+    padding: 8px;
+    height: 41px;
+  }
+
+
+/* Start Sea Section */
+
+.sea-style img {
+  max-width: 140px;
+  height: auto;
+}
+
+
+
+
+ .sea-description {
+  font-size: 15px;
+  color: #555;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+ .sea-description2 {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0px;
+}
+
+
+[dir="ltr"] .sea-description {
+  font-size: 12px;
+  color: #555;
+  font-weight: bold;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+[dir="ltr"] .sea-description2 {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.sea-content{
+  max-width: 61%;
+  padding: 45px 5px 20px;
+  text-align: right;
+  margin-right: -12px;
+}
+
+[dir="ltr"] .sea-content{
+  max-width: 59%;
+  padding: 45px 5px 20px;
+  text-align: left;
+  margin-right: -12px;
+}
+/* End Sea Section */
+
+/* Start Land Section */
+
+.track-style img {
+  max-width: 170px;
+  height: auto;
+}
+[dir="ltr"] .track-style img {
+  max-width: 168px;
+  height: auto;
+}
+
+
+
+ .track-description {
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+ .track-description2 {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+
+[dir="ltr"] .track-description {
+  font-size: 12px;
+  color: #555;
+  font-weight: bold;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+[dir="ltr"] .track-description2 {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.track-content{
+  max-width: 58%;
+  padding: 45px 5px 20px;
+  text-align: right;
+  margin-right: -12px;
+}
+
+[dir="ltr"] .track-content{
+  max-width: 58%;
+  padding: 45px 5px 20px;
+  text-align: left;
+  margin-right: -12px;
+}
+
+/* End Land Section */
+
+
+.land-shipping-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px 25px 5px;
+  flex-wrap: wrap;
+  z-index: 2;
+  position: relative;
+  padding-bottom: 35px;
+}
+
+/* Start AirPort Section */
+.air-style img{
+  height: auto;
+  max-width: 165px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: -100px;
+  margin-top: -10%;
+}
+
+
+[dir="ltr"] .air-style img {
+  max-width: 150px;
+  height: auto;
+}
+[dir="ltr"]  .air-content {
+  max-width: 72%;
+}
+
+
+ .air-description {
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+ .air-description2 {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+
+[dir="ltr"] .air-description {
+  font-size: 15px;
+  color: #555;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+[dir="ltr"] .air-description2 {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.air-content{
+  max-width: 58%;
+  padding: 45px 5px 20px;
+  text-align: right;
+  margin-right: -12px;
+}
+
+[dir="ltr"] .air-content{
+  max-width: 60%;
+  padding: 45px 5px 20px;
+  text-align: left;
+  margin-right: -12px;
+}
+    [dir='ltr'] .air-cta-button {
+        background-color: #fcc400;
+        color: white;
+        padding: 5px 25px;
+        font-size: 17px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 65%;
+        height: 42px;}
+
+
+/* End Airport Section */
+
+
+}
+@media (max-width: 420px) {
+  [dir="ltr"] .sea-content {
+        max-width: 55%;
+        padding: 45px 5px 20px;
+        text-align: left;
+        margin-right: -12px;
+    }
+  .track-style img {
+    max-width: 156px;
+    height: auto;
+  }
+  [dir="ltr"] .track-style img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  
+
+}
+
+@media (max-width: 390px) {
+  [dir="ltr"] .sea-description {
+        font-size: 14px;
+        color: #555;
+        font-weight: bold;
+        line-height: 1.7;
+        margin-bottom: 1.2rem;
+    }
+    [dir="ltr"] .sea-description2 {
+        font-size: 13px;
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 1.2rem;
+    }
+
+      [dir='ltr'] .sea-cta-button {
+        background-color: #fcc400;
+        color: white;
+        padding: 5px 25px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 86%;
+        height: 42px
+      }
+  [dir="ltr"] .sea-style img {
+        max-width: 160px;
+        height: auto;
+        margin-top: -10%;
+    }
+
+        .sea-style img {
+        max-width: 155px;
+        height: auto;
+        margin-top: -10%;
+    }
+
+  [dir="ltr"] .sea-content {
+        max-width: 52%;
+        padding: 45px 5px 20px;
+        text-align: left;
+        margin-right: -12px;
+  }
+
+
+    .sea-content{
+  max-width: 53%;
+  padding: 45px 5px 20px;
+  text-align: right;
+  margin-right: -12px;
+}
+   .sea-description {
+  font-size: 15px;
+  color: #555;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+ .sea-description2 {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0px;
+}
+
+  .track-content {
+        max-width: 55%;
+        padding: 45px 5px 20px;
+        text-align: right;
+        margin-right: -12px;
+    }
+
+    .track-style img {
+        max-width: 145px;
+        height: auto;
+    }
+        [dir="ltr"] .track-style img {
+        max-width: 145px;
+        height: auto;
+    }
+    [dir="ltr"] .track-content {
+        max-width: 53%;
+    }
+       [dir='ltr'] .track-cta-button {
+        background-color: #fcc400;
+        color: white;
+        padding: 5px 25px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 86%;
+        height: 42px
+      }
+ .air-description2 {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+.air-title{
+  font-size: 19px;
+}
+  .air-description {
+    font-size: 13px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+  [dir="ltr"] .air-description {
+    font-size: 13px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+  
+  [dir="ltr"] .air-description2 {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+  
+  .air-content {
+    max-width: 54%;
+    padding: 45px 5px 20px;
+    text-align: right;
+    margin-right: -12px;
+  }
+  .air-style img {
+    object-fit: contain;
+    border-radius: 10px;
+    max-width: 145px;
+    height: auto;
+    margin-top: -5%;
+  }
+
+
+  [dir="ltr"] .air-style img {
+    object-fit: contain;
+    border-radius: 10px;
+    margin-top: -5%;
+    max-width: 148px;
+    height: auto;
+  }
+    [dir="ltr"] .air-content {
+        max-width: 55%;
+        padding: 45px 5px 20px;
+        text-align: left;
+        margin-right: -12px;
+    }
+    [dir='ltr'] .air-cta-button {
+        background-color: #fcc400;
+        color: white;
+        padding: 5px 25px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 84%;
+        height: 42px;
+}
+}
+/* @media (max-width: 374px) { */
+  /* .track-cta-button{
+      width: 50%;
+      font-size: 17px;
+      padding: 8px;
+      height: 41px;
+    
+   }
+
+   [dir="ltr"]  .tr                                                                                                                                       ack-cta-button{
+    width: 60%;
+    font-size: 16px;
+    padding: 8px;
+    height: 40px;
+  
+ }
+  .track-style img {
+    max-width: 131px;
+    height: auto;
+    margin-top: 40%;
+  }
+  [dir="ltr"] .track-style img {
+    max-width: 130px;
+    margin-top: 80%;
+    height: auto;
+  }
+  .sea-title{
+    font-family: 22px;
+  }
+  .sea-style img {
+    max-width: 150px;
+    height: 150px;
+    margin-top: 7px;
+  }
+  [dir="ltr"] .sea-style img {
+    max-width: 150px;
+    height: auto;
+    margin-top: 91%;
+  }
+  [dir="ltr"]  .sea-content {
+    max-width: 53%;
+  }
+
+  .air-content {
+    max-width: 58%;
+    padding: 30px 5px 20px;
+    text-align: right;
+    margin-right: -12px;
+  }
+  .air-style img {
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: -200px;
+    max-width: 135px;
+    height: auto;
+  }
+
+
+  [dir="ltr"] .air-style img {
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: -100px;
+    max-width: 135px;
+    height: auto;
+  }
+} */
+

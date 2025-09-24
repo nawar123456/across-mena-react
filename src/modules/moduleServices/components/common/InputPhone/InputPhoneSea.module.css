@@ -1,0 +1,71 @@
+.input-box{
+    position: relative;
+	bottom: 38px;
+ }
+
+    /* .input-text{
+        height: 55px;
+        width: 100%;
+        outline: none;
+        border-radius: 9px;
+        border: 1px solid #b5b5b58c;
+        padding: 10px 55px 10px 10px;
+        font-size: 17px;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+        font-weight: 700;
+        overflow: hidden;
+    }
+    .input-box .react-tel-input .form-control{
+        width: 100%;
+    } */
+
+
+
+
+
+
+
+    .input-box .input-label{
+        color: #727272;
+        font-size: var(--font-size-label);
+        font-weight: normal;
+		position: relative;
+		bottom: 3px;
+    }
+
+
+    /* .input-box .react-select__input:focus + .input-label,
+      .input-box .react-select__input:not(:placeholder-shown) + .input-label, */
+    /* .input-label.active {
+        top: 0px;
+        font-size: 13px;
+        color: #BABABA;
+        padding: 1px;
+        background-color: #fff;
+        border-radius: 8px;
+        font-weight: normal;
+        z-index: 2;
+      } */
+
+    .input-icon{
+        position: absolute;
+        top: 35%;
+        right: 10px;
+        z-index: 1;
+    }
+
+    .input-icon svg{
+        height: 20px;
+    width: 21px;
+	fill: darkgray;
+    margin: 10px 0px 0px 0px
+    }
+
+	@media (max-width:450px) {
+		.input-box{
+	width: 101.5%;
+		}
+
+	}
+

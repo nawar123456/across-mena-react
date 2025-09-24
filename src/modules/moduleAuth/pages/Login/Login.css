@@ -1,0 +1,92 @@
+.image-container {
+	margin: 0px 31px 4px 75px;
+    position: relative;
+    width: 300px; /* Adjust to your needs */
+    height: 300px; /* Adjust to your needs */
+}
+.particles{
+	width: 250%;
+    height: calc(510px + 10vh);
+    position: relative;
+    overflow: hidden;
+}
+
+.image1 {
+    position: absolute;
+    top: -73px;  /* Align to the top */
+    left: -10px; /* Align to the left */
+    width: 100%; /* Make it responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+.image1 {
+    width: 100%; /* Ensure it spans the full width to allow full movement */
+    /* Optional: Centering the image vertically */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image1 img {
+    width: 100px; /* Adjust as per your image size */
+    animation: moveImage 3s linear infinite; /* Animation duration, timing, iteration */
+}
+
+@keyframes moveImage {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(calc(100vw - 100px)); } /* Move to the right */
+    100% { transform: translateX(0); } /* Move back */
+}
+.image2 {
+    position: absolute;
+    top: -11em; /* Position the second image below the first (adjust as needed) */
+    left: -2em;
+    width: 100%; /* Also responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+.image3{
+    position: absolute;
+    top: -4.5em; /* Position the second image below the first (adjust as needed) */
+    right: -15em;
+    width: 100%; /* Also responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.login-left {
+	width: calc(50% - 30px);
+	text-align: start;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+
+	}
+
+	/*----------------------------------------------*/
+
+	.login-right{
+		width: 75%;
+		/* height: calc(800px + 40vh); */
+		position: absolute;
+		left: 55%;
+		top: 40%;
+		transform: translate(-50%, -50%);
+	}
+
+	.login-right__image{
+		width: 100%;
+		height: 100%;
+		filter: drop-shadow(1px 11.5px 11px rgba(0,0,0,0.16));
+	}
+
+	@media (max-width:800px){
+
+		.login-left{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.login-right , .login-right__image{
+			display: none;
+		}
+	}

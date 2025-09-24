@@ -1,0 +1,46 @@
+.input-with-suggestions {
+	position: relative;
+  }
+
+  .suggestions-container {
+	position: absolute;
+	top: 85%;
+	left: 0;
+	right: 0;
+	background: white;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	z-index: 10;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	margin-top: 4px;
+  }
+
+  .suggestion-item {
+	padding: 10px;
+	color: #0d3453;
+	cursor: pointer;
+	transition: background 0.2s;
+  }
+
+  .suggestion-item:hover {
+	background: #fcc400;
+  }
+
+  .input-with-suggestions .suggestions-container {
+		position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-with-suggestions .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.input-with-suggestions .suggestion-item:hover {
+    background-color: #f0f0f0;
+}

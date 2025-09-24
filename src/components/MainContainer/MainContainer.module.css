@@ -1,0 +1,32 @@
+.main-container {
+    width: 93%;
+    /* padding: 0 12.5%;  */
+    /* margin: auto; */
+		margin: auto auto 10px auto;
+  }
+
+.main-padding{
+  padding: 25px 40px;
+}
+
+.form-request{
+  padding: 0px 110px !important;
+
+}
+
+
+@media (max-width : 660px) {
+
+  .main-padding{
+    padding: 25px 0px;
+  }
+
+  .form-request{
+    padding: 0px 0px !important;
+
+  }
+
+  .main-container {
+    width: 90%;
+  }
+}

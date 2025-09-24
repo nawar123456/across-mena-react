@@ -1,0 +1,16 @@
+.track-subcard__card{
+    box-shadow: 0 1px 6px 0 #20212447;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    padding: 22px 8px;
+    border-radius: 18px;
+    background-color: #fff;
+}
+
+@media (max-width:660px){
+
+    .track-subcard__card{
+        flex-wrap: wrap;
+    }
+}

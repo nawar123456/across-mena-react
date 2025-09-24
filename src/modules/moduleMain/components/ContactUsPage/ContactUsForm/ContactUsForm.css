@@ -1,0 +1,114 @@
+.form-contactus .form-item{
+    margin: var(--margin-up-down) ;
+    color: #0D3453;
+}
+
+.form-contactus .width-100{
+    width: 100% ;
+
+}
+
+.input-box2 .react-tel-input .special-label {
+  display: none !important ;
+}
+
+
+.form-no-results__button-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form-no-results__button{
+    height: var(--height-input);
+    width: 18%;
+    border-radius: 18px;
+    background-color: #fcc400;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 45px 0px 0px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-no-results__button:hover{
+    color: #000;
+}
+
+.form-no-results__button-parent .form-no-results__button:disabled {
+    background: rgba(221, 221, 221, 0.5);
+    border: 2px solid rgba(221, 221, 221, 0.8);
+    color: #707070 ;
+}
+
+.form-no-results__button-parent .form-no-results__button .btn-ring:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-color: #fcc400 transparent #fcc400 transparent;
+    animation: ring 1.2s linear infinite;
+    -webkit-animation: ring 1.2s linear infinite;
+  }
+
+  .form-contactus .input-warning{
+    margin-top: 9px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #F60000;
+}
+
+
+  @keyframes ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes  ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width:850px){
+    .form-contactus .form-item{
+        margin: var(--margin-up-down) ;
+        color: #0D3453;
+    }
+
+        .form-contactus .width-100{
+        width: 100% ;
+    }
+
+    .form-no-results__button{
+        width: 120px;
+    }
+
+    .form-no-results__button-parent {
+			display: flex;
+			align-items: center;
+			/* justify-content: space-around; */
+			column-gap: 26px;
+			/* margin-right: -5px; */
+			margin-top: -70px;
+
+
+}
+}

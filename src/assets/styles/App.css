@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Naskh+Arabic');
+@import url('https://fonts.cdnfonts.com/css/dubai');
+@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
+
+
+
+.swal2-confirm {
+	background-color: #fcc400 !important;
+	color: white !important;
+	border: none ;
+	width:50px;
+	text-align: center;
+}
+/* Ensure the entire SweetAlert2 modal appears above everything */
+.swal2-container {
+    z-index: 9999 !important; /* Higher than .popup-container's 1100 */
+}
+
+.slick-slider {
+  border: none !important;
+  outline: none !important;
+}
+
+/* Ensure this targets only elements inside .react-tel-input */
+ .react-tel-input .special-label {
+  display: none !important;
+}
+
+.custom-swal-confirm {
+	background-color: #fcc400 !important;
+	color: white !important;
+	border: none ;
+	width:50px;
+  height: 50px !important;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+:root {
+    /*========== Colors ==========*/
+ font-size: 16px;
+
+    --white-color: #fff;
+    --border-focus:'';
+    --boxshadow-focus:'';
+    --border-input:'';
+    --boxshadow-input:'';
+
+    --main-color:#fcc400;
+    --hover-btn:#0D3453;
+    --placeholder-color:#aaa;
+
+    /*========== Font and typography ==========*/
+    --font-family-dubai:'Dubai', sans-serif;
+    --font-family-ar-primary:'Noto Naskh Arabic', serif;
+		--font-family-en-primary:'Noto Naskh Arabic', sans-serif;
+    /* --font-family-en-primary:'Noto Naskh Arabic', serif; */
+		/* --font-family-en-primary:'Montserrat', sans-serif; */
+    --font-size-label:18px;
+    --font-size-input:16px;
+    --height-input:50px;
+
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-normal:normal;
+
+    /*==================== Spaces and Distance ===============*/
+    /*========== Forms Spaces and Distance ==========*/
+
+    --margin-up-down:24px 0px 24px 0px;
+    --margin-bottom-en:8px;
+    --gap-between-icon-and-Textsection-accordion:0px;
+    --padding-search-input-accordion-rtl:10px 10px 10px 52px;
+    --border-raduis--search-input-rtl:16px 0px 0px 16px;
+    --border-raduis--search-btn-rtl:0px 10px 10px 0px;
+    --margin-end: 0px 0px 0px 5px;
+    --padding-modal-icon:3px 20px 0px 0px;
+    --padding-sections-icon:2px 25px 1px 50px;
+    --padding-search-input-rtl:0px 0px 0px 40px;
+    --padding-input-personal-rtl:10px 10px 10px 55px;
+    --padding-accordion-input-rtl:0px 10px 0px 10px;
+    --padding-content-accordion-input-rtl:0px 20px 0px 0px;
+    --flex-row-rtl:row-reverse;
+    --border-calculator-search:9px 0px 0px 9px;
+    --borde-caluclator-button:0px 9px 9px 0px;
+    --transition-calculato-input:translate(10px ,-16px) scaleY(0.88);
+    --trantion-calculator-aggre:translate(-50%, -85%);
+    --flex-row-home-rtl:row;
+		--left-title-timelinecard-item_info:44px;
+
+
+    --left-input:initial;
+    --right-input:0;
+
+
+    /*========== z index ==========*/
+    --z-tooltip: 199990;
+    --z-fixed: 999;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+input{
+	color: #0D3453;
+}
+ /* English */
+body{
+  .slick-slider {
+    border: none !important;
+    outline: none !important;
+  }
+ /* font-family: 'Amiri', serif; */
+  /* font-family:'Noto Naskh Arabic', sans-serif; */
+  font-family:'Inter', system-ui, -apple-system, sans-serif;
+	font-variant-ligatures: normal; /* Enables proper ligatures for Arabic script */
+	letter-spacing: 0;
+	unicode-bidi: embed;
+	/* font-family:'Montserrat', sans-serif; */
+	/* pointer-events: none; */
+	--card-about-img-top:6px;
+	--margin-bookdetails-card1:-41.44em 29.5% 10px 46%;
+	--left-timeline-type-mobile:36.5%;
+	--margin-bookdetails-button:32px 0.6em 15px 11.6em;
+	--margin-terms-button-bookingDetails:-20px 13em 0px 0em;
+	--left-terms-bookingDetails:-16rem;
+	--left-terms-bookingDetails-tab:-16em;
+	--left-terms-bookingDetails-mobile:-0.8rem;
+	--left-icon-manager:40%;
+	--left-icon-manager-mobile:39%;
+	--left-DirectWord:16px;
+	--margin-confirm-button-mobile-bookingDetails: 15px 0em 35px 16%;
+ --left-bookingConfirm-mobile:-3.5em;
+ --dir-card-card1-BookingDetails:rtl;
+ --dir-normal:ltr;
+ --dir-inverse:rtl;
+--first-child:7em;
+--transform-timeLine:rotateY(180deg);;
+--width-timeLine:86%;
+--max-width-timeLine:270px;
+--right-timeLine:8%;
+-first-child-wid400:8.8em;
+--width-timeLine-wid400:92%;
+--max-width-timeLine-wid400:286px;
+ --three-contact-label-left1:-28.2em;
+ --three-contact-label-left2:-23.2em;
+ --three-contact-label-left3:-23.6em;
+ --three-contact-value-top:1.5em;
+ --left-title-timeline:31px;
+ --right-fixedbutton-terms:18rem;
+ --right-fixedbutton-terms-mobile:1.8rem;
+ --align-self-confirm-button:center;
+ --margin-right-confirm-button:25%;
+
+
+}
+
+input, select, textarea {
+	color: #0D3453 !important; /* Use variable for better maintainability */
+	/* Other input styles can go here, if needed */
+}
+::placeholder {
+  color: rgba(114, 114, 114, 0.5) !important;
+}
+
+select {
+  color: rgba(114, 114, 114, 0.5);
+}
+body.rtl{
+  
+    direction: rtl;
+    font-family: var(--font-family-ar-primary);
+		--card-about-img-top:-13px;
+		--left-title-timelinecard-item_info:-7px;
+		--right-fixedbutton-terms:64rem;
+		--right-fixedbutton-terms-mobile:17rem;
+		--left-title-timeline:-2px;
+		--left-icon-manager:-36%;
+		--left-icon-manager-mobile:-36%;
+		--three-contact-label-left1:29em;
+		--three-contact-label-left2:23.5em;
+		--three-contact-label-left3:24.9em;
+		--three-contact-value-top:1.5em;
+		--left-timeline-type-mobile:54.2%;
+		--dir-normal:rtl;
+		--dir-inverse:ltr;
+		--first-child:7.3em;
+--width-timeLine:91%;
+--max-width-timeLine:244px;
+--first-child-wid400:8.8em;
+--width-timeLine-wid400: 94.6%;
+--max-width-timeLine-wid400: 293px;
+--margin-right-confirm-button:0px;
+--align-self-confirm-button:end;
+--right-timeLine:4%;
+--transform-timeLine:none;
+		--dir-card-card1-BookingDetails:ltr;
+		--left-DirectWord:-26px;
+		--left-bookingConfirm-mobile:1em;
+		--margin-confirm-button-mobile-bookingDetails: 15px 0em 40px 18%;
+		--left-terms-bookingDetails:25rem;
+		--left-terms-bookingDetails-tab:16em;
+		--left-terms-bookingDetails-mobile:35%;
+    --margin-terms-button-bookingDetails: -21px 0em 0px 20em;
+		--margin-bookdetails-card1: -41.59em 26.5% 10px 46%;
+		--margin-bookdetails-button:16px 0.6em 6px 11.6em;
+    --gap-between-icon-and-Textsection-accordion:7px;
+    --padding-search-input-accordion-rtl:10px 52px 10px 10px;
+    --border-raduis--search-input-rtl:0px 16px 16px 0px;
+		--padding-conent-manager-rtl:'';
+    --border-raduis--search-btn-rtl:10px 0px 0px 10px;
+    --margin-end: 0px 5px 0px 0px;
+    --padding-modal-icon:3px 0px 0px 20px;
+    --padding-sections-icon:2px 50px 1px 25px;
+    --padding-search-input-rtl:0px 40px 0px 0px;
+    --padding-input-personal-rtl:10px 55px 10px 10px;
+    --padding-accordion-input-rtl:0px 10px 0px 10px;
+    --padding-content-accordion-input-rtl:0px 0px 0px 20px;
+    --flex-row-rtl:row;
+    --border-calculator-search:0px 9px 9px 0px;
+    --borde-caluclator-button:9px 0px 0px 9px;
+    --transition-calculato-input:translate(-4px ,-16px) scaleY(0.88);
+    --trantion-calculator-aggre:translate(-100%, -85%);
+    --flex-row-home-rtl:row-reverse;
+
+    --left-input:0;
+    --right-input:initial;
+    --margin-bottom-en:5px;
+
+
+}
+
+.container {
+  width: 75%;
+  /* padding: 0 12.5%; */
+  margin: auto;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none ;
+}
+
+.pd-y{
+  padding: 77px 0;
+}
+
+
+  /* Scrollbar Classes For Google Chrome */
+  html::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  html::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background-color: #FFC400;
+    border-radius: 15px;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+  }
+
+  ::selection {
+    color: #fff;
+    background-color: #fcc400;
+}
+
+/* input[type="tel"]::placeholder{
+  color: #000;
+} */
+
+::placeholder {
+  /* color: rgba(114, 114, 114, 0.50); */
+	color: #727272;
+	/* font-weight: bold; */
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: #BABABA;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+color: #BABABA;
+}
+
+body .my-custom-tooltip {
+  background-color: #f7bd11;
+  color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 20px;
+  z-index: 99999;
+
+  /* width: 200px;
+  word-wrap: break-word; */
+  /* Add more custom styles as needed */
+}
+
+
+
+
+@media (max-width: 850px){
+  :root {
+    --font-size-label:16px;
+    --font-size-input:17px;
+    --height-input:46px;
+    --margin-up-down:12px 0px 12px 0px;
+
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  body {
+    --padding-sections-icon:0px 25px 0px 50px;
+    --padding-content-accordion-input-rtl:0px 10px 0px 0px;
+  }
+
+
+
+
+  body .my-custom-tooltip{
+    font-size: 85% ;
+    padding: 6px 10px ;
+    background-color: #f7bd11 ;
+    z-index: 99999;
+    display: none;
+    /* right:88.5%; */
+}
+
+body.rtl{
+  --padding-sections-icon:0px 50px 0px 25px;
+  --padding-content-accordion-input-rtl:0px 0px 0px 10px;  }
+
+
+
+body .toast-message{
+  min-height: 45px ;
+  max-height: 55px ;
+  font-size: 12px;
+  margin-bottom: 9px ;
+  width: 80%;
+  padding-bottom: 4px ;
+  padding-top: 1px ;
+  }
+
+  body .toast-message-progress{
+    height: 2px;
+  }
+
+  .Toastify__toast-icon {
+    width: 14px ;
+    height: 14px;
+  }
+  body .Toastify__toast-container--bottom-right{
+    bottom: 0em ;
+  }
+
+}
+
+@media (max-width:600px) {
+
+  .pd-y{
+    padding: 30px 0;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+
+  body {
+    --padding-content-accordion-input-rtl:0px 10px 0px 0px;
+  }
+  body.rtl{
+    --padding-content-accordion-input-rtl:0px 0px 0px 10px;
+    }
+
+
+  body , body.rtl{
+    --padding-sections-icon:0px 25px 0px 25px;
+  }
+
+  body .my-custom-tooltip{
+    font-size: 53% ;
+    --padding-content-accordion-input-rtl:0px 0px 0px 6px;
+
+}
+
+ }

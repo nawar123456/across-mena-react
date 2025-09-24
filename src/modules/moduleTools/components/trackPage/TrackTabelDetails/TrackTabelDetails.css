@@ -1,0 +1,168 @@
+.parent-table{
+    overflow-x: auto;
+    padding: 5px;
+    width: 100%;
+
+  }
+  
+  .parent-table table.table-74 {
+    margin-left: auto;  
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    box-shadow:0 1px 6px 0 #20212447;
+    -webkit-box-shadow:0 1px 6px 0 #20212447;
+    -moz-box-shadow:0 1px 6px 0 #20212447;
+    border-color: transparent;
+
+
+
+  }
+  .parent-table table.rounded-corners {
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 18px;
+   }
+
+
+   .parent-table th{
+    border-left: 1px solid rgba(168, 168, 168, 0.7); 
+    text-align: center;
+    border-top: none;
+
+  }
+
+
+  .parent-table table th:first-child , table td:first-child{
+    /* border-left: none; */
+  }
+  .parent-table table th:last-child , table td:last-child{
+    border-inline-end: none;
+  }
+
+
+  .parent-table td {
+    border-left: 1px solid rgba(168, 168, 168, 0.7); 
+    border-top: 1px solid rgba(168, 168, 168, 0.7);
+    border-bottom: none;
+    text-align: center;
+    position: relative;
+    unicode-bidi:plaintext;
+  }
+  
+  .parent-table th{
+    font-size: 14px;
+    /* padding: 8px 5px; */
+  
+  }
+  
+  .parent-table td{
+      font-size: 14px;
+      /* padding: 8px 5px; */
+      /* width: 50%; */
+  }
+  
+  .parent-table .last-td{
+    text-align: right;
+  }
+
+  
+
+
+
+  @media (min-width: 768px) {
+
+    .parent-table .table-td__content{
+      
+      text-wrap: wrap;
+      display: block;
+      width: 61%;
+      margin-inline-start:36%;
+      /* margin-left: 45%; */
+      padding: 12px 5px;
+      unicode-bidi:plaintext;
+
+     }
+
+     .parent-table table td:first-child{
+      border-top: none;
+     }
+     .parent-table table td{
+      border-right: none;
+      border-left: none;
+    }
+
+    .parent-table th{
+      border: 1px solid rgba(168, 168, 168, 0.7); 
+      border-top: none;
+      text-align: center;
+  
+      /*Table Coulmns*/
+      display: none;
+      border-left: none;
+
+    }
+  
+      /*Table Coulmns*/
+  
+      .parent-table table tbody ,.parent-table table tr , .parent-table table , .parent-table td {
+        display: block;
+        width: 100%;
+      }
+      /*Table Coulmns*/
+
+
+      .parent-table table td::before{
+        content: attr(data-label);
+        position: absolute;
+        font-weight: bold;
+        inset-inline-start: 0px;
+        text-wrap: wrap;
+        /* text-align: start; */
+        top: 0;
+        /* vertical-align: top; */
+        width: 30%;
+        /* line-height: 35px; */
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-inline-end: 1px solid rgba(168, 168, 168, 0.7);
+        padding-left: 15px;
+        justify-content: center;
+        font-size: 16px;
+      }
+    
+    
+}
+
+@media (max-width: 778px) { 
+
+  .parent-table table.table-74  {
+
+        width: 100%;
+      }
+      .parent-table th{
+        font-size: 13px;
+        padding: 8px 3px;
+    }
+
+    .parent-table td{
+    font-size: 12px;
+    padding: 8px 3px;
+    }
+}
+
+@media (max-width: 425px) { 
+    
+  .parent-table th{
+        font-size: 11px;
+        /* padding: 2px; */
+    }
+    .parent-table td{
+        font-size: 11px;
+        /* padding: 2px; */
+    }
+
+}

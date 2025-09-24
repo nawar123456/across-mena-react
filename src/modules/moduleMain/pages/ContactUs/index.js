@@ -1,0 +1,113 @@
+import { useTranslation } from 'react-i18next';
+import './ContactUs.css';
+import { Helmet } from 'react-helmet-async';
+import ContactHero from '../../../../assets/images/contactHero.webp';
+import { Heading, MainContainer, SecondaryHero } from '../../../../components';
+import ContactUsForm from '../../components/ContactUsPage/ContactUsForm/ContactUsForm';
+
+const ContactUs = () => {
+
+    const {t} = useTranslation();
+
+
+
+  return (
+    <>
+    <Helmet>
+    <meta
+      name="description"
+      content="ابقى على تواصل مع فريق Across Mena ولا تتردد في الاتصال في أي وقت تريد لطرح اسئلتك واستفساراتك وسنسعد بالاستماع إليك وتقديم الحل الذي يناسب احتياجاتك."
+    />
+    <meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="></meta>
+    <meta property="og:type" content="article"></meta>
+    <meta property="og:url" content="https://acrossmena.net/contact-us"></meta>
+    <meta property="og:site_name" content="Across MENA"></meta>
+    <meta property="article:publisher" content="https://www.facebook.com/acrossmena"></meta>
+    <meta property="og:image" content="https://cdn.acrossmena.com/wp-content/uploads/2020/12/contact.jpg"></meta>
+    
+    <title>{t('labelNavbar.contact')}- Across MENA</title>
+    </Helmet>
+    
+    {/* <SecondaryHero title={t('labelNavbar.contact')}  image={ContactHero} /> */}
+
+    <MainContainer>
+    <section className='contactus-page pd-y'>
+    <div className='contactus-page__right'>
+
+    <Heading  title={t('labelNavbar.contact')} body={t('labelContactUs.ContactUs')}  width100={'100%'}/>
+
+    <section className='contactus-page__right-details'>
+        <div className='contactus-page__right-details-row'>
+        <span>
+            {t('labelContactUs.address')} : {" "}
+        </span>
+        <span>
+            {t('labelContactUs.building')}
+        </span>
+        </div>
+
+        <div className='contactus-page__right-details-row'>
+        <span>
+            {t('labelContactUs.landLine')} : {" "}
+        </span>
+        <a href='tel:+00963415060'> 
+        00963415060
+        </a>
+        </div>
+
+        <div className='contactus-page__right-details-row'>
+        <span>
+            {t('labelContactUs.phone')} : {" "}
+        </span>
+        <a href='tel:+00963944506000'> 
+        00963944506000
+        </a>
+        </div>
+
+        <div className='contactus-page__right-details-row'>
+        <span>
+            {t('labelContactUs.email')} : {" "}
+        </span>
+        <a href='mailto:info@acrossmena.com'> 
+        info@acrossmena.com
+        </a>
+        </div>
+
+        <div className='contactus-page__right-details-row'>
+            <div className='right-details-row__map'>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.2941039427674!2d35.77608782470899!3d35.52172913872022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1526ad492d92a0e3%3A0xc4330d76cbea8c25!2sAcross%20Mena!5e0!3m2!1sar!2s!4v1708259368095!5m2!1sar!2s" 
+            width="400" 
+            height="300" 
+            style={{border:"0"}}
+            className='contactus-page__iframe-map'
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+            title='location-acrossmena'>
+            </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    </div>
+
+    <div className='contactus-page__left'>
+
+        <ContactUsForm/>
+
+
+    </div>
+    </section>
+    </MainContainer>
+
+
+    </>
+  )
+}
+
+export default ContactUs

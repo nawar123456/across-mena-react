@@ -1,0 +1,261 @@
+.portToport-Askmanager{
+padding-left: 20px;
+}
+
+.form-askManager{
+margin-top: 40px;
+}
+
+.buttons-AskManager{
+position: relative;
+}
+.inputPhone-Only-AskManager{
+position: relative;
+top: 15px;
+}
+
+.checkBox-title-Only-AskManager{
+position: relative;
+top: -29px;
+}
+
+.checkBox-Only-AskManager{
+	position: relative;
+	top: -10px;
+	width: 85%;
+	}
+
+.inputEmail-Only-AskManager{
+position: relative;
+}
+
+.form-no-results{
+    border: 1px solid #fcc400;
+    border-radius: 8px;
+    background-color: #fff;
+    /* box-shadow: 1.5px 3px 8px rgba(0, 0, 0, 0.1); */
+	height: 85.5%;
+	max-height: 530px;
+    width: 100%;
+    padding: 0px;
+    margin: 3% auto;
+	}
+
+.no-border{
+	border: none;
+}
+	.form-no-results .input-warning{
+		margin-top: 9px;
+		font-size: 13px;
+		font-weight: bold;
+		color: #F60000;
+		display: none;
+	}
+
+	.form-no-results__check + .input-warning{
+		width: 55%;
+		margin: 0px auto;
+	}
+
+	.header-no-results{
+		text-align: center;
+		margin: 60px auto 30px auto;
+		font-weight: bold;
+		font-size: 18px;
+		color: #0D3453;
+		width: 60%;
+	}
+
+	.form-no-results .form-item{
+		margin: var(--margin-up-down) ;
+		color: #0D3453;
+	}
+
+	.form-no-results .width-100{
+		width: 85% ;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.input-box2 .react-tel-input .special-label {
+		display: none !important ;
+	}
+/* Ensure this targets only elements inside .react-tel-input */
+.material .react-tel-input .special-label {
+	display: none !important;
+  }
+  
+	  .form-no-results__check{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		gap: 5px;
+		width: 90%;
+		margin: 20px auto;
+		flex-wrap: wrap;
+		/* margin-left: auto;
+		margin-right: auto; */
+	  }
+
+	.form-no-results__button-parent{
+	display: flex;
+	align-items: center;
+	column-gap: 50px;
+    margin: 0px 25px;
+    margin-top: -7%;
+	}
+
+	.form-no-results__button{
+		height: 50px;
+		width: 25%;
+		border-radius: 11px;
+		background-color: #fcc400;
+		font-size: 25px;
+		outline: none;
+		border: none;
+		color: #fff;
+		font-weight: bold;
+		cursor: pointer;
+		margin: 0px 0px 0.5em 0px;
+		display: flex;
+		align-items: center;
+		justify-content: center
+	}
+	.form-no-results__button:hover{
+		color: #000;
+	}
+
+	.form-no-results__button-parent .form-no-results__button:disabled {
+		background: rgba(221, 221, 221, 0.5);
+		border: 2px solid rgba(221, 221, 221, 0.8);
+		color: #707070 ;
+	}
+
+	.form-no-results__button-parent .form-no-results__button .btn-ring:after {
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		margin: 8px;
+		border-radius: 50%;
+		border: 3px solid #fff;
+		border-color: #fcc400 transparent #fcc400 transparent;
+		animation: ring 1.2s linear infinite;
+		-webkit-animation: ring 1.2s linear infinite;
+	  }
+
+	  .form-no-results__button-parent .form-no-results__button .btn-ring:after {
+		font-size: 0px;
+		content: "";
+	  }
+
+	  .form-no-results__button:disabled  {
+		/* visibility: hidden; Hides the button text */
+		font-size: 0px;
+	  }
+
+	  @keyframes ring {
+		0% {
+		  transform: rotate(0deg);
+		}
+		100% {
+		  transform: rotate(360deg);
+		}
+	  }
+
+	  @-webkit-keyframes  ring {
+		0% {
+		  transform: rotate(0deg);
+		}
+		100% {
+		  transform: rotate(360deg);
+		}
+	}
+
+	@media(max-width:1250px){
+			  .form-no-results__check{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		gap: 7px;
+		width: 100%;
+		margin: 20px auto;
+		flex-wrap: wrap;
+		/* margin-left: auto;
+		margin-right: auto; */
+	  }
+	  .form-no-results__check{
+
+		justify-content:initial;
+
+	  }
+	}
+
+	@media (max-width:850px){
+
+		.form-askManager{
+margin-top: 40px;
+		}
+
+
+
+		.form-no-results__button-parent{
+			display: flex;
+			align-items: center;
+			/* justify-content: space-around; */
+			column-gap: 30px;
+			/* margin-right: -5px; */
+			margin-top: -15px;
+		}
+
+
+	  .form-no-results{
+		width: 100%;
+        margin: 0px 0px;
+        padding: 13px 13px;
+        max-height: 660px;
+        height: 88%;
+		}
+
+		.header-no-results{
+			margin: 10px auto 20px auto;
+			width: 100%;
+			text-align: start;
+		}
+
+		.form-no-results .form-item{
+			margin: var(--margin-up-down) ;
+			color: #0D3453;
+		}
+
+		.form-no-results .width-100{
+			width: 100% ;
+		}
+
+		.input-box2 .react-tel-input .special-label {
+			display: none !important ;
+		}
+
+
+
+		  .form-no-results__check + .input-warning ,.form-no-results__check {
+			width: 100%;
+			/* margin: 0px auto; */
+		}
+
+		.form-no-results__check{
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.form-no-results__button{
+			width: 120px;
+		}
+
+		  .home-card{
+			  margin: 10px 0px 30px 0px;
+
+		  }
+
+
+
+	}

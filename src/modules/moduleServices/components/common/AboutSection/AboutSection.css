@@ -1,0 +1,64 @@
+.about-sea{
+margin-bottom: 70px;
+}
+
+.about-sea__title{
+    color: #ffc400;
+    font-size: 24pt;
+    font-family: 'sky';
+    margin-bottom: 1rem;
+}
+
+.about-sea__parent{
+    display: flex;
+    /* justify-content: center; */
+    gap: 40px;
+    /* flex-direction: column-reverse; */
+}
+
+.about-sea__texts{
+    width: 55%;
+}
+
+.about-sea__texts :is(.about-sea__text1,.about-sea__text2){
+    color: #5b5b5b;
+    font-style: normal;
+    letter-spacing: 0px;
+    font-size: 14pt;
+    line-height:1.7;
+    margin-bottom: 1rem;
+}
+
+.about-sea__parent .about-sea__image{
+    width: 45%;
+    height: 240px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-sea__parent .about-sea__image img{
+    /* height: auto; */ 
+    width: 100%;
+    aspect-ratio: 7/3;
+}
+
+
+@media (max-width:769px) {
+    .about-sea__parent{
+
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+
+    .about-sea__texts{
+        width: 100%;
+    }
+
+    .about-sea__parent .about-sea__image{
+        width: 85%;
+        height: 200px;
+        margin-top: 20px
+    }
+}
+

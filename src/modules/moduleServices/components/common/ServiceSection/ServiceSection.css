@@ -1,0 +1,153 @@
+
+
+.service-sea__card-text{
+    font-size:22px ;
+    color: #000;
+}
+
+.service-sea .service-sea__title{
+    font-size: 30px;
+    color: #fcc400;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: sky;
+}
+
+.service-sea .service-sea__cards{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
+    
+}
+.service-sea{
+    margin-top: 7%;
+}
+
+.service-sea__cards .service-sea__card{
+    width: 33.3%;
+    text-align: center;
+}
+.service-sea__cards .service-sea__card .service-sea__card-img{
+    width: 85px;
+    height: 85px;
+}
+
+.service-sea__cards .service-sea__card:nth-child(2){
+    /* border-left: 3px double #fcc400;
+    border-right: 3px double #fcc400; */
+}
+
+.service-sea__cards .service-sea__card:nth-child(3){
+    /* border-left: 3px double #fcc400; */
+    /* border-right: 3px double #fcc400; */
+}
+.service-sea__cards .service-sea__card:nth-child(1){
+    /* border-left: 3px double #fcc400; */
+    /* border-right: 3px double #fcc400; */
+}
+.service-sea__cards .service-sea__card:nth-child(4){
+    /* border-left: 3px double #fcc400; */
+    /* border-right: 3px double #fcc400; */
+}
+
+@media (max-width:1300px) {
+
+.service-sea__card-text{
+    font-size:20px ;
+    color: #000;
+}
+
+.service-sea .service-sea__title{
+    font-size: 28px;
+    color: #fcc400;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: sky;
+}
+
+}
+
+
+@media (max-width:769px) {
+
+    .service-sea .service-sea__cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-sea__cards .service-sea__card{
+
+        width: 75%;
+
+    }
+
+    .service-sea__cards .service-sea__card:nth-child(2){
+        border-top: 3px double #fcc400;
+        border-bottom: 3px double #fcc400;
+        border-left: none;
+        border-right: none;
+        padding: 20px 0px;
+    }
+}
+
+@media (max-width:475px) {
+    .service-sea .service-sea__title{
+        font-size: 20px;
+        color: #fcc400;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: sky;
+    }
+    .service-sea__cards .service-sea__card:nth-child(2){
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        padding: 0px 0px;
+    }
+    .service-sea__cards .service-sea__card:nth-child(2){
+        border-left: none;
+        border-right: none;
+    }
+    
+    .service-sea__cards .service-sea__card:nth-child(3){
+        border-left: none;
+        /* border-right: 3px double #fcc400; */
+    }
+    .service-sea__cards .service-sea__card:nth-child(1){
+        /* border-left: 3px double #fcc400; */
+        border-right: none;
+    }
+    .service-sea__cards .service-sea__card:nth-child(4){
+        border-left:none;
+        /* border-right: 3px double #fcc400; */
+    }
+
+
+    .service-sea__cards .service-sea__card .service-sea__card-img{
+        width: 42px;
+        height: 42px;
+    }
+
+    .service-sea__cards p {
+        font-size: 15px ;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+
+
+    }
+
+    .service-sea .service-sea__cards{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+        
+    }
+
+}
+
+
+

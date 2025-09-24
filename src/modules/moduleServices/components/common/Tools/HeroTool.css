@@ -1,0 +1,1964 @@
+/* .description {
+  font-size: 29px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.description2 {
+  font-size: 29px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+} */
+
+/* Start ContainerTypes */
+
+
+/* start TruckTypes */
+
+.TruckTypes-style img {
+       max-width: 435px;
+    height: 230px;
+    margin-bottom: 20px;
+}
+[dir="ltr"] .TruckTypes-style img{
+     max-width: 430px;
+    height: 215px;
+  /* margin-bottom: 20px; */
+}
+.TruckTypes-content {
+  font-size: 30px;
+  max-width: 60%;
+  padding-right: 2px;
+  padding-top: 0.5%;
+  /* padding-bottom: 55px; */
+}
+ 
+  [dir="ltr"]  .TruckTypes-content {
+    max-width: 56%;
+  }
+
+.TruckTypes-description {
+  font-size: 30px;
+  color: #555;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+[dir="ltr"] .TruckTypes-description {
+  font-size: 30px;
+  color: #555;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.TruckTypes-description2 {
+  font-size: 25px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+[dir="ltr"] .TruckTypes-description2 {
+  font-size: 22px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+
+/* end TruckType */
+.containerSea-style img {
+     max-width: 440px;
+    height: 315px;
+    /* margin-top: 10px; */
+}
+[dir="ltr"] .containerSea-style img{
+      max-width: 430px;
+    height: 325px;
+  transform: scaleX(-1);
+}
+
+.containerSea-content {
+  /* font-size: 30px;
+  max-width: 71%;
+  padding-right: 2px;
+  padding-bottom: 55px; */
+     font-size: 29px;
+    max-width: 55%;
+    padding-right: 2px;
+    padding-bottom: 1%;
+    /* padding-bottom: 3%; */
+}
+ 
+  [dir="ltr"]  .containerSea-content {
+    font-size: 30px;
+    max-width: 60%;
+    padding-right: 2px;
+        margin-top: 1%;
+
+    /* padding-bottom: 3%;  */
+   }
+
+  .containerSea-description {
+    font-size: 28px;
+    color: #555;
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 1rem;
+  }
+
+  [dir="ltr"] .containerSea-description {
+    font-size: 28px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 6rem;
+  }
+
+  .containerSea-description2 {
+    font-size: 24px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  [dir="ltr"] .containerSea-description2 {
+    font-size: 24px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+/* End ContainerTypes */
+
+/* Container to wrap section + wave smoothly */
+
+
+/* Start THE TrUck (تعقب) */
+
+.tracking-style img {
+    max-width: 400px;
+    height: 245px;
+  }
+  [dir="ltr"] .tracking-style img{
+    max-width: 370px;
+    height: 265px;
+  }
+  
+  .tracking-content {
+    font-size: 30px;
+    max-width: 71%;
+    padding-right: 2px;
+    padding-bottom: 55px;}
+   
+    [dir="ltr"]  .tracking-content {
+      max-width: 62%;
+    }
+  
+    .tracking-description {
+      font-size: 30px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    [dir="ltr"] .tracking-description {
+      font-size: 27px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    .tracking-description2 {
+      font-size: 25px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    [dir="ltr"] .tracking-description2 {
+      font-size: 24px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+  
+  /* End Truck() */
+
+
+  /* start shippingCalc */
+  .calc-style img {
+      max-width: 375px;
+    height: 415px;
+    margin-top: 10px
+  
+  }
+  [dir="ltr"] .calc-style img{
+    max-width: 375px;
+    height: 415px;
+    margin-top: 10px;
+    transform: scaleX(-1);
+  }
+  
+  .calc-content {
+    font-size: 30px;
+    max-width: 71%;
+    padding-right: 2px;
+    padding-bottom: 0px;
+    /* margin-top: 35px; */
+  }
+   
+    [dir="ltr"]  .calc-content {
+      max-width: 60%;
+    }
+  
+    .calc-description {
+      font-size: 30px;
+      color: #555;
+      font-weight: bold;
+      line-height: 2;
+      margin-bottom: 1rem;
+    }
+  
+    [dir="ltr"] .calc-description {
+    font-size: 30px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem
+    }
+  
+    .calc-description2 {
+      font-size: 25px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    [dir="ltr"] .calc-description2 {
+      font-size: 24px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+  
+
+
+
+  /* end shippingCalc */
+  
+  .sea-shipping-wrapper {
+    position: relative;
+    background-color: #f7f7f7;
+    z-index: 1;
+    overflow: visible;
+  }
+.land-Tool-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px 25px 40px;
+  flex-wrap: wrap;
+  z-index: 2;
+  position: relative;
+  padding-bottom: 3%;
+}
+  /* Section layout */
+  /* .land-Tool-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 25px 40px;
+    flex-wrap: wrap;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 0px;
+    margin-bottom: -10px;
+  } */
+  /* Wave at the bottom of the background */
+  .bottom-wave {
+    position: relative;
+    width: 100%;
+    line-height: 0;
+    overflow: hidden;
+    z-index: 2;
+    margin-bottom: -5px; /* tighten it up if needed */
+  }
+  
+  .bottom-wave svg {
+    width: 100%;
+    height: 100px;
+    display: block;
+  }
+  
+  .wave-mask {
+    position: relative;
+    top: 4px;
+    width: 100%;
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .wave-mask svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  
+  
+  
+  /* start sea-content 1400 */
+  
+  .sea-style img {
+    max-width: 405px;
+    height: 415px;
+  }
+  [dir="ltr"] .sea-style img{
+    max-width: 380px;
+    height: 415px;
+  }
+  
+  .sea-content {
+    font-size: 30px;
+    max-width: 71%;
+    padding-right: 2px;
+    /* padding-bottom: 55px; */
+  }
+   
+    [dir="ltr"]  .sea-content {
+      max-width: 75%;
+    }
+  
+    .sea-description {
+      font-size: 30px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    [dir="ltr"] .sea-description {
+      font-size: 27px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    .sea-description2 {
+      font-size: 25px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    [dir="ltr"] .sea-description2 {
+      font-size: 22px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    
+
+
+  /* end sea-content 1400*/
+  
+  
+  
+    /* start track-content*/
+  
+
+  
+
+    
+  /* end track-content*/
+  
+  
+  
+  /* start aitPort-content 1400*/
+  
+  
+  .air-content {
+      max-width: 71%;
+      padding-right: 2px;
+    padding-bottom: 7%;
+  }    
+  
+  
+  
+  .air-style img {
+    max-width: 480px;
+    height: 415px;
+  }
+  
+  [dir="ltr"] .air-style img{
+    max-width: 480px;
+    height: 415px;
+  }
+  
+  [dir="ltr"]  .air-content {
+    max-width: 70%;
+        padding-bottom: 7%;
+
+  }
+  
+  /* .air-description {
+    font-size: 30px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .air-description2 {
+    font-size: 25px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  [dir="ltr"] .air-description {
+    font-size: 30px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  
+  [dir="ltr"] .air-description2 {
+    font-size: 24px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+   */
+  
+  
+  /* end aitPort-content 1400*/
+  
+  
+  /* TrackHero Content */
+  .track-content {
+    max-width: 71%;
+    padding-right: 2px;
+    padding-bottom: 7%;
+  }  
+  
+  .title-hero-tool {
+    font-size:35px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .title-hero-tool::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fcc400;
+    border-radius: 2px;
+  }
+  
+
+  
+  /* TrackHero Specific Paragraph Style */
+  /* .track-description {
+    font-size: 30px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;;
+  }
+   */
+  /* AirPlane Specific Paragraph Style */
+  
+  
+  
+  
+  /* .cta-button {
+    background-color: #fcc400;
+    color: white;
+    padding: 10px 25px;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 30%;
+  } */
+  
+  .cta-button:hover {
+    background-color: #fcc400;
+    color: #555;
+  }
+  
+  [dir="rtl"]  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  [dir="ltr"]  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    transform: rotateY(180deg);
+  }
+  
+  
+  
+  
+  .image-container  {
+  
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  
+  /* .track-style img {
+    max-width: 600px;
+    height: 400px;
+  } */
+  
+  
+  @media (max-width:1300px){
+    /* start .calc-content */
+   .calc-description {
+      font-size: 24px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.7;
+      margin-bottom: 3rem;
+    }
+
+
+  [dir="ltr" ] .calc-description {
+      font-size: 24px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.7;
+      margin-bottom: 3rem;
+    }
+
+
+    /* end calc */
+      [dir="ltr"]  .TruckTypes-content {
+    max-width: 56%;
+    margin-top: 0px;
+  }
+    .tracking-content {
+    font-size: 30px;
+    max-width: 61%;
+    padding-right: 2px;
+    padding-bottom: 55px;
+    } 
+    
+.calc-content {
+    font-size: 30px;
+    max-width: 60%;
+    padding-right: 2px;
+    padding-bottom: 0px;
+    /* margin-top: 35px; */
+}
+  [dir="ltr"]  .containerSea-content {
+    font-size: 30px;
+    max-width: 60%;
+    padding-right: 2px;
+        margin-top: 1%;
+
+    /* padding-bottom: 3%;  */
+   }
+    
+.containerSea-style img {
+       max-width: 430px;
+    height: 275px;
+}
+  [dir="ltr"] .containerSea-style img{
+      max-width: 430px;
+    height: 275px;
+    transform: scaleX(-1);
+  }
+  
+  .containerSea-content {
+    /* font-size: 30px;
+    max-width: 50%;
+    padding-right: 2px;
+    padding-bottom: 55px; */
+
+    font-size: 30px;
+    max-width: 52%;
+    padding-right: 2px;
+    padding-bottom: 3%;
+  }
+   
+    [dir="ltr"]  .containerSea-content {
+      max-width: 60%;
+    }
+  
+    .containerSea-description {
+      font-size: 24px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    [dir="ltr"] .containerSea-description {
+      font-size: 24px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.7;
+      margin-bottom: 0rem;
+    }
+  
+    .containerSea-description2 {
+      font-size: 25px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    [dir="ltr"] .containerSea-description2 {
+      font-size: 22px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  .TruckTypes-description {
+  font-size: 24px;
+  color: #555;
+  font-weight: bold;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+    [dir="ltr"]  .TruckTypes-description {
+  font-size: 24px;
+  color: #555;
+  font-weight: bold;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+    .TruckTypes-content {
+  font-size: 30px;
+  max-width: 51%;
+  padding-right: 2px;
+  margin-top: 2%;
+  /* padding-bottom: 55px; */
+}
+    .TruckTypes-style img {
+        max-width: 475px;
+        height: 195px;
+    }
+    /* .description {
+      font-size: 24px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    } 
+
+    .description2 {
+      font-size: 24px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }  */
+    .tracking-style img {
+      max-width: 395px;
+      height: 275px;
+    }
+
+    [dir="ltr"] .tracking-style img {
+      max-width: 355px;
+      height: 255px;
+    }
+
+    .tracking-description {
+      font-size: 24px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    [dir="ltr"] .tracking-description {
+      font-size: 24px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    .tracking-description2 {
+      font-size: 22px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      max-width: 85%;
+
+    }
+    [dir="ltr"] .tracking-description2 {
+      font-size: 22px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      max-width: 860px;
+    }
+    /* start Air Section 1300 */
+  
+  /* .air-description {
+    font-size: 30px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+    .air-description2 {
+      font-size: 24px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  [dir="ltr"]    .air-description {
+        font-size: 30px;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+  }
+  [dir="ltr"] .air-description2 {
+          font-size: 24px;
+          color: #555;
+          line-height: 1.6;
+          margin-bottom: 1rem;
+  }
+        
+  
+  
+  .air-style img {
+  max-width: 400px;
+  height: 415px;
+  }
+  
+  [dir="ltr"] .air-style img{
+  max-width: 480px;
+  height: 415px;
+  } */
+  
+  /* End Air Section  1300 */
+  
+  /* Start Track Section: */
+   .track-content {
+    max-width: 63%;
+        padding-bottom: 7%;
+
+  }
+  [dir="ltr"]  .track-content {
+    max-width: 63%;
+        padding-bottom: 7%;
+
+  }
+  
+
+    
+  
+    /* .track-description {
+      font-size: 30px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+   
+     .track-description2 {
+      font-size: 28px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    
+    [dir="ltr"]  .track-description {
+      font-size: 22px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+   
+    [dir="ltr"] .track-description2 {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    } */
+  
+  
+  /* end Track-section */
+  
+    /* Start Sea Section: 1300 */
+    [dir="ltr"] .sea-style img {
+      max-width: 340px;
+      height: 415px;
+    }
+    [dir="ltr"]  .sea-content {
+      max-width: 72%;
+    }
+  
+    [dir="ltr"] .sea-description {
+      font-size: 23px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    [dir="ltr"] .sea-description2 {
+      font-size: 19px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    /* .image-container img {
+      max-width: 350px;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 15px;
+    } */
+  
+        /* End Sea Section: 1300 */
+
+    
+    .title-hero-tool {
+      font-size:28px;
+      color: #555;
+      font-weight: bold;
+      margin-bottom: 15px;
+      position: relative;
+      display: inline-block;
+    }
+  
+  
+  
+  }
+  
+  
+  @media (max-width: 600px) {
+
+    .title-hero-tool{
+      font-size: 19px;
+    }
+    .tracking-style img {
+      margin-top: 20%;
+      max-width: 160px;
+      height: 150px;
+  
+    }
+
+    .tracking-description {
+      font-size: 14px ;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    [dir="ltr"] .tracking-description {
+      font-size: 27px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    .tracking-description2 {
+      font-size: 14px ;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      max-width: 85%;
+
+    }
+    [dir="ltr"] .tracking-description2 {
+      font-size: 22px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      max-width: 860px;
+    }
+    /* start sea section 600 */
+
+    .sea-style img{
+      /* width: 100%; */
+      height: 162px;
+      max-width: 132px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  
+    .image-container {
+      justify-content: center;
+    }
+  
+    .sea-content {
+      max-width: 66%;
+      padding: 30px 0px 20px;
+      text-align: right;
+      margin-right: -12px;
+      padding-bottom: 7%;
+    }
+  
+    .title-hero-tool {
+      font-size: 19px;
+    }
+  
+    .sea-description {
+      font-size: 12px;
+    }
+  
+    .sea-description2{
+          font-size: 12px;
+  }
+/*   
+    .cta-button {
+      width: 80%;
+      font-size: 20px;
+      padding: 10px;
+    } */
+
+  /* end sea section 600  */
+  }
+  
+  
+  @media (max-width: 500px) {
+         .containerSea-content {
+        max-width: 59%;
+        padding: 30px 0px 20px;
+        text-align: right;
+        margin-right: -13px;
+    }
+    .containerSea-description {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+   }
+   
+   .containerSea-description2 {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem
+   }
+   .containerSea-style img {
+    max-width: 168px;
+    height: 166px;
+    margin-bottom: -60px;
+   }
+
+
+      [dir="ltr"] .tracking-content {
+    max-width: 55%;
+      }
+       .tracking-content{
+      max-width: 56%;
+      padding: 30px 0px 20px;
+      /* text-align: left; */
+      margin-right: -13px;
+    
+    }
+
+    [dir="ltr"] .tracking-description {
+      font-size: 13px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    [dir="ltr"] .tracking-description2 {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      max-width: 860px;
+    }
+
+  [dir="ltr"] .tracking-style img {
+    margin-top: 20%;
+    max-width: 150px;
+    height: 142px;
+  }
+/* start TruckTypes  */
+.TruckTypes-content {
+max-width: 56%;
+        padding: 30px 0px 20px;
+        text-align: right;
+        margin-right: -13px;
+}
+ 
+    [dir="ltr"] .TruckTypes-content {
+        max-width: 53%;
+        text-align: left;
+    }
+.TruckTypes-style img {
+        max-width: 160px;
+        height: 75px;
+        margin-top: 110px;
+}
+[dir="ltr"] .TruckTypes-style img{
+          max-width: 175px;
+        height: 77px;
+        margin-top: 92px;
+
+}
+.title-hero-tool {
+  font-size: 17px;
+}
+
+.TruckTypes-description {
+  font-size: 15px;
+  color: #555;
+  font-weight: 100;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+[dir="ltr"] .TruckTypes-description {
+  font-size: 15px;
+  color: #555;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.TruckTypes-description2 {
+  font-size: 25px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+[dir="ltr"] .TruckTypes-description2 {
+  font-size: 24px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+
+
+/* end TruckTypes */
+ .calc-content {
+  font-size: 30px;
+  max-width: 50%;
+  padding-right: 2px;
+  margin-top: 24%;
+  padding-bottom: 17%;
+    /* margin-top: 35px; */
+  }
+   
+    [dir="ltr"]  .calc-content {
+      max-width: 60%;
+    }
+    .calc-style img {
+      max-width: 175px;
+      height: 210px;
+      margin-top: 95px;
+    }
+    [dir="ltr"] .calc-style img{
+      max-width: 370px;
+      height: 265px;
+      transform: scaleX(-1);
+    }
+    .title-hero-tool {
+      font-size: 17px;
+    }
+    [dir="ltr"]  .calc-content {
+      max-width: 54%;
+    }
+  .calc-style img {
+    max-width: 150px;
+    height: 210px;
+    margin-top: 95px;
+  }
+  [dir="ltr"] .calc-style img{
+   max-width: 145px;
+    height: 210px;
+    margin-top: 95px;
+          transform: scaleX(-1);
+
+  }
+    .calc-description {
+      font-size: 16px;
+      color: #555;
+      font-weight: 100;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    [dir="ltr"] .calc-description {
+      font-size: 15px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    .calc-description2 {
+      font-size: 25px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    [dir="ltr"] .calc-description2 {
+      font-size: 24px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .sea-style img,
+    .track-style img,
+    .air-style img {
+      /* width: 100%; */
+      height: 162px;
+      max-width: 132px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  
+    .image-container {
+      justify-content: center;
+    }
+  
+    .sea-content,
+    .track-content,
+    .air-content {
+      max-width: 56%;
+      padding: 30px 0px 20px;
+      text-align: right;
+      margin-right: -13px;
+    }
+
+    [dir="ltr"]   
+    .sea-content,
+    .track-content,
+    .air-content {
+      max-width: 56%;
+      padding: 30px 0px 20px;
+      text-align: left;
+      margin-right: -13px;
+    }
+    .TruckTypes-content {
+      max-width: 56%;
+      padding: 30px 0px 20px;
+      text-align: right;
+      margin-right: -13px;
+    }
+    .title-hero-tool {
+      font-size: 17px;
+    }
+  
+    .sea-description,
+    .track-description,
+    .air-description {
+      font-size: 10px;
+    }
+  
+    .sea-description2,
+    .track-description2,
+    .air-description2 {
+      font-size: 10px;
+    }
+  
+    /* .cta-button {
+      width: 80%;
+      font-size: 20px;
+      padding: 10px;
+    } */
+  
+  
+  /* Start Sea Section  450 */
+    .sea-description{
+      font-size: 10px;
+    }
+  
+    .sea-description2 {
+      font-size: 10px;
+    }
+
+  .sea-style img {
+    max-width: 150px;
+    height: 170px;
+  }
+  [dir="ltr"] .sea-style img {
+    max-width: 150px;
+    height: 170px;
+  }
+  [dir="ltr"]  .sea-content {
+    max-width: 72%;
+  }
+  
+  
+   .sea-description {
+    font-size: 12px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+   .sea-description2 {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  
+  [dir="ltr"] .sea-description {
+    font-size: 12px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  [dir="ltr"] .sea-description2 {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .sea-content{
+    max-width: 68%;
+    padding: 30px 5px 20px;
+    text-align: right;
+    margin-right: -12px;
+  }
+  
+  [dir="ltr"] .sea-content{
+    max-width: 66%;
+    padding: 30px 5px 20px;
+    text-align: left;
+    margin-right: -12px;
+  }
+  /* End Sea Section 450 */
+  
+  /* Start Land Section */
+  
+  .track-style img {
+    max-width: 155px;
+    height: 160px;
+  }
+  [dir="ltr"] .track-style img {
+    max-width: 150px;
+    height: 170px;
+  }
+  [dir="ltr"]  .track-content {
+    max-width: 72%;
+  }
+  
+  
+   .track-description {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+   .track-description2 {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  
+  [dir="ltr"] .track-description {
+    font-size: 12px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  [dir="ltr"] .track-description2 {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .track-content{
+    max-width: 59%;
+    padding: 30px 5px 20px;
+    text-align: right;
+    margin-right: -12px;
+  }
+  
+  [dir="ltr"] .track-content{
+    max-width: 58%;
+    padding: 30px 5px 20px;
+    text-align: left;
+    margin-right: -12px;
+  }
+  
+  /* End Land Section */
+  
+  
+  .land-Tool-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 25px 25px 15px;
+    flex-wrap: wrap;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 35px;
+  }
+  
+  /* Start AirPort Section 450 */
+  
+  .air-style img {
+    max-width: 155px;
+    height: 170px;
+  }
+  [dir="ltr"] .air-style img {
+    max-width: 150px;
+    height: 170px;
+  }
+  [dir="ltr"]  .air-content {
+    max-width: 72%;
+  }
+  
+  
+   .air-description {
+    font-size: 15px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+   .air-description2 {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  
+  [dir="ltr"] .air-description {
+    font-size: 12px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  [dir="ltr"] .air-description2 {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .air-content{
+    max-width: 61%;
+    padding: 30px 5px 20px;
+    text-align: right;
+    margin-right: -12px;
+  }
+  
+  [dir="ltr"] .air-content{
+    max-width: 68%;
+    padding: 30px 5px 20px;
+    text-align: left;
+    margin-right: -12px;
+  }
+  
+  
+  
+  /* End Airport Section */
+      /* start Hero Container types Section */
+
+      .containerSea-content {
+        max-width: 59%;
+        padding: 30px 0px 20px;
+        text-align: right;
+        margin-right: -13px;
+    }
+    .containerSea-description {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+   }
+   
+   .containerSea-description2 {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem
+   }
+   .containerSea-style img {
+          max-width: 155px;
+        height: 130px;
+        margin-bottom: -60px;
+   }
+
+
+    
+
+     [dir="ltr"] .containerSea-style img {
+           margin-top: 25%;
+        max-width: 160px;
+        height: 135px;
+    }
+
+
+       
+    /* start container: */
+    [dir="ltr"] .containerSea-content {
+    max-width: 54%;
+    text-align: left;
+}
+    [dir="ltr"] .containerSea-description {
+      font-size: 12px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+        .containerSea-title-hero-tool {
+      font-size: 16px;
+    }
+       /* end Hero Comtainer */
+  
+  }
+
+  @media (max-width: 400px) {
+
+   .tracking-content{
+      max-width: 56%;
+      padding: 30px 0px 20px;
+      /* text-align: left; */
+      margin-right: -13px;
+    
+    }
+
+     [dir="ltr"]  .tracking-content{
+      max-width: 56%;
+      padding: 30px 0px 20px;
+      text-align: left;
+      margin-right: -13px;
+    
+    }
+  .tracking-style img {
+    margin-top: 20%;
+    max-width: 140px;
+    height: 125px;
+  }
+  
+  [dir="ltr"] .tracking-content {
+    max-width: 56%;
+}
+    [dir="ltr"] .tracking-description {
+      font-size: 12px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    [dir="ltr"] .tracking-description2 {
+      font-size: 12px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      max-width: 860px;
+    }
+
+  [dir="ltr"] .tracking-style img {
+    margin-top: 20%;
+    max-width: 140px;
+    height: 135px;
+  }
+
+ .calc-content {
+  font-size: 30px;
+  max-width: 50%;
+  padding-right: 2px;
+  margin-top: 24%;
+  padding-bottom: 17%;
+    /* margin-top: 35px; */
+  }
+   
+    [dir="ltr"]  .calc-content {
+      max-width: 54%;
+    }
+  .calc-style img {
+    max-width: 150px;
+    height: 150px;
+    margin-top: 95px;
+  }
+  [dir="ltr"] .calc-style img{
+   max-width: 145px;
+    height: 185px;
+    margin-top: 95px;
+          transform: scaleX(-1);
+
+  }
+  .title-hero-tool {
+    font-size: 17px;
+  }
+
+  .calc-description {
+    font-size: 14px;
+    color: #555;
+    font-weight: 100;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  [dir="ltr"] .calc-description {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .calc-description2 {
+    font-size: 25px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  [dir="ltr"] .calc-description2 {
+    font-size: 24px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  
+
+     .containerSea-content{
+         max-width: 55%;
+      padding-right: 2px;
+  margin-top: 3%;
+  /* padding-bottom: 17%; */
+  padding: 0px;
+    }
+
+     [dir="ltr"] .containerSea-style img {
+
+        margin-top: 19%;
+        max-width: 150px;
+        height: 127px;
+    }
+    
+
+
+       
+    /* start container: */
+    [dir="ltr"] .containerSea-content {
+    max-width: 53%;
+    text-align: left;
+}
+    [dir="ltr"] .containerSea-description {
+      font-size: 12px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+        .containerSea-title-hero-tool {
+      font-size: 14px;
+    }
+        [dir="ltr"] .TruckTypes-content {
+        max-width: 51%;
+        text-align: left;
+    }
+  }
+  @media (max-width: 390px) {
+
+    
+
+  /* start TruckTypes */
+  .TruckTypes-content {
+    max-width: 54%;
+    padding: 30px 0px 20px;
+    text-align: right;
+    margin-right: -13px;
+  }
+   
+ 
+     .TruckTypes-style img {
+        max-width: 154px;
+        height: 80px;
+        margin-top: 100px;
+    }
+  [dir="ltr"] .TruckTypes-style img{
+ max-width: 155px;
+  height: 75px;
+    margin-top: 75px;
+  }
+  .title-hero-tool {
+    font-size: 17px;
+  }
+.containerSea-title-hero-tool {
+        font-size: 14px;
+    }
+  .TruckTypes-description {
+    font-size: 14px;
+    color: #555;
+    font-weight: 100;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  [dir="ltr"] .TruckTypes-description {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .TruckTypes-description2 {
+    font-size: 25px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  [dir="ltr"] .TruckTypes-description2 {
+    font-size: 24px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+
+  /* End TruckTypes */
+    /* start Hero Container types Section */
+
+    .containerSea-content {
+     max-width: 56%;
+     padding: 30px 0px 20px;
+     text-align: right;
+     margin-right: -13px;
+ }
+ .containerSea-description {
+   font-size: 13px;
+   color: #555;
+   line-height: 1.6;
+   margin-bottom: 1rem;
+}
+
+.containerSea-description2 {
+ font-size: 13px;
+ color: #555;
+ line-height: 1.6;
+ margin-bottom: 1rem
+}
+.containerSea-style img {
+ max-width: 145px;
+ height: 130px;
+ margin-bottom: -60px;
+}
+    /* end Hero Comtainer */
+   .calc-style img {
+     max-width: 136px;
+     height: 190px;
+     margin-top: 95px;
+   }
+
+   .title-hero-tool {
+     font-size: 17px;
+   }
+   .containerSea-title-hero-tool {
+      font-size: 15px;
+    } 
+    .TruckTypes-title-hero-tool {
+      font-size: 16px;
+    } 
+   .calc-description {
+     font-size: 14px;
+     color: #555;
+     font-weight: 100;
+     line-height: 1.6;
+     margin-bottom: 1rem;
+   }
+ 
+
+ 
+   .calc-description2 {
+     font-size: 25px;
+     color: #555;
+     line-height: 1.6;
+     margin-bottom: 1rem;
+   }
+
+   [dir="ltr"] .calc-description2 {
+     font-size: 24px;
+     color: #555;
+     line-height: 1.6;
+     margin-bottom: 1rem;
+   }
+
+   
+
+    [dir="ltr"] .containerSea-description2 {
+      font-size: 12px;
+      color: #555;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      max-width: 860px;
+    }
+
+ }
+
+ 
+  
+
+  @media (max-width: 350px) {
+ 
+ .calc-content {
+  max-width: 50%;
+  padding-right: 2px;
+  margin-top: 24%;
+  padding-bottom: 17%;
+    /* margin-top: 35px; */
+  }
+   
+    [dir="ltr"]  .calc-content {
+      max-width: 52%;
+    }
+
+    .containerSea-content{
+         max-width: 57%;
+      padding-right: 2px;
+  margin-top: 3%;
+  /* padding-bottom: 17%; */
+  padding: 0px;
+    }
+       
+    /* start container: */
+    [dir="ltr"] .containerSea-content {
+        max-width: 56%;
+        text-align: left;
+    }
+    [dir="ltr"] .containerSea-description {
+      font-size: 12px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    [dir="ltr"] .containerSea-description2 {
+      font-size: 12px;
+      color: #555;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      max-width: 860px;
+    }
+
+    [dir="ltr"] .containerSea-style img {
+          margin-top: 0%;
+        max-width: 145px;
+        height: 125px;
+
+  }
+     /* end container; */
+        .tracking-content{
+      max-width: 55%;
+      padding: 30px 0px 20px;
+      /* text-align: left; */
+      margin-right: -13px;
+    
+    }
+
+     [dir="ltr"]  .tracking-content{
+      max-width: 55%;
+      padding: 30px 0px 20px;
+      text-align: left;
+      margin-right: -13px;
+    
+    }
+[dir="ltr"] .tracking-content {
+    max-width: 54%;
+}
+    [dir="ltr"] .tracking-description {
+      font-size: 12px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    [dir="ltr"] .tracking-description2 {
+      font-size: 12px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      max-width: 860px;
+    }
+
+    [dir="ltr"] .tracking-style img {
+    margin-top: 20%;
+    max-width: 120px;
+    height: 110px;
+  }
+    /* start TruckTypes */
+    .TruckTypes-content {
+      max-width: 51%;
+      padding: 30px 0px 20px;
+      text-align: right;
+      margin-right: -13px;
+    }
+     
+      [dir="ltr"]  .TruckTypes-content {
+        max-width: 52%;
+        text-align: left;
+            }
+    .TruckTypes-style img {
+        max-width: 132px;
+        height: 70px;
+        margin-top: 85px;
+    
+    }
+    [dir="ltr"] .TruckTypes-style img{
+      max-width: 130px;
+      height: 65px;
+    }
+    .title-hero-tool {
+      font-size: 17px;
+    }
+  
+    .TruckTypes-description {
+      font-size: 14px;
+      color: #555;
+      font-weight: 100;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    [dir="ltr"] .TruckTypes-description {
+      font-size: 14px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    .TruckTypes-description2 {
+      font-size: 25px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    [dir="ltr"] .TruckTypes-description2 {
+      font-size: 24px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+
+
+    /* end TruckTypes */
+
+     /* start Hero Container types Section */
+
+
+  .containerSea-description {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.containerSea-description2 {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem
+}
+.containerSea-style img {
+        max-width: 136px;
+        height: 120px;
+        margin-top: 0px;
+}
+     /* end Hero Comtainer */
+    .calc-style img {
+      max-width: 136px;
+      height: 175px;
+      margin-top: 95px;
+    }
+    [dir="ltr"] .calc-style img{
+     max-width: 136px;
+      height: 170px;
+      margin-top: 95px;
+      transform: scaleX(-1);
+
+    }
+    .title-hero-tool {
+      font-size: 16px;
+    }
+    .containerSea-title-hero-tool {
+      font-size: 14px;
+    }
+  
+
+    /* start calc content */
+
+ [dir="ltr"] .title-hero-tool{
+font-size: 14px;
+}   
+    .calc-description {
+      font-size: 14px;
+      color: #555;
+      font-weight: 100;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    [dir="ltr"] .calc-description {
+      font-size: 13px;
+      color: #555;
+      font-weight: bold;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  
+    .calc-description2 {
+      font-size: 25px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    [dir="ltr"] .calc-description2 {
+      font-size: 24px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    /* end calc content */
+
+  }

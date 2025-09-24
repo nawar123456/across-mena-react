@@ -1,0 +1,25 @@
+.check-details{
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: block;
+    font-size: 20px;
+}
+
+.checkbox-type{
+    height: 20px ;
+    width: 20px ;
+    accent-color: #ffc400;
+    }
+    
+    .checkbox-type:checked:after {
+        color:white;
+      }
+    
+    
+
+@media (max-width : 1150px) {
+    
+    .check-details{
+        font-size: 17px;
+    }
+}

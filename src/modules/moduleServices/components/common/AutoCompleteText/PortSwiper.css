@@ -1,0 +1,114 @@
+.port-tabs-container {
+  position: relative;
+  padding: 16px 0;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.tabs-slider {
+  padding: 0 16px;
+}
+
+.port-tab {
+  padding: 12px 8px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #666;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.port-tab.active {
+  color: #0D3453;
+  font-weight: 600;
+  width: 60% !important;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 65px;
+  color: #666;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0 8px;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+/* Underline Wrapper */
+.tab-underline-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  z-index: 1;
+}
+
+/* الخط المنقط — ثابت */
+.tab-underline-dashed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: repeating-linear-gradient(
+    to right,
+    #ccc,
+    #ccc 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+/* الخط الأصفر — يظهر فقط تحت التبويب النشط */
+.tab-underline-yellow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:90%;
+  height: 4px;
+  background: #fcc400;
+  border-radius: 2px;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.tab-underline-yellow.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tabs-slider .slick-list {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  overflow: hidden; /* تأكّد أن overflow لا يضيف محتوى خارج الحد المرسوم */
+}
+
+.tabs-slider .slick-slide {
+  margin: 0 !important; 
+  padding: 0 !important;
+}
+
+.port-tabs-container .tabs-slider {
+  /* قد تحتاج أن تقلّل padding أو margin هنا */
+  /* margin:0px -700px 0px 0px  */
+}
+.port-tabs-container {
+  padding-right: 0 !important;
+}

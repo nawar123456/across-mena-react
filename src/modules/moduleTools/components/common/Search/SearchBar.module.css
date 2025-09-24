@@ -1,0 +1,207 @@
+.form-serach{
+    border-radius: 25px;
+    position: relative;
+    width: 100%;
+    /* margin-top: 70px; */
+    border-radius: 20px;
+    display: flex;
+    /* border: 2px solid;
+    border-color: transparent; */
+}
+
+
+
+.form-input:focus , .form-input:focus ~ .btn-accordain  , .form-input:focus + .form-btn svg{
+    fill:#fcc400 ;
+    border-color: #fcc400; /* Change the border color when focused */
+
+}
+
+
+
+.form-input{
+    /* width: 100%;
+    height: 65px;
+    display: block;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 5px 0;
+    padding-right: 80px;
+    background-color: #F3F2F2;
+    color: #8F8F8F;
+    border: none;
+    box-sizing: border-box; */
+
+    height: 62px;
+    width: 100%;
+    outline: none;
+    padding: var(--padding-search-input-accordion-rtl);
+    border-radius: var(--border-raduis--search-input-rtl);
+    font-size: 19px;
+    /* transition: all 0.3s ease; */
+    font-weight: 700;
+    overflow: hidden;
+    flex-grow:2;
+    border: 1px solid #b5b5b58c;
+}
+
+/*
+    border-radius: 0px 20px 20px 0px;
+    padding: 10px 52px 10px 10px;
+*/
+
+.form-input::placeholder{
+    /* padding-right: 80px; */
+    color: rgba(114, 114, 114, 0.5);
+}
+
+/* #b5b5b58c Border of any inputs */
+
+
+.form-btn{
+    position: absolute;
+    top: 6px;
+    inset-inline-start: 3px;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 24px;
+}
+
+
+
+.icon{
+    fill: #707070 ;
+    transition: all 0.4s ;
+    height: 60%;
+
+}
+
+.icon:hover{
+    fill: #fcc400;
+
+}
+/* .icon{
+    stroke: #707070 ;
+    transition: all 0.4s ;
+    width: 50px;
+    height: 60px;
+
+
+}
+
+.icon:hover{
+    stroke: red ;
+
+} */
+
+.btn-accordain{
+    /* background:linear-gradient(#fffdfd, rgba(0,0,0,0), #d4d4d4); */
+    background-color: #fcc400;
+    color:#fff;
+    border-radius: var(--border-raduis--search-btn-rtl);
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 2px;
+    font-size: 21px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-inline-start: none;
+    /* padding-top: 1.5%;
+    padding-right: 1px;
+    padding-left: 1px; */
+    word-wrap: break-word;
+    transition: all 0.4s ;
+}
+
+.btn-accordain:hover{
+    color: black;
+}
+
+  .btn-title{
+    padding-top: 3px ;
+  }
+
+  .btn-icon{
+    width: 22px ;
+    height: 22px;
+  }
+
+@media (max-width: 768px) {
+
+    .icon{
+        height: 55%;
+
+    }
+
+    .form-input{
+        font-size: 14px;
+        /* height: 45px; */
+
+    }
+    .btn-accordain{
+        width: 20%;
+        }
+}
+
+@media (max-width: 660px) {
+
+    .form-serach{
+        margin-top: 40px;
+        height: 40px;
+    }
+
+    .form-btn{
+
+        right: 0px;
+        width: 50px;
+        /* font-size: 24px; */
+    }
+
+    .form-input{
+        /* font-size: 73%; */
+        font-weight: bold;
+        padding-right: 45px;
+        height: 40px;
+    }
+
+    .btn-accordain{
+        font-size: 15px;
+        padding-bottom: 3px;
+
+
+    }
+
+
+
+}
+
+
+@media (max-width: 590px) {
+
+    .form-btn .icon{
+        height: 62%;
+
+    }
+
+    .form-input{
+        font-size: 16px;
+        /* height: 30px; */
+        /* padding-right: 55px;*/
+    }
+
+    .form-input::placeholder{
+        font-size: 14px;
+    }
+
+    .btn-accordain{
+    width: 40%;
+    }
+
+}
