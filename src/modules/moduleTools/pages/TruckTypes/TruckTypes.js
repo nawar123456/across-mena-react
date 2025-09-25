@@ -1,4 +1,4 @@
-import TruckType from '../../../../assets/images/TruckTypes.png';
+import TruckType from '../../../../assets/images/TruckTypes.webp';
 import { useTranslation } from 'react-i18next';
 import HeroTool from '../../../moduleServices/components/common/Tools/HeroTool';
 import './TruckTypes.css'

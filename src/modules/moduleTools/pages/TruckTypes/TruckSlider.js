@@ -7,19 +7,19 @@ import Download from '../../../../assets/images/download-slider-yel.png'
 
 import Truck1 from '../../../../assets/images/TruckTypes.png'
 import Share from '../../../../assets/images/share-slider-yel.png'
-import t1 from '../../../../assets/images/satha.png'
-import t2 from '../../../../assets/images/refreg-01.png'
-import t3 from '../../../../assets/images/saineha.png'
-import t4 from '../../../../assets/images/tek-open.png'
-import t5 from '../../../../assets/images/katera-maktora.png'
-import t6 from '../../../../assets/images/tek-close.png'
-import t7 from '../../../../assets/images/close-contaiber.png'
-import t8 from '../../../../assets/images/loader-moashi.png'
-import t9 from '../../../../assets/images/loader-01.png'
-import t10 from '../../../../assets/images/kalab-01.png'
-import t11 from '../../../../assets/images/kalab-katera-maktora.png'
-import t12 from '../../../../assets/images/hamela-cars.png'
-import t13 from '../../../../assets/images/oil-truck.png'
+import t1 from '../../../../assets/images/satha.webp'
+import t2 from '../../../../assets/images/refreg-01.webp'
+import t3 from '../../../../assets/images/saineha.webp'
+import t4 from '../../../../assets/images/tek-open.webp'
+import t5 from '../../../../assets/images/katera-maktora.webp'
+import t6 from '../../../../assets/images/tek-close.webp'
+import t7 from '../../../../assets/images/close-contaiber.webp'
+import t8 from '../../../../assets/images/loader-moashi.webp'
+import t9 from '../../../../assets/images/loader-01.webp'
+import t10 from '../../../../assets/images/kalab-01.webp'
+import t11 from '../../../../assets/images/kalab-katera-maktora.webp'
+import t12 from '../../../../assets/images/hamela-cars.webp'
+import t13 from '../../../../assets/images/oil-truck.webp'
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 const TruckSlider = () => {
@@ -252,7 +252,7 @@ const downloadTruckPDF = async () => {
            <Slider {...settings} ref={(slider) => (sliderRef = slider)}>
         {trucks.map((truck, index) => (
           <div key={index} className="truck-slide">
-            <img src={truck.image} alt={truck.name} className="truck-img" />
+            <img src={truck.image} alt={truck.name} className="truck-img" loading="lazy"  />
             <h3 className="truck-name">{truck.name}</h3>
          <div className="truck-info">
   <table className="specs-table">

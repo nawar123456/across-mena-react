@@ -1,5 +1,5 @@
 import LandHero from '../../../../assets/images/land-hero.webp';
-import Track from '../../../../assets/images/LandGPT.png';
+import Track from '../../../../assets/images/LandGPT.webp';
 import DefaultIcon from '../../../../assets/images/defaultIcon.png';
 import DefaultIcon2 from '../../../../assets/images/defaultIcon2.jpg';
 import DefaultIcon3 from '../../../../assets/images/defaultIcon3.jpg';

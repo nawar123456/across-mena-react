@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import imageTest from '../../../../assets/images/HeroHome.png';
+import imageTest from '../../../../assets/images/HeroHome.webp';
 import styles from './Hero.module.css';
 import Part from './Part';
 import { useTranslation } from 'react-i18next';

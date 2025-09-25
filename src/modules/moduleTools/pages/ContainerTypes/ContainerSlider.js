@@ -4,15 +4,15 @@ import "./ContainerSlider.css";
 import Download from '../../../../assets/images/download-slider-yel.png'
 import Share from '../../../../assets/images/share-slider-yel.png'
 import { useTranslation } from 'react-i18next';
-import t1 from '../../../../assets/images/20ft.png'
-import t2 from '../../../../assets/images/40ft.png'
-import t3 from '../../../../assets/images/20ft open top.png'
-import t4 from '../../../../assets/images/40ft open top.png'
-import t5 from '../../../../assets/images/20flat.png'
-import t6 from '../../../../assets/images/flat.png'
-import t7 from '../../../../assets/images/20ft freeser.png'
-import t8 from '../../../../assets/images/40ft freeser.png'
-import t9 from '../../../../assets/images/40ft hq.png'
+import t1 from '../../../../assets/images/20ft.webp'
+import t2 from '../../../../assets/images/40ft.webp'
+import t3 from '../../../../assets/images/20ft open top.webp'
+import t4 from '../../../../assets/images/40ft open top.webp'
+import t5 from '../../../../assets/images/20flat.webp'
+import t6 from '../../../../assets/images/flat.webp'
+import t7 from '../../../../assets/images/20ft freeser.webp'
+import t8 from '../../../../assets/images/40ft freeser.webp'
+import t9 from '../../../../assets/images/40ft hq.webp'
 const ContainerSlider = () => {
     const {t} = useTranslation();
     const tabRefs = useRef([]);
@@ -235,7 +235,7 @@ const ContainerSlider = () => {
       <Slider {...settings} ref={(slider) => (sliderRef = slider)}>
         {trucks.map((truck, index) => (
           <div key={index} className="truck-slide">
-            <img src={truck.image} alt={truck.name} className="truck-img" />
+            <img src={truck.image} alt={truck.name} className="truck-img" loading="lazy"  />
             <h3 className="truck-name">{truck.name}</h3>
          <div className="truck-info">
   <table className="specs-table">

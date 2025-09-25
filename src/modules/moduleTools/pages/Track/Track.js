@@ -9,7 +9,7 @@ import { fetchTrackInfo } from '../../store/trackTab/track.action';
 import { useDispatch, useSelector } from 'react-redux';
 import { Helmet } from 'react-helmet-async';
 import noResultsIcon from '../../../../assets/images/noresults.png';
-import Truck from '../../../../assets/images/TruckShimpnet.png';
+import Truck from '../../../../assets/images/TruckShimpnet.webp';
 import Box from '../../../../assets/images/yBox.svg';
 import Ship from '../../../../assets/images/yShip.svg';
 import Map from '../../../../assets/images/mapRoad.svg';

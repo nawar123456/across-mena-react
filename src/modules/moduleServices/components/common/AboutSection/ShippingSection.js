@@ -89,7 +89,7 @@ const ShippingSection = ({ title, parag1, parag2, image, onScrollClick }) => {
   image?.includes('Customs Clearance') ? 'customs-style' : 
   image?.includes('Tracking') ? 'tracking-style' : 
   ''}`}>
-  <img src={image} alt="Shipping" />
+  <img src={image} alt="Shipping" loading="lazy"/>
 </div>
 
       </section>
@@ -106,3 +106,4 @@ const ShippingSection = ({ title, parag1, parag2, image, onScrollClick }) => {
 };
 
 export default ShippingSection;
+
