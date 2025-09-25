@@ -8,7 +8,7 @@ import DescImag from '../../../../assets/icons/desc.png';
 import PlaneImag from '../../../../assets/icons/plane.svg';
 import TruckImag from '../../../../assets/icons/truck.svg';
 // import TrackShipmentImage from '../../../../assets/icons/TrackShipmentImage.png';
-import TrackShipmentImage from '../../../../assets/images/TruckShimpnet.png';
+import TrackShipmentImage from '../../../../assets/images/TruckShimpnet.webp';
 
 import AccordionImage from '../../../../assets/images/customs.webp';
 import AppointementImage from '../../../../assets/images/appointement_fast.webp';
