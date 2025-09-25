@@ -25,7 +25,7 @@ const settings = {
 
   return (
     <div className="port-tabs-container" dir="rtl">
-      <button className="arrow right" onClick={nextSlide}>‹</button>
+      <button className="port-swiper-arrow right" onClick={nextSlide}>‹</button>
 
       <Slider {...settings} ref={sliderRef} className="tabs-slider">
         {ports.map((port, index) => (
@@ -45,7 +45,7 @@ const settings = {
         ))}
       </Slider>
 
-      <button className="arrow left" onClick={prevSlide}>›</button>
+      <button className="port-swiper-arrow left" onClick={prevSlide}>›</button>
 
       {/* الخط المنقط — ثابت */}
       <div className="tab-underline-wrapper">

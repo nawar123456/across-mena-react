@@ -26,8 +26,7 @@
   font-weight: 600;
   width: 60% !important;
 }
-
-.arrow {
+.port-swiper-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -40,11 +39,11 @@
   padding: 0 8px;
 }
 
-.arrow.right {
+.port-swiper-arrow.right {
   right: 0;
 }
 
-.arrow.left {
+.port-swiper-arrow.left {
   left: 0;
 }
 
