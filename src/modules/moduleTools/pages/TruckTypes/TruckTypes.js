@@ -4,9 +4,15 @@ import HeroTool from '../../../moduleServices/components/common/Tools/HeroTool';
 import './TruckTypes.css'
 import TruckSlider from './TruckSlider';
 import { useEffect,useState } from 'react';
+import SEO from '../../../../components/SEO/SEO';
+import { getSEOData } from '../../../../const/seoTitles';
 const TruckTypes = () => {
 const {t,i18n} = useTranslation();
       const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
+      
+      // Get SEO data based on current language
+      const currentLang = i18n.language || 'ar';
+      const seoData = getSEOData('truckTypes', currentLang);
      useEffect(() => {
         const handleResize = () => {
           setIsMobile(window.innerWidth <= 500);
@@ -25,6 +31,15 @@ const {t,i18n} = useTranslation();
 return(
 
 <>
+<SEO 
+  title={seoData.title}
+  description={seoData.description}
+  keywords={seoData.keywords}
+  image="https://acrossmena.net/images/og-truck-types.jpg"
+  url="https://acrossmena.net/tools/truck-types"
+  type="tool"
+  lang={currentLang}
+/>
 <div className='home-truck-types'>
 <HeroTool 
 image={TruckType}

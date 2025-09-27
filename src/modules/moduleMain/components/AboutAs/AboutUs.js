@@ -3,11 +3,27 @@ import { FaRocket } from 'react-icons/fa'; // Rocket icon
 import './AboutUs.css';
 import Rocket from '../../../../assets/icons/rocket-aboutUs.svg'
 import { useTranslation } from 'react-i18next';
+import SEO from '../../../../components/SEO/SEO';
+import { getSEOData } from '../../../../const/seoTitles';
 
 const AboutUs = () => {
       const { t, i18n } = useTranslation();
   
+      // Get SEO data based on current language
+      const currentLang = i18n.language || 'ar';
+      const seoData = getSEOData('aboutUs', currentLang);
+
   return (
+    <>
+    <SEO 
+      title={seoData.title}
+      description={seoData.description}
+      keywords={seoData.keywords}
+      image="https://acrossmena.net/images/og-about-us.jpg"
+      url="https://acrossmena.net/about-us"
+      type="website"
+      lang={currentLang}
+    />
     <div className="about-us-container">
       <h1 className="about-us-title">
         <span className='highlight' >
@@ -80,6 +96,7 @@ const AboutUs = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

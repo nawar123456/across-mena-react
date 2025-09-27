@@ -7,7 +7,8 @@ import TrackTabelDetails from '../../components/trackPage/TrackTabelDetails/Trac
 import { useTranslation } from 'react-i18next';
 import { fetchTrackInfo } from '../../store/trackTab/track.action';
 import { useDispatch, useSelector } from 'react-redux';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../../components/SEO/SEO';
+import { getSEOData } from '../../../../const/seoTitles';
 import noResultsIcon from '../../../../assets/images/noresults.png';
 import Truck from '../../../../assets/images/TruckShimpnet.webp';
 import Box from '../../../../assets/images/yBox.svg';
@@ -28,6 +29,11 @@ import HeroTool from '../../../moduleServices/components/common/Tools/HeroTool';
 const Track = () => {
 
     const dispatch = useDispatch();
+    const {t, i18n} = useTranslation();
+    
+    // Get SEO data based on current language
+    const currentLang = i18n.language || 'ar';
+    const seoData = getSEOData('track', currentLang);
     const {loadingTrack,trackInfo} = useSelector((state) => state.trackSlice)
     const inputValue = useRef();
     
@@ -41,7 +47,7 @@ const Track = () => {
     const [activeContainerNo, setActiveContainerNo] = useState(null);
     const [activeContainerNoAuto, setActiveContainerNoAuto] = useState(0);
     // const [inputValue,setInputValue] = useState("");
-    const {t,i18n} = useTranslation();
+    // const {t,i18n} = useTranslation();
     const [initialTrackContainer,setInitialTrackContainer]= useState({});
     const [trackingPath , setTrackingPath] = useState([]);
 
@@ -550,19 +556,15 @@ const findObjectName = (array , cureentDate) => {
 
     return (
     <>
-    <Helmet>
-    <meta property="og:type" content="tool"></meta>
-    <meta property="og:url" content="https://acrossmena.net/track"></meta>
-    <meta
-    name="description"
-    content="أداة تعقب الشحنة هي برنامج أو خدمة عبر الإنترنت تتيح للمستخدمين إدخال معلومات التتبع المرتبطة بشحنتهم ومن ثم توفير تحديثات فورية حول حالة وموقع الطرد أثناء تقدمه خلال عملية الشحن. يمكن أن تشمل هذه المعلومات متى تم استلام الطرد، وموقعه الحالي، وتاريخ التسليم المتوقع، وأي استثناءات أو تأخيرات تسليم ذات الصلة.      " 
+    <SEO 
+      title={seoData.title}
+      description={seoData.description}
+      keywords={seoData.keywords}
+      image="https://acrossmena.net/images/og-track.jpg"
+      url="https://acrossmena.net/track"
+      type="tool"
+      lang={currentLang}
     />
-    <meta property="og:site_name" content="Across MENA"></meta>
-    <meta property="article:publisher" content="https://www.facebook.com/acrossmena"></meta>
-    <meta name="keywords" content=" تتبع الشحنة , تعقب الشحنة , acrossmena , تواصل معنا  , شركة لوجيستية , خدمات , أدوات , تعرفة جمركية , شحن , شحن بري جوي بحري  ,  أداة تعقب الشحنة , track , " ></meta>
-
-    <title>{t('title.titleTrack')} - Across MENA</title>
-    </Helmet>
     <main className='track'>
 
 

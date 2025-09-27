@@ -9,11 +9,17 @@ import ContainerSlider from './ContainerSlider';
 import HeroTool from '../../../moduleServices/components/common/Tools/HeroTool';
 import './ContainerSlider.css'
 import { useEffect,useState } from 'react';
+import SEO from '../../../../components/SEO/SEO';
+import { getSEOData } from '../../../../const/seoTitles';
 const ContainerTypes = () => {
 const {t,i18n} = useTranslation();
     
   const containerImage = i18n.language === 'ar' ? ContainerTypeAR : ContainerTypeEN;
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
+  
+  // Get SEO data based on current language
+  const currentLang = i18n.language || 'ar';
+  const seoData = getSEOData('containerTypes', currentLang);
  useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 500);
@@ -32,6 +38,15 @@ const {t,i18n} = useTranslation();
     : t('containerTypePage.title');
 return(
 <>
+<SEO 
+  title={seoData.title}
+  description={seoData.description}
+  keywords={seoData.keywords}
+  image="https://acrossmena.net/images/og-container-types.jpg"
+  url="https://acrossmena.net/tools/container-types"
+  type="tool"
+  lang={currentLang}
+/>
 <div className='home-truck-types'>
 <HeroTool 
 image={containerImage}

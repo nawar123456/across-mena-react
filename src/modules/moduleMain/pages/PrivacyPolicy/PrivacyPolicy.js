@@ -1,8 +1,27 @@
 import React from 'react';
 import './PrivacyPolicy.css';
+import SEO from '../../../../components/SEO/SEO';
+import { getSEOData } from '../../../../const/seoTitles';
+import { useTranslation } from 'react-i18next';
 
 const PrivacyPolicy = () => {
+  const { i18n } = useTranslation();
+  
+  // Get SEO data based on current language
+  const currentLang = i18n.language || 'ar';
+  const seoData = getSEOData('privacyPolicy', currentLang);
+
   return (
+    <>
+    <SEO 
+      title={seoData.title}
+      description={seoData.description}
+      keywords={seoData.keywords}
+      image="https://acrossmena.net/images/og-privacy-policy.jpg"
+      url="https://acrossmena.net/privacy-policy"
+      type="website"
+      lang={currentLang}
+    />
     <div className="privacy-container" dir="rtl">
       <span className='main-header'>سياسة الخصوصية</span>
       <p className='sub-main-header'>
@@ -179,7 +198,8 @@ const PrivacyPolicy = () => {
         إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه، يمكنك الاتصال بنا عبر البريد الإلكتروني: 
         <a href="mailto:info@acrossmena.com"> info@acrossmena.com</a>
       </p>
-    </div>
+</div>
+</>
   );
 };
 

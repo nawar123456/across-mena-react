@@ -12,13 +12,14 @@ import ShippingSection from '../../components/common/AboutSection/ShippingSectio
 
 import ServiceSection from '../../components/common/ServiceSection/ServiceSection';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import { Fragment, useRef } from 'react';
+import SEO from '../../../../components/SEO/SEO';
+import { getSEOData } from '../../../../const/seoTitles';
 // import useScrollToTarget from '../../../../hooks/useScrollToTarget';
 
 const ServiceSea = () => {
 
-  const {t} = useTranslation();
+  const {t,i18n} = useTranslation();
 
 
   const text1 =t('section.detailsSeaShipping_1');
@@ -26,6 +27,10 @@ const ServiceSea = () => {
   const targetRef = useRef(null);
   // useScrollToTarget(targetRef);
   const scrollTargetRef = useRef(null);
+  
+  // Get SEO data based on current language
+  const currentLang = i18n.language || 'ar';
+  const seoData = getSEOData('seaShipping', currentLang);
 
   const handleScrollToBooking = () => {
     scrollTargetRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -40,19 +45,15 @@ const ServiceSea = () => {
 
     return (
     <>
-    <Helmet>
-
-    <meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="></meta>
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-    <meta property="og:type" content="article"/>
-    <meta property="og:description" content="نقدم حلول لوجستية للشحن&nbsp; البحري لكافة أنواع البضائع مع كبرى الخطوط الملاحية وبأفضل الأسعار لحجز الحاوية المناسبة بطريقة سهلة وبسيطة"/>
-    <meta property="og:url" content="https://acrossmena.net/services/sea-shipping"/>
-    <meta property="og:site_name" content="Across MENA"/>
-    <meta property="article:publisher" content="https://www.facebook.com/acrossmena"></meta>
-    <meta property="og:image" content="https://cdn.acrossmena.com/wp-content/uploads/2020/12/sea-feight.jpg"/>
-    <meta name="keywords" content="  الشحن , الشحن البحري , شحن بحري , شحن , طلب شحن بحري , حلول لوجيستية ,أدوات , خدمات" ></meta>
-    <title>{t('title.titleSeaShipping')} - Across MENA</title>
-    </Helmet>
+    <SEO 
+      title={seoData.title}
+      description={seoData.description}
+      keywords={seoData.keywords}
+      image="https://acrossmena.net/images/og-sea-shipping.jpg"
+      url="https://acrossmena.net/services/sea-shipping"
+      type="service"
+      lang={currentLang}
+    />
 
     <section className='pd-y'>
 

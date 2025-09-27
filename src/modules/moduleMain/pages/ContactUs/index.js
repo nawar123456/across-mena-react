@@ -1,32 +1,30 @@
 import { useTranslation } from 'react-i18next';
 import './ContactUs.css';
-import { Helmet } from 'react-helmet-async';
 import ContactHero from '../../../../assets/images/contactHero.webp';
 import { Heading, MainContainer, SecondaryHero } from '../../../../components';
 import ContactUsForm from '../../components/ContactUsPage/ContactUsForm/ContactUsForm';
+import SEO from '../../../../components/SEO/SEO';
+import { getSEOData } from '../../../../const/seoTitles';
 
 const ContactUs = () => {
 
-    const {t} = useTranslation();
-
-
+    const {t, i18n} = useTranslation();
+    
+    // Get SEO data based on current language
+    const currentLang = i18n.language || 'ar';
+    const seoData = getSEOData('contactUs', currentLang);
 
   return (
     <>
-    <Helmet>
-    <meta
-      name="description"
-      content="ابقى على تواصل مع فريق Across Mena ولا تتردد في الاتصال في أي وقت تريد لطرح اسئلتك واستفساراتك وسنسعد بالاستماع إليك وتقديم الحل الذي يناسب احتياجاتك."
+    <SEO 
+      title={seoData.title}
+      description={seoData.description}
+      keywords={seoData.keywords}
+      image="https://acrossmena.net/images/og-contact.jpg"
+      url="https://acrossmena.net/contact-us"
+      type="website"
+      lang={currentLang}
     />
-    <meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="></meta>
-    <meta property="og:type" content="article"></meta>
-    <meta property="og:url" content="https://acrossmena.net/contact-us"></meta>
-    <meta property="og:site_name" content="Across MENA"></meta>
-    <meta property="article:publisher" content="https://www.facebook.com/acrossmena"></meta>
-    <meta property="og:image" content="https://cdn.acrossmena.com/wp-content/uploads/2020/12/contact.jpg"></meta>
-    
-    <title>{t('labelNavbar.contact')}- Across MENA</title>
-    </Helmet>
     
     {/* <SecondaryHero title={t('labelNavbar.contact')}  image={ContactHero} /> */}
 

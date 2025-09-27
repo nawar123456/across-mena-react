@@ -1,5 +1,3 @@
-import { Helmet } from 'react-helmet-async';
-
 import './index.css';
 import ShipImag from '../../../../assets/icons/ship.svg';
 import HeroHome from '../../../../assets/images/HeroHome.png';
@@ -26,8 +24,10 @@ import { useDispatch } from 'react-redux';
 import {  savePortsObject } from '../../store/home/home.slice';
 import useQuery from '../../../../hooks/useQuery';
 import InstallApp from '../../../../components/PWAPrompt/InstallApp'
+import SEO from '../../../../components/SEO/SEO';
+import { getSEOData } from '../../../../const/seoTitles';
 const Home = () => {
-  const {t} = useTranslation();
+  const {t, i18n} = useTranslation();
 
   const title= t('title.titleMainPage');
   const subTitle =t('title.subtitlemain');
@@ -35,6 +35,10 @@ const Home = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const queryUrl =useQuery();
+  
+  // Get SEO data based on current language
+  const currentLang = i18n.language || 'ar';
+  const seoData = getSEOData('home', currentLang);
 
   const handleNavigate = ()=>{
 
@@ -59,11 +63,15 @@ const Home = () => {
 
   return (
     <>
-    <Helmet>
-<meta name="keywords" content="Across MENA, digital trade platform, HS codes MENA, tariff codes, customs regulations, customs tariff schedule, customs duty calculator, import duty calculator, types of shipping containers, container sizes, sea container types, types of trucks, truck sizes MENA, import export MENA, international shipping, shipping calculators, freight calculators, shipping cost estimator, cargo tracking platform, real-time shipment tracking, track your shipment, shipment tracking MENA, track container, logistics tracking tool, cross-border logistics, MENA trade compliance, customs clearance platform, trade digitalization, Middle East North Africa trade, harmonized system codes, MENA logistics solutions, sea freight MENA, land freight Middle East, air freight MENA, freight forwarding Middle East, export solutions, customs duties MENA, border clearance, electronic trade documents, paperless trade platform, supply chain MENA, trade tech solutions, freight matching app, port logistics, smart customs system, trade facilitation MENA, international trade Middle East, MENA customs automation, shipping agents MENA, logistics platform MENA, import export companies MENA, customs brokers Middle East, GCC trade solutions, Egypt HS codes, UAE trade platform, Saudi logistics, Iraq export services, Jordan import platform, Arab customs digitalization, MENA region supply chain, digital logistics Middle East, logistics startups MENA"></meta>
-    <meta name="description" content="Across MENA is a comprehensive digital trade platform for the Middle East and North Africa. Discover HS codes, customs tariffs, duty calculators, container and truck types, and real-time shipment tracking. Streamline your sea, land, and air freight operations with smart logistics tools for importers, exporters, and freight professionals."></meta>
-    <title>{t('title.mainpage')}- Across MENA</title>
-    </Helmet>
+    <SEO 
+      title={seoData.title}
+      description={seoData.description}
+      keywords={seoData.keywords}
+      image="https://acrossmena.net/images/og-home.jpg"
+      url="https://acrossmena.net/"
+      type="website"
+      lang={currentLang}
+    />
     <InstallApp></InstallApp>
 
       <Hero title={title} subTitle={subTitle} image={HeroHome}/>

@@ -15,6 +15,8 @@ import { AiOutlineClose } from 'react-icons/ai';
 import ShipmentDetailsCard from './ShipmentDetailsCard';
 import BookingWays from './BookingWays';
 import PriceCard from './PriceCard';
+import SEO from '../../../../components/SEO/SEO';
+import { getSEOData } from '../../../../const/seoTitles';
 
 const DetailsBook = () => {
 
@@ -28,6 +30,10 @@ const DetailsBook = () => {
 	const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
 	const [isSubmitted, setIsSubmitted] = useState(false);
   const [isTextHidden, setIsTextHidden] = useState(false);
+  
+  // Get SEO data based on current language
+  const currentLang = i18n.language || 'ar';
+  const seoData = getSEOData('detailsBook', currentLang);
 
 	const handleCheckboxChange = (e) => {
 		setIsCheckboxChecked(e.target.checked); // Update state when the checkbox changes
@@ -139,6 +145,15 @@ setTimeout(() => {
 
   return (
 <>
+<SEO 
+  title={seoData.title}
+  description={seoData.description}
+  keywords={seoData.keywords}
+  image="https://acrossmena.net/images/og-booking-details.jpg"
+  url="https://acrossmena.net/booking-details"
+  type="website"
+  lang={currentLang}
+/>
 <div class="container">
 <button
       className="back-button"

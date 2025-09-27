@@ -8,13 +8,19 @@ import {ReactComponent as ContainerIcon}  from '../../../../assets/icons/contain
 import SkeletonCardPrice from '../../../../components/Skeletons/SkeletonCardPrice';
 import { useTranslation } from 'react-i18next';
 import FormNoResults from '../../components/FormNoResults/FormNoResults';
+import SEO from '../../../../components/SEO/SEO';
+import { getSEOData } from '../../../../const/seoTitles';
 
 const ResultsBook = () => {
 
-    const {t} = useTranslation();
+    const {t, i18n} = useTranslation();
     const targetRef = useRef(null);
     const title= t('title.titleMainPage');
     const subTitle =t('title.subtitlemain');
+    
+    // Get SEO data based on current language
+    const currentLang = i18n.language || 'ar';
+    const seoData = getSEOData('results', currentLang);
     const {
         tripsArray,
         loadingTrip,
@@ -69,6 +75,15 @@ const [visibleTripsCount, setVisibleTripsCount] = useState(0);
 
 return (
     <>
+    <SEO 
+      title={seoData.title}
+      description={seoData.description}
+      keywords={seoData.keywords}
+      image="https://acrossmena.net/images/og-results.jpg"
+      url="https://acrossmena.net/results"
+      type="website"
+      lang={currentLang}
+    />
       <Hero title={title} subTitle={subTitle} />
 
         <MainContainer>

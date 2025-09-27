@@ -15,10 +15,11 @@ import GoToTop from "../../../../components/GoToTop/GoToTop";
 import { useSelector } from "react-redux";
 // import { useParams } from "react-router-dom";
 
-import { Helmet } from 'react-helmet-async';
 import { useTranslation } from "react-i18next";
 import alertWarn from '../../../../assets/images/alert.png';
 import ModalFeedBack from '../../components/common/ModalFeedBack/ModalFeedBack';
+import SEO from '../../../../components/SEO/SEO';
+import { getSEOData } from '../../../../const/seoTitles';
 
 const ProhibitedPermitted = () => {
   const { t, i18n } = useTranslation();
@@ -27,24 +28,22 @@ const ProhibitedPermitted = () => {
     window.history.scrollRestoration = 'manual'
   }, []);
 
+  // Get SEO data based on current language
+  const currentLang = i18n.language || 'ar';
+  const seoData = getSEOData('prohibitedPermitted', currentLang);
 
   const {stateScrollValue , objectFeesModal} = useSelector((state) => state.accordion);
   return (
     <>
-    <Helmet>
-    <meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="/>
-    <meta property="og:type" content="article"></meta>
-    <meta property="og:url" content="https://acrossmena.net/prohibited-permitted-materials/search-hs-code"></meta>
-      <meta
-      name="description"
-      content="التعرفة الجمركية والشروط · حاسبة الرسوم الجمركية · حاسبات الشحن · أنواع ومقاسات الحاويات البحرية · أنواع ومقاسات الشاحنات · شروط التجارة الدولية (Incoterms) ..."
+    <SEO 
+      title={seoData.title}
+      description={seoData.description}
+      keywords={seoData.keywords}
+      image="https://acrossmena.net/images/og-prohibited.jpg"
+      url="https://acrossmena.net/prohibited-permitted-materials/search-hs-code"
+      type="tool"
+      lang={currentLang}
     />
-    <meta property="og:site_name" content="Across MENA"></meta>
-    <meta property="article:publisher" content="https://www.facebook.com/acrossmena"></meta>
-    <meta name="keywords" content="اتصل بنا , فريق , acrossmena , تواصل معنا , هاتف , شركة لوجيستية , خدمات , أدوات , تعرفة جمركية , شحن , شحن بري جوي بحري , استشارات , مساعدة , حاسبة جمركية , رسوم جمركية" ></meta>
-
-    <title>{t('title.titleCustomsTariffAndCondition')} - Across MENA</title>
-    </Helmet>
 
     <GoToTop valueScroll={stateScrollValue}/>
     {

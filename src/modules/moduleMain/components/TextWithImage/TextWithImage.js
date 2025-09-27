@@ -13,7 +13,7 @@ const TextWithImage = ({image,title,text,text2}) => {
 
 
 		<div className='textwithimage-right'>
-        <img src={image} alt={'about'} className='textwithimage-right__img' />
+        <img src={image} alt={'about'} className='textwithimage-right__img' loading='lazy' />
     </div>
 
 		<div className='textwithimage-left'>

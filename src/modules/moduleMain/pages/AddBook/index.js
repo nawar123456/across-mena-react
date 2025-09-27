@@ -14,11 +14,17 @@ import FormAskManager from '../AskManager/FormAskManager';
 import UserIcon from '../../../../assets/icons/userManager.png'
 import { LuUsers } from "react-icons/lu";
 import './fixed-header.css'
+import SEO from '../../../../components/SEO/SEO';
+import { getSEOData } from '../../../../const/seoTitles';
 
 const AddBook = () => {
 
   const {t,i18n} = useTranslation();
   const [showPopup, setShowPopup] = useState(false);
+  
+  // Get SEO data based on current language
+  const currentLang = i18n.language || 'ar';
+  const seoData = getSEOData('addBook', currentLang);
 
 
 
@@ -84,6 +90,15 @@ const closePopup = () => {
 };
   return (
     <>
+    <SEO 
+      title={seoData.title}
+      description={seoData.description}
+      keywords={seoData.keywords}
+      image="https://acrossmena.net/images/og-add-booking.jpg"
+      url="https://acrossmena.net/add-booking"
+      type="website"
+      lang={currentLang}
+    />
 {/* {console.log(portsObject)} */}
       {/* <Hero title={title} subTitle={subTitle} /> */}
 

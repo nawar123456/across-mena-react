@@ -36,7 +36,8 @@ import { useMemo } from 'react';
 import ModalText from '../../components/customsPage/ModalText/ModalText';
 import ModalAccordion from '../../components/customsPage/ModalAccordion/ModalAccordion';
 import LoaderModal from '../../../../components/LoaderModal/LoaderModal';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../../../../components/SEO/SEO';
+import { getSEOData } from '../../../../const/seoTitles';
 import { useTranslation } from 'react-i18next';
 
 let timer ;
@@ -44,6 +45,10 @@ let timer ;
 const CustomsCalculator = () => {
 
   const {t, i18n} = useTranslation();
+  
+  // Get SEO data based on current language
+  const currentLang = i18n.language || 'ar';
+  const seoData = getSEOData('customsCalculator', currentLang);
 
   const dispatch = useDispatch();
   const {loadingFeeCalc,feeCalculator ,errorCalc, arrayCountries ,errorCountry , customValues , loadingCustomCalc ,getLastItem   } = useSelector((state) => state.customsCalculator);
@@ -1553,24 +1558,15 @@ const showPopUpFees = (e,index) =>{
 
   return (
     <>
-
-    <Helmet>
-
-    <meta name="keywords" content="حساب رسوم جمركية  متعددة , حاسبة جمركية , تعرفة جمركية , أدوات , ألة حاسبة جمركية , الألة الحاسبة الجمركية , جمرك , ضرائب , تكلفة اجمالية , حساب الرسوم , رسوم جمركية " ></meta>
-      <meta
-      name="description"
-      content="هذه الأداة تقدم تقديرات تقريبية للرسوم الجمركية والضرائب المتعلقة بالمنتجات المستوردة، وتعتمد على المعلومات التي قدمها المستخدم. لا يمكن الاعتماد بنسبة 100٪ على هذه التقديرات بسبب تغييرات اللوائح والقوانين الجمركية والضريبية."
+    <SEO 
+      title={seoData.title}
+      description={seoData.description}
+      keywords={seoData.keywords}
+      image="https://acrossmena.net/images/og-calculator.jpg"
+      url="https://acrossmena.net/customs-duties-calculator/calculator"
+      type="tool"
+      lang={currentLang}
     />
-
-<meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="/>
-<meta property="og:url" content="https://acrossmena.net/customs-duties-calculator/calculator"></meta>
-<meta property="og:type" content="article"></meta>
-<meta property="og:site_name" content="Across MENA"></meta>
-<meta property="og:image" content="https://cdn.acrossmena.com/wp-content/uploads/2021/03/calculator-scaled.jpg"></meta>
-
-    <title>{t('title.titleCustomsDutiesCaculator')}- Across MENA</title>
-
-    </Helmet>
 
     <GoToTop/>
     {/* <SecondaryHero title={t('title.titleCustomsDutiesCaculator')} image={heroImage}/> */}
