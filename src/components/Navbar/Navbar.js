@@ -36,9 +36,9 @@ const NavLinksData2 = [{
   "toPage": "track",
 },
 {
-  "name": t('labelNavbar.contact'),
+  "name": t('labelNavbar.blog'),
   "id": 2,
-  "toPage": "contact-us",
+  "toPage": "blog",
 },
 // {
 //   "name": t('labelNavbar.help'),
@@ -70,6 +70,11 @@ const NavLinksData2 = [{
           "name": t('labelNavbar.privacyPolicy'),
           "toPage":"privacy-policy"
       },
+      {
+        "id": 3,
+        "name": t('labelNavbar.contact'),
+        "toPage":"contact-us"
+    },
   ]
 },
 {

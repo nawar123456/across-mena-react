@@ -35,6 +35,7 @@ const PrivacyPolicy = lazy(() => import('../modules/moduleMain/pages/PrivacyPoli
 const BlogSyria = lazy(() => import('../modules/moduleMain/pages/BlogSyria/BlogSyria.js'));
 const BlogDetail = lazy(() => import('../modules/moduleMain/pages/BlogDetail/BlogDetail.js'));
 const SyriaShippingGuide = lazy(() => import('../modules/moduleMain/pages/SyriaShippingGuide/SyriaShippingGuide.js'));
+const SeaFreightSyria = lazy(() => import('../modules/moduleMain/pages/SeaFreightSyria/SeaFreightSyria.js'));
 
 const RootLayout = lazy(() => import('../layout/RootLayout/RootLayout'));
 const PlainLayout = lazy(() => import('../layout/RootLayout/PlainLayout'));
@@ -248,8 +249,8 @@ const router = createBrowserRouter ([
                 element: <PrivacyPolicy/>
             },
             {
-                path:"blog/sea-freight-syria",
-                element: <BlogSyria/>
+                path:"blog",
+                element: <SeaFreightSyria/>
             },
             {
                 path:"blog/:slug",

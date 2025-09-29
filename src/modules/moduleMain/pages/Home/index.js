@@ -102,7 +102,7 @@ const Home = () => {
       <section className='home-cards-about'>
 
 
-      <CardAbout path={queryUrl.has("param") ?'services/sea-shipping-syria?param=across-mena' : 'services/sea-shipping-syria'} img={ShipImag}      title="شحن بحري سورية" text="شحن بحري متخصص إلى سورية من دبي والإمارات. أسعار تنافسية وحاويات 20ft و40ft إلى الموانئ السورية" />
+      <CardAbout path={queryUrl.has("param") ?'services/sea-shipping-syria?param=across-mena' : 'services/sea-shipping-syria'} img={ShipImag}      title={t('title.seapage')} text={t('title.subtitlesea')}/>
 
       <CardAbout path={queryUrl.has("param") ?'services/land-shipping?param=across-mena' : 'services/land-shipping'} img={TruckImag}     title={t('title.landpage')} text={t('title.subtitleland')} />
       <CardAbout path={queryUrl.has("param") ?'services/airport-shipping?param=across-mena' : 'services/airport-shipping'} img={PlaneImag}

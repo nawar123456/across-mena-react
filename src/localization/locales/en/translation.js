@@ -106,7 +106,7 @@ const translations = {
         accordionsubP_5:'Knowledge of prohibited materials and permitted non-tariff measures',
 		labelheaderTrackShipment:'Shipment Tracking',
 		text1TrackShipment:'Our advanced tracking system provides an accurate and seamless experience, allowing you to monitor your shipments in real-time.',
-		text2TrackShipment:'Through this system, you can: Access the real-time location of your shipment at any moment,Enhance your operational planning and avoid unexpected delays,Enjoy greater transparency and complete control, ensuring your shipping process is safer and more efficient.',
+		text2TrackShipment:'',
         labelheaderAppointemnt:'Instant Booking',
         text1Appointement:'There is no need to delve into the complexities of shipping lines and their requirements. Without experience, you will make mistakes that could be devastating to some.',
         text2Appointement:'Book your shipment yourself through an easy and simple interface and get quotes in complete transparency and in real time',
