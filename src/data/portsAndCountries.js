@@ -353,7 +353,7 @@ export const COUNTRIES_AND_PORTS = [
       lang: "ar",
       label: "Lebanon",
       label_ar: "لبنان",
-      ImageURL: "https://www.svgrepo.com/show/405500/flag-for-flag-lebanon.svg",
+      ImageURL: "https://flagcdn.com/w40/lb.png",
       countries_code: "LB",
       countryGroups: []
     },

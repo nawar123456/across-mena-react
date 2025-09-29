@@ -89,13 +89,13 @@ const LocalPortSearch = ({
         }
       }));
       setSearchResults(formattedPorts);
-      setSearchQuery(item.origin?.label_ar || item.origin?.label);
+      setSearchQuery(item.origin?.label || item.origin?.label_ar);
       setIsShowingCountryPorts(true); // تم النقر على دولة
       return; // لا نغلق القائمة ولا نختار الدولة
     }
     
     // إذا كان العنصر ميناء، يمكن اختياره
-    const displayName = item.name || item.origin?.label_ar || item.origin?.label;
+    const displayName = item.name || item.origin?.label || item.origin?.label_ar;
     setSearchQuery(displayName);
     setSearchResults([]);
     setIsOpen(false);
@@ -232,8 +232,8 @@ const LocalPortSearch = ({
             <div className="results-section">
               {/* عنوان القسم فقط عند عرض موانئ دولة معينة */}
               {isShowingCountryPorts && searchQuery && (
-                <div className="section-title">
-                  موانئ {searchQuery}
+                <div className="section-title country-ports-title">
+                  Ports of <span className="country-name-highlight">{searchQuery}</span>
                 </div>
               )}
               
