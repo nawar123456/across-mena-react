@@ -19,14 +19,14 @@ export const seoTitles = {
   // خدمات الشحن البحري
   seaShipping: {
     ar: {
-      title: "شحن بحري - أسعار حاويات من دبي السعودية | Across MENA",
-      description: "شحن بحري من دبي السعودية الكويت. أسعار حاويات 20ft 40ft. تتبع الشحنات وخدمة التخليص الجمركي. احجز الآن!",
-      keywords: "شحن بحري, حاويات, دبي, السعودية, الكويت, أسعار الشحن, تتبع الشحنة, تخليص جمركي"
+      title: "شحن بحري سورية - حاويات من دبي إلى سورية | Across MENA",
+      description: "شحن بحري إلى سورية من دبي السعودية الكويت. أسعار حاويات 20ft 40ft تنافسية. تتبع الشحنات وخدمة التخليص الجمركي. احجز الآن!",
+      keywords: "شحن بحري سورية, شحن إلى سورية, حاويات سورية, دبي سورية, السعودية سورية, أسعار الشحن إلى سورية, تخليص جمركي سورية, شحن بحري دمشق, شحن بحري حلب"
     },
     en: {
-      title: "Sea Freight Shipping - Container Rates Dubai Saudi | Across MENA",
-      description: "Sea freight from Dubai, Saudi Arabia, Kuwait. 20ft 40ft container rates. Shipment tracking and customs clearance service. Book now!",
-      keywords: "sea freight, containers, Dubai, Saudi Arabia, Kuwait, shipping rates, track shipment, customs clearance"
+      title: "Sea Freight to Syria - Container Shipping Dubai to Syria | Across MENA",
+      description: "Sea freight to Syria from Dubai, Saudi Arabia, Kuwait. Competitive 20ft 40ft container rates. Shipment tracking and customs clearance service. Book now!",
+      keywords: "sea freight to Syria, shipping to Syria, Syria containers, Dubai Syria, Saudi Arabia Syria, Syria shipping rates, Syria customs clearance, sea freight Damascus, sea freight Aleppo"
     }
   },
 
@@ -279,6 +279,20 @@ export const seoTitles = {
       title: "Booking Details - Shipment Information | Across MENA",
       description: "Complete booking details. Shipment status, tracking, and financial details. Follow your booking now!",
       keywords: "booking details, shipment information, shipment status, booking tracking, financial details"
+    }
+  },
+
+  // الشحن البحري إلى سورية - صفحة مخصصة
+  seaShippingSyria: {
+    ar: {
+      title: "شحن بحري في سورية - أفضل أسعار الشحن البحري إلى سورية 2024 | Across MENA",
+      description: "شحن بحري في سورية بأفضل الأسعار! حاويات 20ft و40ft من دبي والإمارات إلى دمشق وحلب واللاذقية. خدمة تخليص جمركي وتتبع الشحنات. احجز الآن!",
+      keywords: "شحن بحري في سورية, شحن بحري سورية, شحن إلى سورية, حاويات سورية, دبي سورية, الإمارات سورية, أسعار الشحن إلى سورية, تخليص جمركي سورية, شحن بحري دمشق, شحن بحري حلب, ميناء اللاذقية, ميناء طرطوس, شحن بحري سوريا, شركة شحن سورية, شحن بحري من دبي إلى سورية, شحن بحري من الإمارات إلى سورية, شحن حاويات إلى سورية, أفضل شركة شحن إلى سورية, أسعار شحن بحري سورية, تكلفة الشحن البحري إلى سورية"
+    },
+    en: {
+      title: "Sea Freight to Syria - Best Syria Sea Shipping Rates | Across MENA",
+      description: "Sea freight to Syria at the best rates! 20ft and 40ft containers from Dubai and UAE to Damascus and Aleppo. Customs clearance and shipment tracking service. Book now!",
+      keywords: "sea freight to Syria, shipping to Syria, Syria containers, Dubai Syria, UAE Syria, Syria shipping rates, Syria customs clearance, sea freight Damascus, sea freight Aleppo, Latakia port, Tartus port, Syria sea freight, Syria shipping company"
     }
   }
 };

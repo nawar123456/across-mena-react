@@ -15,14 +15,13 @@ import ContainerMoveImage from '../../../../assets/icons/container-icon.svg';
 // Redux Actions
 import { fetchTripsBy } from '../../store/home/home.action';
 import { addPortsObject, savePortsObject, addBookingObject } from "../../store/home/home.slice";
-import { setSelectedContainer } from "../../../moduleServices/store/seaTap/seaTap.slice";
 
 // البيانات المحلية
 import { COUNTRIES_AND_PORTS, formatPortsForSearch } from '../../../../data/portsAndCountries';
 
 import './CardInputs.css';
 
-const CardInputs = ({ portsObjectSave }) => {
+const CardInputsOptimized = ({ portsObjectSave }) => {
   const [hasError, setHasError] = useState(false);
   const [recentPortsFrom, setRecentPortsFrom] = useState([]);
   const [recentPortsTo, setRecentPortsTo] = useState([]);
@@ -92,11 +91,6 @@ const CardInputs = ({ portsObjectSave }) => {
 
   // تحديث الاختيارات الأخيرة
   const updateRecentPorts = useCallback((field, selectedValue) => {
-    // إذا كان selectedValue هو null، لا نفعل شيئاً
-    if (!selectedValue || !selectedValue.name) {
-      return;
-    }
-
     if (field === FieldsObject.fieldFromPort) {
       setRecentPortsFrom((prev) => {
         const updated = [selectedValue, ...prev.filter((item) => item.name !== selectedValue.name)];
@@ -125,18 +119,20 @@ const CardInputs = ({ portsObjectSave }) => {
 
     // معالجة خاصة للموانئ
     if (field === FieldsObject.fieldFromPort || field === FieldsObject.fieldToPort) {
+      let inputShow = "";
+      if (value?.name) {
+        inputShow = `${value?.name}`;
+      } else {
+        inputShow = `${value?.origin?.label || value?.origin?.label_ar}`;
+      }
+
       // إذا كان اختيار دولة، نحتاج لتحميل موانئها
       if (value && value?.origin && value?.origin?.ports) {
+        // يمكن إضافة منطق إضافي هنا إذا لزم الأمر
         console.log('Selected country with ports:', value.origin.ports);
       }
     }
-
-    // معالجة خاصة لعدد الحاويات
-    if (field === FieldsObject.fieldContainer && value?.counter !== undefined) {
-      dispatch(setSelectedContainer(value.counter));
-      console.log(`Saved to Redux -> Counter: ${value.counter}`);
-    }
-  }, [FieldsObject.fieldFromPort, FieldsObject.fieldToPort, FieldsObject.fieldContainer, updateRecentPorts, dispatch]);
+  }, [FieldsObject.fieldFromPort, FieldsObject.fieldToPort, updateRecentPorts]);
 
   // تحديث النموذج عند تغيير اللغة
   useEffect(() => {
@@ -331,4 +327,4 @@ const CardInputs = ({ portsObjectSave }) => {
   );
 };
 
-export default CardInputs;
+export default CardInputsOptimized;

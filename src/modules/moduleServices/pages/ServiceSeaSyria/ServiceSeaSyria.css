@@ -1,0 +1,110 @@
+/* Syria-specific sea shipping page styles */
+.syria-specific-content {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  margin: 2rem 0;
+}
+
+.syria-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.syria-about h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.syria-about p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.syria-features {
+  list-style: none;
+  padding: 0;
+}
+
+.syria-features li {
+  color: #27ae60;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.syria-cities h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.city-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.city-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.city-card h4 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.city-card p {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .syria-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .syria-about h2 {
+    font-size: 1.5rem;
+  }
+  
+  .cities-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .city-card {
+    padding: 1rem;
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] .syria-features li {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+[dir="rtl"] .city-card {
+  text-align: center;
+}

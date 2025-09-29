@@ -32,6 +32,9 @@ const  SignUp = lazy(() => import('../modules/moduleAuth/pages/SignUp/SignUp'));
 const ContactUs = lazy(() => import('../modules/moduleMain/components/ContactUS/ContactUs.js'));
 const AboutUs = lazy(() => import('../modules/moduleMain/components/AboutAs/AboutUs.js'));
 const PrivacyPolicy = lazy(() => import('../modules/moduleMain/pages/PrivacyPolicy/PrivacyPolicy.js'));
+const BlogSyria = lazy(() => import('../modules/moduleMain/pages/BlogSyria/BlogSyria.js'));
+const BlogDetail = lazy(() => import('../modules/moduleMain/pages/BlogDetail/BlogDetail.js'));
+const SyriaShippingGuide = lazy(() => import('../modules/moduleMain/pages/SyriaShippingGuide/SyriaShippingGuide.js'));
 
 const RootLayout = lazy(() => import('../layout/RootLayout/RootLayout'));
 const PlainLayout = lazy(() => import('../layout/RootLayout/PlainLayout'));
@@ -47,6 +50,7 @@ const TruckTypes = lazy(() => import('../modules/moduleTools/pages/TruckTypes/Tr
 
 // const Home = lazy(() => import('../modules/moduleMain/pages/Home'));
 const ServiceSea = lazy(() => import('../modules/moduleServices/pages/ServiceSea/ServiceSea'));
+const ServiceSeaSyria = lazy(() => import('../modules/moduleServices/pages/ServiceSeaSyria/ServiceSeaSyria'));
 const ServiceAirPort = lazy(() => import('../modules/moduleServices/pages/ServiceAirPort/ServiceAirPort'));
 const ServiceLand = lazy(() => import('../modules/moduleServices/pages/ServiceLand/ServiceLand'));
 const CustomsClearance = lazy(() => import('../modules/moduleServices/pages/CustomsClearance/Customsclearance.js'));
@@ -113,6 +117,14 @@ const router = createBrowserRouter ([
                 element: (
                     // <Suspense fallback={<LoaderModal/>}>
                         <ServiceSea/>
+                    // </Suspense>
+                ) ,
+            },
+            {
+                path :"services/sea-shipping-syria" ,
+                element: (
+                    // <Suspense fallback={<LoaderModal/>}>
+                        <ServiceSeaSyria/>
                     // </Suspense>
                 ) ,
             },
@@ -234,6 +246,18 @@ const router = createBrowserRouter ([
             {
                 path:"privacy-policy",
                 element: <PrivacyPolicy/>
+            },
+            {
+                path:"blog/sea-freight-syria",
+                element: <BlogSyria/>
+            },
+            {
+                path:"blog/:slug",
+                element: <BlogDetail/>
+            },
+            {
+                path:"guide/syria-shipping",
+                element: <SyriaShippingGuide/>
             },
              {
                 path :"tools/import-export" ,

@@ -1,0 +1,466 @@
+.local-port-search {
+  position: relative;
+  width: 100%;
+}
+
+/* إزالة جميع الخطوط والحدود من الـ inputs */
+.local-port-search input,
+.local-port-search input:focus,
+.local-port-search input:active,
+.local-port-search input:hover {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  text-decoration: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+.search-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 40px 12px 16px; /* مساحة للأيقونة */
+  transition: border-color 0.3s ease;
+}
+
+.search-input-container:focus-within {
+  border-color: #ffc107;
+  /* box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.25); */
+}
+
+.search-input-container.error {
+  border-color: #dc3545;
+}
+
+.search-icon {
+  margin-right: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.input-display-elements {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.country-flag-in-input {
+  width: 25px;
+  height: 20px;
+  object-fit: contain;
+  border-radius: 2px;
+  /* border: 1px solid #ddd; */
+}
+
+.port-code-in-input {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+.search-input {
+  flex: 1;
+  border: none !important;
+  outline: none !important;
+  font-size: 16px;
+  color: #333;
+  background: transparent;
+  width: 100%;
+  box-shadow: none !important;
+  border-bottom: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  text-decoration: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.search-input.has-selected-port {
+  padding-left: 60px; /* مساحة للعناصر المعروضة */
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-input:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  text-decoration: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.search-input:active {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  text-decoration: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.search-input:hover {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  text-decoration: none !important;
+}
+
+.loading-spinner {
+  margin-left: 8px;
+  animation: spin 1s linear infinite;
+  color: #007bff;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+  margin-top: 4px;
+}
+
+.recent-section,
+.results-section {
+  padding: 8px 0;
+}
+
+.section-title {
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 4px;
+}
+
+
+.dropdown-item {
+  padding: 12px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Country Items */
+.country-item {
+  background-color: #f8f9fa;
+  border-left: 3px solid #007bff;
+}
+
+.country-item-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.country-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+  margin-left: auto; /* اسم البلد في أقصى اليمين */
+}
+
+.country-code {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.ports-count {
+  font-size: 16px;
+  color: #007bff;
+  background: rgba(0, 123, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin: 0 auto; /* عدد الموانئ في المنتصف */
+}
+
+/* Port Items */
+.port-item {
+  padding-left: 0;
+}
+
+.port-item-content {
+  display: flex;
+  align-items: center;
+  /* gap: 8px; */
+  padding: 0px 10px;
+  width: 100%;
+}
+
+.port-name-local {
+  font-weight: 500;
+  color: #000;
+  font-size: 16px;
+  margin-left: auto;
+}
+
+.port-code {
+  font-size: 14px;
+  color: #000;
+  font-family: monospace;
+  font-weight: 500;
+}
+
+.mena-icon {
+  width: 26px;
+  height: 26px;
+  color: #666;
+}
+
+/* Recent Items */
+.recent-item {
+  background-color: #fff;
+  /* border-left: 3px solid #ffc107; */
+}
+
+.recent-item .item-name {
+  font-weight: 500;
+  color: #856404;
+}
+
+.recent-item .item-country {
+  font-size: 12px;
+  color: #856404;
+}
+
+/* Country Flag */
+.country-flag {
+  width: 29px;
+  height: 27px;
+  object-fit: contain;
+  border-radius: 4px;
+  /* border: 1px solid #ddd; */
+}
+
+/* No Results */
+.no-results {
+  padding: 20px;
+  text-align: center;
+  outline: none;
+  box-shadow: none;
+}
+
+.no-results-text {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Error Message */
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+  padding-left: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-input-container {
+    padding: 10px 12px;
+  }
+  
+  .search-input {
+    font-size: 14px;
+  }
+  
+  .dropdown-item {
+    padding: 10px 12px;
+  }
+  
+  .country-name,
+  .port-name {
+    font-size: 13px;
+  }
+  
+  .country-code,
+  .port-code {
+    font-size: 11px;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .search-input-container {
+    background: #2d3748;
+    border-color: #4a5568;
+  }
+  
+  .search-input {
+    color: #e2e8f0;
+  }
+  
+  .search-input::placeholder {
+    color: #a0aec0;
+  }
+  
+  .search-dropdown {
+    background: #2d3748;
+    border-color: #4a5568;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #4a5568;
+  }
+  
+  .country-item {
+    background-color: #4a5568;
+  }
+  
+  .recent-item {
+    background-color: #744210;
+  }
+}
+
+/* أيقونة المرساة داخل الـ input */
+.input-anchor-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 16px;
+  pointer-events: none;
+  z-index: 1;
+  width: 22px;
+  height: 30px;
+}
+
+/* عرض الميناء المحدد */
+.selected-port-display {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: text;
+  min-height: 20px;
+}
+
+/* علم البلد الصغير */
+.country-flag-small {
+  width: 20px;
+  height: 14px;
+  border-radius: 2px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* رمز الميناء الصغير */
+.port-code-small {
+  font-size: 14px;
+  color: #000;
+  font-family: monospace;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+/* اسم الميناء الصغير */
+.port-name-small {
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+  flex: 1;
+}
+
+/* Scrollbar Styles */
+.search-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.search-dropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.search-dropdown::-webkit-scrollbar-thumb {
+  background: #fcc400;
+  border-radius: 3px;
+}
+
+.search-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #e6b000;
+}
+
+/* Dark mode styles for new elements */
+@media (prefers-color-scheme: dark) {
+  .port-code-small,
+  .port-name-small {
+    color: #fff;
+  }
+
+  .input-anchor-icon {
+    color: #a0aec0;
+  }
+}

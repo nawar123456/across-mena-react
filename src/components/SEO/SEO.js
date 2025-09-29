@@ -49,6 +49,16 @@ const SEO = ({
           {JSON.stringify(schema)}
         </script>
       )}
+      
+      {/* Syria-specific meta tags */}
+      {url && url.includes('syria') && (
+        <>
+          <meta name="geo.region" content="SY" />
+          <meta name="geo.country" content="Syria" />
+          <meta name="geo.placename" content="Syria" />
+          <meta name="ICBM" content="33.5138, 36.2765" />
+        </>
+      )}
     </Helmet>
   );
 };
